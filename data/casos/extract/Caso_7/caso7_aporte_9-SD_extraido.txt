@@ -1,0 +1,51 @@
+=== TEXTO EXTRAÍDO DE: caso7_aporte_9-SD.pdf ===
+Ruta original: /Users/rayespinoza/AI_Projects/cordoba_classificator/data/casos/Caso_7/2-Aporte del contribuyente/caso7_aporte_9-SD.pdf
+Fecha de procesamiento: 2025-06-17 14:54:07
+==================================================
+
+Libro IVA
+Fecha
+Tipo
+12/07/2021 6 - Factura B
+12/07/2021 6 - Factura B
+12/07/2021 8 - Nota de
+00001-
+00000001
+Crédito B
+16/07/2021 6 - Factura B
+Número
+00001-
+00000008
+00001-
+00000009
+00001-
+00000010
+Nro. Doc.
+Comprador
+CUIT
+77-00000011-1
+CUIT
+77-00000011-1
+CUIT
+77-00000011-1
+CUIT
+77-00000011-1
+Denominación Comprador
+CLIENTE1-X7
+$ 22.218.644,55 $ 0,00
+CLIENTE1-X7
+CLIENTE1-X7
+CLIENTE1-X7
+Neto Gravado
+No
+Gravado
+Total
+$ 22.294.333,29 $ 0,00
+$ 0,00 $ 4.681.809,99 $ 26.976.143,28
+$ 22.218.644,55 $ 0,00
+$ 0,00 $ 4.665.915,35 $ 26.884.559,90
+$ 6.446.843,14
+$ 0,00
+$ 0,00 $ 1.353.837,06 $ 7.800.680,20
+Exento IVA
+$ 0,00 $ 4.665.915,35 $ 26.884.559,90

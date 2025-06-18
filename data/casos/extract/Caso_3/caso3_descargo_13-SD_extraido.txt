@@ -1,0 +1,69 @@
+=== TEXTO EXTRAÍDO DE: caso3_descargo_13-SD.pdf ===
+Ruta original: /Users/rayespinoza/AI_Projects/cordoba_classificator/data/casos/Caso_3/2-Aporte del contribuyente/caso3_descargo_13-SD.pdf
+Fecha de procesamiento: 2025-06-17 14:49:12
+==================================================
+
+CONTRIBUYENTE CASO 3
+A
+COD: 1
+CONTRIBUYENTE CASO 3
+CORDOBA-CAPITAL
+Tel: 0351
+IVA: Responsable Inscripto
+Razón Social
+CLIENTE4 X3
+Domicilio
+Localidad
+VILLA MARIA
+Cond.IVA
+Responsable Inscripto
+DPTO 0
+C.P.
+CUIT
+30-00033333-4
+Provincia:
+CORDOBA
+Condiciones de Venta:
+Forma de Pago: Cta.Cte.
+Cant.
+1
+Descripción
+ACOPIO DE MATERIALES PARA LA CONSTRUCCIÓN (A-ACOPIO)
+Marca
+SIN MARCA
+CANJE MAYO 2021 - CIBELES C.PAZ-
+Factura
+Número:
+0001
+00002813
+Fecha:
+30/06/2021
+Inicio Actividades:
+01/05/2011
+Nro. IIBB .:
+33333333
+CUIT:
+33-33333333-3
+Hora 30/06/2021 00:00:00
+Precio Dto. %
+$ 10.541.2 ...
+SubTotal
+0,00 $ 10.541.225, ...
+Descuentos:
+$ 0,00
+Subtotal
+$ 10.541.225,60
+Percepción IIBB Cba:
+$ 0,00
+IVA
+21,00 %
+$ 2.213.657,38
+Total
+$ 12.754.882,98
+30711810621010001
+CAE
+71261595914475
+Fec.Ven.
+10/07/2021
+Generado por Sabio GO ERP www.sablogbecientos ochenta y dos con 98/100 .-
+doce millones setecientos cincuenta y cuatro mil

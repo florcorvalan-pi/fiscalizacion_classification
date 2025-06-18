@@ -1,0 +1,28 @@
+=== TEXTO EXTRAÍDO DE: caso3_descargo_3-SD.pdf ===
+Ruta original: /Users/rayespinoza/AI_Projects/cordoba_classificator/data/casos/Caso_3/2-Aporte del contribuyente/caso3_descargo_3-SD.pdf
+Fecha de procesamiento: 2025-06-17 14:49:15
+==================================================
+
+CONTRIBUYENTE CASO 1
+Detalle de Asiento: 7576
+Ren. Nro.
+1 101030010001
+2 401020010003
+a Ingresos por Acopio
+3 201010010003
+a IVA - Debito Fiscal
+TOTALES
+Cuenta
+Deudores por Ventas
+Debe
+$ 5.262.255,26
+$ 0,00
+$ 0,00
+$ 913.283,97 FAC-000100002814A CANJE MAYO 2021 -
+5.262.255,26
+5.262.255,26
+Haber Concepto
+$ 0,00 FAC-000100002814A CANJE MAYO 2021 -
+$ 4.348.971,29 FAC Factura A-0001-00002814
+PROVEEDOR X3
+CANJE

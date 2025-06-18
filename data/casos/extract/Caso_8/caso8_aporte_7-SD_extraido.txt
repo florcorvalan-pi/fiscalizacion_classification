@@ -1,0 +1,55 @@
+=== TEXTO EXTRAÍDO DE: caso8_aporte_7-SD.pdf ===
+Ruta original: /Users/rayespinoza/AI_Projects/cordoba_classificator/data/casos/Caso_8/2-Aporte del contribuyente/caso8_aporte_7-SD.pdf
+Fecha de procesamiento: 2025-06-17 14:53:14
+==================================================
+
+Fecha Comp. y Numero
+Razon Social
+IVA
+CONTRIBUYENTE CASO 8
+Libro De IVA Venta Desde 2022/08 Hasta El 2022/08 - De La Sucursal Todas
+CUIT
+$ Gravado 21% $ Gravado 10.5%
+0.00
+1,484, 130.00
+$ Gravado 27%
+08/08/2022 FV A 0001-00000053
+16/08/2022 FV A 3302-21694871
+22/08/2022 FV A 3302-21736662
+RLIvaReporte_V1_3
+MFORLANI
+CLIENTE1-X8
+RI
+CLIENTE2-X8
+CLIENTE2-X8
+RI
+88-00000011-1
+RI
+88-00000022-2
+0.00
+336,685.80
+88-00000022-2
+Total General
+0.00
+2,004,764.00
+No Gravado
+IVA 21
+IVA 10.5
+NO GRAV
+0.00
+155,833.65
+0.00
+35,352.01
+0.00
+183,948.20
+0.00
+19,314.56
+0.00
+210,500.22
+Hoja
+1 / 1
+Total
+1,639,963.65
+372,037.81
+203,262.76
+2,215,264.22

@@ -1,0 +1,83 @@
+=== TEXTO EXTRAÍDO DE: caso4_aporte_2_IIBB_02_2023_DDJJ_rect-SD.pdf ===
+Ruta original: /Users/rayespinoza/AI_Projects/cordoba_classificator/data/casos/Caso_4/2-Aporte del contribuyente/caso4_aporte_2_IIBB_02_2023_DDJJ_rect-SD.pdf
+Fecha de procesamiento: 2025-06-17 14:50:53
+==================================================
+
+Comarb
+SIFERE WEB
+CM03
+CUIT:
+44-44444444-4
+Anticipo:
+202302
+Impuesto sobre los Ingresos Brutos
+Convenio Multilateral
+Presentación y Pago
+Contribuyente:
+CONTRIBUYENTE CASO 4
+Secuencia:
+Rectificativa - 1
+Nº de Formulario
+5866
+Nº Verificador
+917722
+Sede:
+901
+Tipo:
+Resto
+Datos Presentación AFIP: DDJJ presentada el 28/02/2025 - 11:03:50 ante AFIP, Nº de Transacción 1077936037
+Jurisdicción
+901
+CABA
+902
+BUENOS AIRES
+$0,00
+$966,26
+$0,00
+$966,26
+$0,00
+$0,00
+904
+CORDOBA
+$28.640,51
+$46.950,59
+$0,00
+$18.310,08
+$0,00
+$0,00
+921
+SANTA FE
+Totales
+Jurisdicciones incluídas en la presente Declaración Jurada
+Anticipo Impuesto
+Determinado
+Valores Restan
+$436,15
+$1.001,95
+Valores Suman
+A favor
+Contribuyente
+$565,80
+$0,00
+$0,00
+$0,00
+$0,00
+$0,00
+$29.076,66
+$48.918,80
+$19.842,14
+$0,00
+A favor Fisco
+A Pagar
+$0,00
+$0,00
+$0,00
+$0,00
+$0,00
+$0,00
+DNI Nro .:
+44-44444444-4
+en carácter de TITULAR declara que los datos consignados en este formulario son
+correctos y completos, y que esta declaración se ha realizado utilizando el software/aplicativo aprobado por la Comisión Arbitral/AFIP, sin
+omitir ni falsear dato alguno que deba contener siendo fiel expresión de la verdad.
+El que suscribe |Titular caso 4

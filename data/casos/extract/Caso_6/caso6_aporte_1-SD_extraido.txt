@@ -1,0 +1,1477 @@
+=== TEXTO EXTRAÍDO DE: caso6_aporte_1-SD.pdf ===
+Ruta original: /Users/rayespinoza/AI_Projects/cordoba_classificator/data/casos/Caso_6/2-Aporte del contribuyente/caso6_aporte_1-SD.pdf
+Fecha de procesamiento: 2025-06-17 14:52:39
+==================================================
+
+Ciudad Autónoma de Buenos Aires, 22/10/2024
+Señores
+Dirección General de Rentas de Córdoba
+Area de Determinaciones
+Dirección de Inteligencia Fiscal
+De nuestra consideración:
+Referencia: Contesta Vista referida a Orden de Tarea Nº FM 15184
+Atentos a vuestra Vista de fecha 3 de octubre de 2024 sobre las diferencias entre las declaraciones
+juradas de IVA y del Impuesto sobre los Ingresos Brutos del período 04/2023, por el monto de $
+21.028.827,22.
+En la fiscalización referida a la Orden de Tarea de la referencia se nos solicitó que explicaramos
+porque no se gravó el monto mencionado en el Impuesto sobre los Ingresos Brutos, monto que fue
+declarado por la empresa en el rubro "Otros" dentro del Rubro "Datos de Facturación" del aplicativo
+SIFERE. Al respecto se indicó que el mencionado monto se descompone en dos conceptos: $
+15.393.365,27 de recupero de gastos y $ 5.635.461,95 en concepto de servicios prestados en el
+exterior.
+Al respecto nos allanamos parcialmente a la pretensión fiscal en la parte de lo facturado como
+recupero de gastos ya que no queremos entrar en controversia sobre esa materia. Pero por otro
+lado sostenemos la no gravabilidad de lo facturado a las empresas del exterior.
+Lo facturado al exterior, en este caso a empresas radicadas en la República Oriental del Uruguay
+corresponde a trabajos de inventariado realizados por personal contratado por la empresa para
+realizar los inventarios "in situ" a empresas de dicho país. A los efectos de demostrar dichas
+operaciones se adjuntas las facturas y notas de crédito emitidas a las empresas indicadas que figuran
+en el Libro IVA Ventas que también se adjunta. Por otra parte se adjunta las facturas por la
+contratación de dicho personal en Uruguay y el detalle de las horas insumidas por los trabajadores.
+Quedamos a disposición para cualquier aclaración al respecto
+Atentamente,
+PERSONA REFERENTE CASO 6
+Contador
+LIBRO IVA VENTAS - STOCK SERVICES SRL - ABRIL 2023
+Fecha
+Tipo
+Pto Venta
+01/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+898
+01/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+02/04/2023
+6 - Factura B
+6
+02/04/2023
+6 - Factura B
+6
+03/04/2023
+8 - Nota de Crédito B
+6
+04/04/2023
+203 - Nota de Crédito Electrónica MiPyMEs (FCE) A
+6
+05/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+902
+05/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+901
+05/04/2023
+6
+900
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+06/04/2023
+1 - Factura A
+6
+1084
+06/04/2023
+1 - Factura A
+06/04/2023
+1 - Factura A
+6
+1083
+06/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+905
+06/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+904
+06/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+903
+07/04/2023
+1 - Factura A
+6
+1086
+07/04/2023
+1 - Factura A
+6
+1085
+07/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+07/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+907
+07/04/2023
+203 - Nota de Crédito Electrónica MiPyMEs (FCE) A
+6
+149
+11/04/2023
+1 - Factura A
+6
+1090
+11/04/2023
+1 - Factura A
+6
+11/04/2023
+1 - Factura A
+6
+11/04/2023
+1 - Factura A
+6
+11/04/2023
+1 - Factura A
+6
+1087
+12/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+12/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+909
+12/04/2023
+203 - Nota de Crédito Electrónica MiPyMEs (FCE) A
+6
+13/04/2023
+6 - Factura B
+6
+13/04/2023
+8 - Nota de Crédito B
+6
+13/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+13/04/2023
+203 - Nota de Crédito Electrónica MiPyMEs (FCE) A
+14/04/2023
+1 - Factura A
+14/04/2023
+1 - Factura A
+6
+1093
+14/04/2023
+1 - Factura A
+14/04/2023
+6 - Factura B
+14/04/2023
+6 - Factura B
+6
+15/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+912
+15/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+911
+16/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+16/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+16/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+16/04/2023
+203 - Nota de Crédito Electrónica MiPyMEs (FCE) A
+6
+16/04/2023
+203 - Nota de Crédito Electrónica MiPyMEs (FCE) A
+6
+17/04/2023
+1 - Factura A
+6
+6
+1082
+Nº FC
+CUIT
+CUIT OCULTO
+Denominación Comprador
+Tipo Cambio
+Moneda Neto Gravado
+1 $
+6
+906
+6
+151
+6
+1092
+6
+1094
+6
+344
+CLIENTE OCULTO
+899
+340
+66-00000044-4
+CLIENTE4-X6
+341
+66-00000011-1
+66
+66-00000011-1
+CLIENTE1-X6
+CLIENTE1-X6
+148
+CUIT OCULTO
+CLIENTE OCULTO
+1089
+1091
+1088
+908
+150
+342
+66-00000022-2
+CLIENTE2-X6
+67
+66-00000022-2
+910
+CLIENTE2-X6
+CUIT OCULTO
+CLIENTE OCULTO
+66-00000055-5
+CLIENTE5-X6
+343
+66-00000033-3
+CLIENTE3-X6
+CUIT OCULTO
+CLIENTE OCULTO
+914
+913
+915
+152
+153
+1096
+1 $
+5,526456 011
+213,76 USD
+5,366626 011
+188,02 USD
+1 $
+1 $
+1.549.264,24
+1 $
+1 $
+8.600,29
+1 $
+Total
+1.635.493,94
+1 $
+425.407,33
+1
+1 $
+423.384,10
+88.910,66
+1 $
+969.012,52
+203.492,63
+1 $
+1.551.180,24
+325.747,85
+1.938.975,28
+1 $
+175.120,90
+36.775,39
+1
+220.652,32
+1 $
+921.986,57
+193.617,18
+1
+1.115.603,75
+1 $
+141.637,15
+1 $
+1 $
+4.458.138,43
+1 $
+2.101.037,24
+1
+441.217,82
+1 $
+550.045,52
+1 $
+126.997,43
+26.669,46
+1 $
+179.323,05
+37.657,84
+1 $
+175.832,48
+36.924,82
+214.163,96
+1 $
+1.004.462,62
+210.937,15
+1.240.511,34
+1 $
+760.000,00
+-
+1 $
+1.004.462,62
+210.937,15 -
+218,53 USD
+1 $
+270.876,90
+1 $
+1 $
+381.600,00
+80.136,00
+1
+5,60664 011
+5,60664 011
+1 $
+2.031.179,52
+426.547,70
+2.493.272,86
+1 $
+5.078.872,05
+1.066.563,13
+1 $
+1 $
+519.607,41
+3.037.229,00
+1 $
+672.176,90
+1
+1 $
+-
+5.078.872,05
+1 $
+426.547,70 -
+2.457.727,22
+1.571.115,42
+1 $
+1.246.917,00
+261.852,57
+1.346.085,57
+805.965,00
+470.031,20
+2.474.321,00
+519.607,41
+2.084.963,38
+1
+62.705,38
+674.462,62
+827.902,84
+3.783.675,90
+794.571,94
+1
+4.644.462,13
+2.693.600,00
+565.656,00
+3.299.660,00
+1.874.609,67
+56.884,15
+329.115,53
+350.900,00
+290.000,00
+1 $
+60.900,00
+2.449.371,57
+514.368,03
+1
+2.474.321,00
+ʻ
+-
+2.031.179,52
+ʻ
+No Gravado
+IVA
+282.677,97
+169.252,65
+1.015.515,90
+93.949,75
+570.700,72
+93.949,75
+570.700,72
+569.535,71
+I
+569.535,71
+98.706,74 -
+568.737,94
+3.037.229,00
+325.345,49
+1.897.848,66
+437.842,31
+2.522.805,71
+ʻ
+1.806,06
+10.475,15
+13.168,13
+79.008,80
+89.335,54
+525.378,05
+514.411,70
+1.211.265,64
+1
+-
+936.209,07 -
+5.394.347,50
+2.544.356,12
+1
+115.509,56
+679.306,22
+153.666,90
+1
+225.947,05
+159.600,00
+919.600,00
+1.215.399,77
+535.398,50
+1 $
+2.450,00
+1 $
+1.549.264,19
+325.345,48 -
+535.398,50
+2.450,00
+467.841,60
+679.692,97
+679.692,97
+950.272,10
+ʻ
+950.272,10
+6.234.315,43
+3.000.480,15
+141.157,15
+846.942,88
+-
+1.066.563,13 -
+6.145.435,18
+LIBRO IVA VENTAS - STOCK SERVICES SRL - ABRIL 2023
+Fecha
+Tipo
+17/04/2023
+1 - Factura A
+17/04/2023
+1 - Factura A
+17/04/2023
+8 - Nota de Crédito B
+18/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+19/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+19/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+19/04/2023
+203 - Nota de Crédito Electrónica MiPyMEs (FCE) A
+6
+21/04/2023
+6
+920
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+21/04/2023
+1 - Factura A
+6
+1101
+21/04/2023
+6
+1098
+1 - Factura A
+21/04/2023
+1 - Factura A
+6
+1100
+21/04/2023
+1 - Factura A
+6
+1099
+21/04/2023
+1 - Factura A
+6
+1102
+21/04/2023
+1 - Factura A
+6
+1103
+21/04/2023
+1 - Factura A
+6
+1105
+21/04/2023
+1 - Factura A
+6
+1104
+21/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+21/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+919
+22/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+922
+27/04/2023
+1 - Factura A
+6
+1107
+27/04/2023
+1 - Factura A
+6
+1111
+27/04/2023
+1 - Factura A
+6
+1108
+27/04/2023
+1 - Factura A
+6
+1109
+27/04/2023
+1 - Factura A
+6
+1106
+27/04/2023
+1 - Factura A
+6
+1110
+28/04/2023
+1 - Factura A
+6
+1112
+28/04/2023
+1 - Factura A
+6
+29/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+29/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+29/04/2023
+201 - Factura de Crédito Electrónica MiPyMEs (FCE) A
+6
+30/04/2023
+6 - Factura B
+30/04/2023
+1 - Factura A
+6
+1114
+Pto Venta
+6
+6
+6
+6
+921
+6
+Nº FC
+1095
+1097
+68
+916
+917
+918
+154
+1113
+923
+925
+924
+345
+CUIT
+CUIT OCULTO
+Denominación Comprador
+Tipo Cambio
+Moneda Neto Gravado
+CLIENTE OCULTO
+66-00000033-3
+CLIENTE3-X6
+CUIT OCULTO
+CLIENTE OCULTO
+1 $
+1 $
+5,60664 011
+1 $
+1 $
+1 $
+5.078.872,05
+1 $
+1 $
+1 $
+165.322,29
+1
+34.717,68
+1 $
+4.064.816,00
+1 $
+150.532,43
+ʻ
+31.611,81
+1 $
+291.034,48
+61.117,24
+1 $
+439.860,86
+1
+1 $
+53.882,95
+1 $
+1 $
+1 $
+1.728.595,67
+-
+1 $
+4.077.626,76
+856.301,62
+1 $
+3.090.156,00
+1 $
+4.304.337,10
+1 $
+148.585,67
+31.202,99
+1 $
+99.001,86
+20.790,39
+1 $
+1 $
+410.559,52
+86.217,50
+1 $
+299.143,67
+-
+1 $
+214.795,76
+1
+1 $
+236.380,00
+49.639,80
+290.747,40
+1 $
+2.570.979,52
+1 $
+1 $
+5,879759 011
+1 $
+No Gravado
+395.711,00
+114.559,00
+ʻ
+- 950.272,10
+833.306,71
+8.995.803,43
+-
+2.474.320,95
+1
+3.037.228,99
+2.557.452,90
+537.065,11
+1
+3.222.390,67
+33.816,71
+-
+7.101,51
+276.054,81
+1
+57.971,51
+1
+5.005.286,86
+1
+648.932,76
+3.785.441,09
+-
+903.910,79
+5.212.552,25
+1
+119.841,74
+248.452,86
+52.175,10
+-
+498.829,80
+2.031.179,52
+1
+1.678.159,57
+-
+4.327.705,71
+707.180,48
+148.507,90
+67.972.638,94
+5.635.461,95
+14.274.253,99
+89.395.092,78
+IVA
+83.099,31
+24.057,39
+Total
+498.595,86
+144.344,34
+-
+950.272,10
+174.994,41
+1.049.966,44
+1.889.118,72
+11.042.348,71
+1.066.563,13
+6.234.315,43
+519.607,40 -
+200.039,92
+853.611,36
+4.922.492,16
+189.670,90
+359.427,56
+92.370,78
+539.929,22
+11.315,42
+66.141,33
+41.510,01
+338.857,27
+363.005,09
+2.178.030,56
+187.217,92
+313.050,63
+62.820,17
+361.963,85
+45.107,11
+259.902,86
+539.905,70
+3.175.159,73
+426.547,70
+2.493.272,86
+352.413,51
+-
+2.059.940,86
+4.327.705,71
+856.395,54
+RAZON SOCIAL PROVEEDOR1-X6
+Telefono:
+Treinta
+Uruguay
+PROVEEDOR1-X6
+CONSUMIDOR FINAL
+CONTRIBUYENTE CASO 6
+J
+Otros
+66-66666666-6
+Fecha vto. 01/04/2023
+CABA (1186)
+Pais AR Buenos Aires
+Vend. 0
+Tipo cambio:
+38,550
+Moneda:
+USD
+R.U.T. 2
+e Ticket
+A 288
+Crédito
+Fecha: 01/04/2023
+Código
+Producto
+3
+Servicios personal eventual segun detalle adjunto
+Subtotal
+9.304,00 Dto.
+Cantidad
+1,00 Un
+P.Unitario % Dto
+9.304,000
+9.304,00
+0,00 Subtotal Iva Basico
+9.304,00
+Iva 22 %
+2.046,88
+Total U$S
+11.350,88
+ADENDA
+CONTRIBUYENTE CASO 6
+Doc. Interno : CRED .- A0003905
+()
+Res. 2436/ **
+Puede verificar comprobante en
+http://www.efactura.dgi.gub.uy
+Código de seguridad :
+Constancia IVA : Iva al Dia
+Nº CAE
+S
+Desde
+A
+201
+00
+00
+Hasta
+300
+Vencimiento
+12/04/23
+Total
+Hoja
+1 de
+1
+RAZON SOCIAL PROVEEDOR1-X6
+Telefono:
+1320
+Uruguay
+PROVEEDOR1-X6
+CONSUMIDOR FINAL
+CONTRIBUYENTE CASO 6
+Otros
+66-66666666-6
+Fecha vto. 01/04/2023
+CABA (1186)
+Pais AR Buenos Aires
+Vend. 0
+Tipo cambio:
+38,550
+R.U.T. 2
+Moneda:
+USD
+e Ticket
+A 289
+Crédito
+Fecha: 01/04/2023
+Código
+Producto
+3
+Servicios personal eventual segun detalle adjunto
+Subtotal
+2.630,00 Dto.
+Cantidad
+1,00 Un
+P.Unitario % Dto
+2.630,000
+2.630,00
+0,00 Subtotal Iva Basico
+2.630,00
+Iva 22 %
+578,60
+Total U$S
+3.208,60
+ADENDA
+CONTRIBUYENTE CASO 6
+Doc. Interno : CRED .- A0003906
+()
+Res. 2436/ **
+Puede verificar comprobante en
+http://www.efactura.dgi.gub.uy
+Código de seguridad :
+Constancia IVA : Iva al Dia
+Nº CAE
+S
+Desde
+A
+201
+Hasta
+300
+Vencimiento
+12/04/23
+Total
+Hoja
+1 de
+1
+PROVEEDOR1-X6
+RGIS
+Servicio Auxiliares de Stock = 225,12 NXH
+425,98 h comunes
+629,59 h nocturnas
+39,43 h extra diurnas
+17.753
+77,79 h extra nocturnas
+42.028
+TEA
+12.688
+Ajuste TEA sobre facturas de junio (2 meses) y julio 2022 ( 1 mes)
+11.393
+Total de factura marzo 2023
+349.839
+TC 01/4 USD 37,60
+TEA: 7,79% anual
+*LOS MONTOS NO INCLUYEN IVA
+Facturación
+95.897
+170.080
+9.304
+PROVEEDOR1-X6
+RGIS
+Servicio Auxiliares de Stock = 225,12 NXH
+Complemento horas febrero
+422,78 h comunes
+TEA
+3.707
+Total de Factura marzo 2023
+98.883
+TC 01/4 USD 37,60
+TEA: 7,79% anual
+2.630
+Facturación
+*LOS MONTOS NO INCLUYEN IVA
+95.176
+ORIGINAL
+CONTRIBUYENTE CASO 6
+Razón Social:
+CONTRIBUYENTE CASO 6
+Domicilio Comercial:
+Buenos Aires
+B
+NOTA DE CRÉDITO
+CÓD. 008
+- Ciudad de
+Condición frente al IVA: IVA Responsable Inscripto
+Período Facturado Desde:
+20/03/2023
+Hasta: 20/03/2023
+CUIT: 66-00000011-1
+Condición frente al IVA:
+Cliente del Exterior
+Punto de Venta: 00006
+Comp. Nro: 00000066
+Fecha de Emisión: 03/04/2023
+CUIT:
+66-66666666-6
+Ingresos Brutos:
+66-66666666-6
+Fecha de Inicio de Actividades:
+06/06/2000
+Fecha de Vto. para el pago: 03/04/2023
+Apellido y Nombre / Razón Social:
+CLIENTE1-X6
+Domicilio:
+Condición de venta:
+Contado / Cuenta Corriente
+Fac. B: 00006-00000338
+Código
+Producto / Servicio
+Cantidad
+U. Medida
+Precio Unit. (UYU)
+Anula FC 338
+1,00
+unidades
+% Bonif
+Imp. Bonif. (UYU)
+0,00
+Subtotal (UYU)
+106125,47
+106125,47
+0,00
+Moneda: UYU - Pesos Uruguayos
+Subtotal: UYU
+106125,47
+Importe Otros Tributos: UYU
+0,00
+Importe Total: UYU
+106125,47
+Pág. 1/1
+El total de este comprobante expresado en moneda de curso legal - Pesos Argentinos - considerándose un tipo de cambio
+consignado de 5.366626 asciende a: $
+569535,71
+Comprobante Autorizado
+CAE Nº: 73
+Fecha de Vto. de CAE: 13/04/2023
+03
+Esta Administración Federal no se responsabiliza por los datos ingresados en el detalle de la operación
+ORIGINAL
+CONTRIBUYENTE CASO 6
+Razón Social:
+CONTRIBUYENTE CASO 6
+B
+NOTA DE CRÉDITO
+COD. 008
+Domicilio Comercial:
+Buenos Aires
+- Ciudad de
+Condición frente al IVA: IVA Responsable Inscripto
+Período Facturado Desde:
+28/11/2022
+CUIT: 66-00000022-2
+Condición frente al IVA:
+Cliente del Exterior
+Hasta: 29/11/2022
+Punto de Venta: 00006
+Comp. Nro: 00000067
+Fecha de Emisión: 13/04/2023
+CUIT:
+66-66666666-6
+Ingresos Brutos:
+66-66666666-6
+Fecha de Inicio de Actividades:
+06/06/2000
+Fecha de Vto. para el pago: 13/04/2023
+Apellido y Nombre / Razón Social: CLIENTE2-X6
+Domicilio:
+Condición de venta:
+Contado / Cuenta Corriente
+URUGUAY
+Fac. B: 00006-00000339
+Código
+Producto / Servicio
+Cantidad
+U. Medida
+Precio Unit.
+Anula FC 339
+1,00
+unidades
+Pág. 1/1
+Comprobante Autorizado
+% Bonif
+Imp. Bonif.
+0,00
+Subtotal
+2450,00
+0,00
+2450,00
+Subtotal: $
+2450,00
+Importe Otros Tributos: $
+0,00
+Importe Total: $
+2450,00
+CAE Nº: 73
+Fecha de Vto. de CAE: 23/04/2023
+Esta Administración Federal no se responsabiliza por los datos ingresados en el detalle de la operación
+CONTRIBUYENTE CASO 6
+Razón Social:
+CONTRIBUYENTE CASO 6
+Domicilio Comercial:
+Buenos Aires
+ORIGINAL
+B
+NOTA DE CRÉDITO
+CÓD. 008
+Punto de Venta: 00006
+Comp. Nro: 00000068
+Fecha de Emisión: 17/04/2023
+Ciudad de
+Condición frente al IVA: IVA Responsable Inscripto
+Período Facturado Desde:
+03/04/2023
+CUIT:
+66-66666666-6
+Ingresos Brutos:
+66-66666666-6
+Fecha de Inicio de Actividades:
+06/06/2000
+Hasta: 06/04/2023
+Fecha de Vto. para el pago: 14/05/2023
+Apellido y Nombre / Razón Social: CLIENTE3-X6
+CUIT: 66-00000033-3
+Condición frente al IVA:
+Cliente del Exterior
+Condición de venta:
+Contado / Cuenta Corriente
+Código
+Producto / Servicio
+Cantidad
+Anula FC 343
+Domicilio:
+Fac. B: 00006-00000343
+U. Medida
+Precio Unit. (UYU)
+% Bonif
+Imp. Bonif. (UYU)
+0,00
+Subtotal (UYU)
+169490,48
+8,00
+unidades
+21186,31
+0,00
+Moneda: UYU - Pesos Uruguayos
+Subtotal: UYU
+169490,48
+Importe Otros Tributos: UYU
+0,00
+Importe Total: UYU
+169490,48
+El total de este comprobante expresado en moneda de curso legal - Pesos Argentinos - considerándose un tipo de cambio
+consignado de 5.606640 asciende a: $
+950272,10
+Comprobante Autorizado
+Pág. 1/1
+CAE Nº:
+Fecha de Vto. de CAE: 27/04/2023
+Esta Administración Federal no se responsabiliza por los datos ingresados en el detalle de la operación
+ORIGINAL
+CONTRIBUYENTE CASO 6
+Razón Social:
+CONTRIBUYENTE CASO 6
+B
+CÓD. 006
+Domicilio Comercial:
+Buenos Aires
+Ciudad de
+Condición frente al IVA: IVA Responsable Inscripto
+Período Facturado Desde:
+26/03/2023
+CUIT: 66-00000044-4
+Condición frente al IVA:
+Cliente del Exterior
+FACTURA
+Punto de Venta: 00006
+Comp. Nro: 00000340
+Fecha de Emisión: 02/04/2023
+CUIT:
+66-66666666-6
+Ingresos Brutos:
+66-66666666-6
+Fecha de Inicio de Actividades:
+06/06/2000
+Hasta: 26/03/2023
+Fecha de Vto. para el pago: 02/05/2023
+Apellido y Nombre / Razón Social:
+CLIENTE4-X6
+Domicilio:
+Condición de venta:
+Contado / Cuenta Corriente
+Código
+Producto / Servicio
+Cantidad
+U. Medida
+Uruguay
+Precio Unit. (UYU)
+Servicios Prestados 26/03
+1,00
+unidades
+% Bonif
+Imp. Bonif. (UYU)
+0,00
+Subtotal (UYU)
+17000,00
+0,00
+17000,00
+Moneda: UYU - Pesos Uruguayos
+Subtotal: UYU
+17000,00
+Importe Otros Tributos: UYU
+0,00
+Importe Total: UYU
+17000,00
+Pág. 1/1
+El total de este comprobante expresado en moneda de curso legal - Pesos Argentinos - considerándose un tipo de cambio
+consignado de 5.526456 asciende a: $
+93949,75
+Comprobante Autorizado
+CAE Nº:
+Fecha de Vto. de CAE: 12/04/2023
+Esta Administración Federal no se responsabiliza por los datos ingresados en el detalle de la operación
+ORIGINAL
+CONTRIBUYENTE CASO 6
+Razón Social:
+CONTRIBUYENTE CASO 6
+Domicilio Comercial:
+Buenos Aires
+B
+CÓD. 006
+Ciudad de
+Condición frente al IVA: IVA Responsable Inscripto
+Período Facturado Desde: 20/03/2023
+CUIT: 66-00000011-1
+Condición frente al IVA:
+Cliente del Exterior
+Hasta: 20/03/2023
+FACTURA
+Punto de Venta: 00006
+Comp. Nro: 00000341
+Fecha de Emisión: 02/04/2023
+CUIT:
+66-66666666-6
+Ingresos Brutos:
+66-66666666-6
+Fecha de Inicio de Actividades:
+06/06/2000
+Fecha de Vto. para el pago: 02/05/2023
+Apellido y Nombre / Razón Social: CLIENTE1-X6
+Domicilio:
+Condición de venta:
+Contado / Cuenta Corriente
+Código
+Producto / Servicio
+Cantidad
+U. Medida
+Precio Unit. (USD)
+Servicios Prestados 20/03
+1,00
+unidades
+% Bonif
+Imp. Bonif. (USD)
+0,00
+Subtotal (USD)
+2669,82
+0,00
+2669,82
+Moneda: USD - Dólar Estadounidense
+Subtotal: USD
+2669,82
+Importe Otros Tributos: USD
+0,00
+Importe Total: USD
+2669,82
+Pág. 1/1
+El total de este comprobante expresado en moneda de curso legal - Pesos Argentinos - considerándose un tipo de cambio
+consignado de 213.760000 asciende a: $
+570700,72
+Comprobante Autorizado
+CAE Nº: 73
+Fecha de Vto. de CAE: 12/04/2023
+6
+Esta Administración Federal no se responsabiliza por los datos ingresados en el detalle de la operación
+CONTRIBUYENTE CASO 6
+Razón Social:
+CONTRIBUYENTE CASO 6
+Domicilio Comercial:
+Buenos Aires
+ORIGINAL
+B
+CÓD. 006
+FACTURA
+Punto de Venta: 00006
+Comp. Nro: 00000342
+Fecha de Emisión: 13/04/2023
+Ciudad de
+CUIT:
+66-66666666-6
+Ingresos Brutos:
+66-66666666-6
+Fecha de Inicio de Actividades:
+06/06/2000
+Condición frente al IVA: IVA Responsable Inscripto
+Período Facturado Desde:
+28/11/2022
+Hasta: 29/11/2022
+CUIT: 66-00000022-2
+Condición frente al IVA:
+Cliente del Exterior
+Condición de venta:
+Contado
+Código
+Producto / Servicio
+Servicios Prestados 28/11/2022 y
+29/11/2022
+Fecha de Vto. para el pago: 13/04/2023
+Apellido y Nombre / Razón Social: CLIENTE2-X6
+Domicilio:
+URUGUAY
+Cantidad
+U. Medida
+Precio Unit. (USD)
+% Bonif
+Imp. Bonif. (USD)
+0,00
+Subtotal (USD)
+1,00
+unidades
+2450,00
+0,00
+2450,00
+Moneda: USD - Dólar Estadounidense
+Subtotal: USD
+2450,00
+Importe Otros Tributos: USD
+0,00
+Importe Total: USD
+2450,00
+El total de este comprobante expresado en moneda de curso legal - Pesos Argentinos - considerándose un tipo de cambio
+consignado de 218.530000 asciende a: $
+535398,50
+Pág. 1/1
+CAE Nº:
+Fecha de Vto. de CAE: 23/04/2023
+D
+Comprobante Autorizado
+Esta Administración Federal no se responsabiliza por los datos ingresados en el detalle de la operación
+ORIGINAL
+CONTRIBUYENTE CASO 6
+Razón Social:
+CONTRIBUYENTE CASO 6
+B
+CÓD. 006
+Domicilio Comercial:
+Buenos Aires
+Ciudad de
+Condición frente al IVA: IVA Responsable Inscripto
+Período Facturado Desde:
+03/04/2023
+CUIT: 66-00000033-3
+Condición frente al IVA:
+Cliente del Exterior
+Hasta: 06/04/2023
+FACTURA
+Punto de Venta: 00006
+Comp. Nro: 00000343
+Fecha de Emisión: 14/04/2023
+CUIT:
+66-66666666-6
+Ingresos Brutos:
+66-66666666-6
+Fecha de Inicio de Actividades:
+06/06/2000
+Fecha de Vto. para el pago: 14/05/2023
+Apellido y Nombre / Razón Social: CLIENTE3-X6
+Domicilio:
+Condición de venta:
+Contado / Cuenta Corriente
+Código
+Producto / Servicio
+Cantidad
+U. Medida
+Precio Unit. (UYU)
+Servicios Prestados
+8,00
+unidades
+% Bonif
+Imp. Bonif. (UYU)
+0,00
+Subtotal (UYU)
+169490,48
+21186,31
+0,00
+Moneda: UYU - Pesos Uruguayos
+Subtotal: UYU
+169490,48
+Importe Otros Tributos: UYU
+0,00
+Importe Total: UYU
+169490,48
+Pág. 1/1
+El total de este comprobante expresado en moneda de curso legal - Pesos Argentinos - considerándose un tipo de cambio
+consignado de 5.606640 asciende a: $
+950272,10
+Comprobante Autorizado
+CAE Nº: 73
+Fecha de Vto. de CAE: 24/04/2023
+Esta Administración Federal no se responsabiliza por los datos ingresados en el detalle de la operación
+ORIGINAL
+CONTRIBUYENTE CASO 6
+Razón Social:
+CONTRIBUYENTE CASO 6
+Domicilio Comercial:
+Buenos Aires
+B
+CÓD. 006
+Ciudad de
+Condición frente al IVA: IVA Responsable Inscripto
+Período Facturado Desde:
+10/04/2023
+Hasta: 10/04/2023
+CUIT: 66-00000055-5
+Condición frente al IVA:
+Cliente del Exterior
+FACTURA
+Punto de Venta: 00006
+Comp. Nro: 00000344
+Fecha de Emisión: 14/04/2023
+CUIT:
+66-66666666-6
+Ingresos Brutos:
+66-66666666-6
+Fecha de Inicio de Actividades:
+06/06/2000
+Fecha de Vto. para el pago: 14/05/2023
+Apellido y Nombre / Razón Social: CLIENTE5-X6
+RUT 214047130019
+Domicilio:
+Condición de venta:
+Contado / Cuenta Corriente
+Código
+Producto / Servicio
+Cantidad
+U. Medida
+Precio Unit. (UYU)
+Servicios prestados
+Reembolsos
+1,00
+unidades
+1,00
+unidades
+% Bonif
+Imp. Bonif. (UYU)
+Subtotal (UYU)
+101880,00
+0,00
+19350,00
+0,00
+0,00
+101880,00
+0,00
+19350,00
+Moneda: UYU - Pesos Uruguayos
+Subtotal: UYU
+121230,00
+Importe Otros Tributos: UYU
+0,00
+Importe Total: UYU
+121230,00
+Pág. 1/1
+El total de este comprobante expresado en moneda de curso legal - Pesos Argentinos - considerándose un tipo de cambio
+consignado de 5.606640 asciende a: $
+679692,97
+AFIP
+Comprobante Autorizado
+CAE Nº:
+Fecha de Vto. de CAE: 24/04/2023
+B
+Esta Administración Federal no se responsabiliza por los datos ingresados en el detalle de la operación
+ORIGINAL
+CONTRIBUYENTE CASO 6
+Razón Social:
+CONTRIBUYENTE CASO 6
+Domicilio Comercial:
+Buenos Aires
+B
+CÓD. 006
+Ciudad de
+Condición frente al IVA: IVA Responsable Inscripto
+Período Facturado Desde:
+01/04/2023
+Hasta: 30/04/2023
+CUIT: 66-00000033-3
+Condición frente al IVA:
+Cliente del Exterior
+FACTURA
+Punto de Venta: 00006
+Comp. Nro: 00000345
+Fecha de Emisión: 30/04/2023
+CUIT:
+66-66666666-6
+Ingresos Brutos:
+66-66666666-6
+Fecha de Inicio de Actividades:
+06/06/2000
+Fecha de Vto. para el pago: 30/05/2023
+Apellido y Nombre / Razón Social:
+CLIENTE3-X6
+Domicilio:
+Condición de venta:
+Contado / Cuenta Corriente
+Código
+Producto / Servicio
+Cantidad
+U. Medida
+Precio Unit. (UYU)
+Servicios Prestados Abril
+Reembolso Punta del Este
+1,00
+34,00
+unidades
+unidades
+% Bonif
+Imp. Bonif. (UYU)
+Subtotal (UYU)
+21186,31
+0,00
+15700,00
+0,00
+0,00
+720334,54
+0,00
+15700,00
+Moneda: UYU - Pesos Uruguayos
+Subtotal: UYU
+736034,54
+Importe Otros Tributos: UYU
+0,00
+Importe Total: UYU
+736034,54
+Pág. 1/1
+El total de este comprobante expresado en moneda de curso legal - Pesos Argentinos - considerándose un tipo de cambio
+consignado de 5.879759 asciende a: $
+4327705,71
+AFIP
+Comprobante Autorizado
+CAE Nº: 73
+Fecha de Vto. de CAE: 10/05/2023
+Esta Administración Federal no se responsabiliza por los datos ingresados en el detalle de la operación

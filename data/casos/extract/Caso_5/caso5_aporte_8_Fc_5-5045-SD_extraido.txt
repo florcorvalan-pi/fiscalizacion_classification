@@ -1,0 +1,81 @@
+=== TEXTO EXTRAÍDO DE: caso5_aporte_8_Fc_5-5045-SD.pdf ===
+Ruta original: /Users/rayespinoza/AI_Projects/cordoba_classificator/data/casos/Caso_5/2-Aporte del contribuyente/caso5_aporte_8_Fc_5-5045-SD.pdf
+Fecha de procesamiento: 2025-06-17 14:47:08
+==================================================
+
+CONTRIBUYENTE CASO 5
+A
+Código 001
+IVA RESPONSABLE INSCRIPTO
+CLIENTE6-X5
+() - CORDOBA - CORDOBA
+I.V.A.
+RESPONSABLE INSCRIPTO
+Condición de Venta
+CUENTA CORRIENTE
+MAWB: 230-63751085
+Vuelo: 101 Fecha Vuelo: 20/09/2023 Matrícula: HP9910
+FACTURA A
+Nº 0005-00005045
+Fecha
+21/09/2023
+CUIT
+INGRESOS BRUTOS
+901-555555-1
+INICIO ACTIVIDADES
+11/05/1973
+55-55555555-5
+C.U.I.T.
+55-66666666-5
+ORIGINAL
+FLETE IMPO
+DUE AGENT IMPO
+DUE CARRIER IMPO
+COLLECT FEE IMPO
+IATA
+ANA RESOL.3244/2011
+CARGO TERMINAL
+[USD
+120.00] $
+43860.00
+[USD
+360.00] $
+131580.00
+[USD
+35.00] $
+12792.50
+[USD
+36.00] $
+13158.00
+[USD
+[$
+3653.00] $
+3653.00
+Subtotal Exento
+$
+212353.50
+[USD
+20.00] $
+7310.00
+160.00]
+$
+58480.00
+Exento
+$
+212353.50
+Gravado
+$
+58480.00
+I.V.A. 21.00
+$
+12280.80
+58480.00
+Subtotal Gravado
+SON PESOS DOSCIENTOS OCHENTA Y TRES MIL CIENTO
+CATORCE CON 30/100
+Total
+$
+283114.30
+CAE Nº 73
+Fecha de Vto. CAE 01/10/2023
+3

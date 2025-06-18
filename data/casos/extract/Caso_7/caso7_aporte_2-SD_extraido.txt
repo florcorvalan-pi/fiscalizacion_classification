@@ -1,0 +1,50 @@
+=== TEXTO EXTRAÍDO DE: caso7_aporte_2-SD.pdf ===
+Ruta original: /Users/rayespinoza/AI_Projects/cordoba_classificator/data/casos/Caso_7/2-Aporte del contribuyente/caso7_aporte_2-SD.pdf
+Fecha de procesamiento: 2025-06-17 14:53:37
+==================================================
+
+CONTRIBUYENTE CASO 7
+B
+FACTURA
+Nº 0001 - 00000009
+Código
+06
+12
+07
+2021
+I.V.A. RESPONSABLE INSCRIPTO
+CUIT Nº:
+77-77777777-7
+Ing. Brutos:
+777777777
+Inicio Actividades:
+11/2013
+Señor/es
+CLIENTE1-X7
+Domicilio AVDA
+738
+Localidad CAPITAL FEDERAL
+CUIT Nº
+77-00000011-1
+Situación IVA NO RESPONSABLE
+CONDICIONES:
+Remito Nº
+Por los conceptos detallados a continuación:
+Cant.
+DESCRIPCION
+1.00
+CERTIFICADO DE OBRA N° 6
+LA PRESENTE FACTURA INCLUYE IVA POR $ 4681809.99
+Son pesos, veintiseis millones novecientos setenta y seis mil ciento
+cuarenta y tres con 28/100*
+IMPORTE
+26,976,143.28
+TOTAL
+26,976,143.28
+$
+C.A.E .: 71
+1
+- FECHA Vto .: 22/07/2021
+AFIP
+Comprobante Autorizado
+Esta Administración Federal no se responsabiliza por los datos ingresados en el detalle de la operación

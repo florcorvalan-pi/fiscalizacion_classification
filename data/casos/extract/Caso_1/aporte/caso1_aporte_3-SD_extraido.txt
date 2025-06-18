@@ -1,0 +1,88 @@
+=== TEXTO EXTRAÍDO DE: caso1_aporte_3-SD.pdf ===
+Ruta original: /Users/rayespinoza/AI_Projects/cordoba_classificator/data/casos/Caso_1/2-Aporte del contribuyente/caso1_aporte_3-SD.pdf
+Fecha de procesamiento: 2025-06-17 14:52:11
+==================================================
+
+ORIGINAL
+PROVEEDOR X1
+Razón Social:
+PROVEEDOR X1
+Domicilio Comercial:
+Córdoba
+Condición frente al IVA: IVA Responsable Inscripto
+Período Facturado Desde: 01/11/2023
+Hasta: 30/11/2023
+A
+COD. 01
+Maria,
+CUIT:
+11-11111111-1
+FACTURA
+Punto de Venta: 00002
+Comp. Nro: 00000061
+Fecha de Emisión: 30/11/2023
+CUIT: 30
+Ingresos Brutos: 28
+Fecha de Inicio de Actividades: 01/10/2018
+Fecha de Vto. para el pago: 07/12/2023
+Apellido y Nombre / Razón Social: CONTRIBUYENTE CASO 1
+Condición frente al IVA:
+IVA Responsable Inscripto
+Domicilio Comercial: Avda.
+Condición de venta:
+Otra
+Código
+Producto / Servicio
+Cantidad
+Ventas por cuenta y orden (carnicería y
+verdulería)
+Ventas por cuenta y orden (carnicería y
+verdulería)
+U. medida
+1,00
+otras
+unidades
+1,00
+otras
+unidades
+Maria, Córdoba
+Precio Unit.
+% Bonif
+Subtotal
+Alicuota
+IVA
+Subtotal c/IVA
+18075755,61
+0,00
+18075755,61 10,5%
+19973709,95
+3572946,08
+0,00
+3572946,08
+21%
+4323264,76
+Importe Otros Tributos: $
+0,00
+Comprobante Autorizado
+Pág. 1/1
+Importe Neto Gravado: $
+21648701,69
+IVA 27%: $
+0,00
+IVA 21%: $
+750318,68
+IVA 10.5%: $
+1897954,34
+IVA 5%: $
+0,00
+IVA 2.5%: $
+0,00
+IVA 0%: $
+0,00
+Importe Otros Tributos: $
+0,00
+Importe Total: $
+24296974,71
+CAE Nº: 73499758766619
+Fecha de Vto. de CAE: 10/12/2023
+Esta Administración Federal no se responsabiliza por los datos ingresados en el detalle de la operación

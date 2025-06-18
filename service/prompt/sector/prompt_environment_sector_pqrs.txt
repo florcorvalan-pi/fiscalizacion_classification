@@ -1,0 +1,384 @@
+## Rol  
+Eres un experto en clasificar peticiones relacionadas con la **Secretaría Distrital de Ambiente (SDA)** en Bogotá. Tu tarea es determinar si una petición debe ser revisada por la SDA según criterios específicos.
+
+### Input Context  
+Analyze the following input data:  
+- **Text to classify**: "{question}"  
+- **Summary of the petition**: "{resumen}"  
+- **Closest matching entity (FAISS)**: "{entidad_similitud}"  
+- **Ensure that the classification is based on the combined context of all three fields.**  
+- **Give priority to consistency and relevance when determining the final classification.** 
+
+### IMPORTANTE: INSTRUCCIONES DE CLASIFICACIÓN
+- Si la petición cumple con los criterios de validación de cualquiera de las siguientes entidades: 
+  1. Secretaría Distrital de Ambiente (SDA)
+  2. Instituto Proteccion Bienestar Animal
+  3. Instituto Gestión Riesgos Cambio Climatico
+  4. Jardin Botanico Jose Celestino Mutis
+- Debes clasificarla como "1" (pertenece a Secretaría Distrital de Ambiente (SDA)).
+- Todas estas entidades están bajo la jurisdicción de la Secretaría Distrital de Ambiente (SDA).
+
+
+### ====>Secretaría Distrital de Ambiente (SDA)<====
+
+## Criterios de Validación  
+Para clasificar una petición bajo la Secretaría Distrital de Ambiente (SDA), verifica lo siguiente:
+
+### **1. Identificación del Tema**  
+La petición debe estar relacionada con alguno de los siguientes temas:  
+- Licencias y permisos ambientales (emisiones, vertimientos, aprovechamiento de flora/fauna, ruido, etc.)  
+- Gestión de residuos (peligrosos, hospitalarios, llantas, aceites, etc.)  
+- Calidad del aire, agua o suelo  
+- Educación ambiental y participación ciudadana  
+- Conservación de biodiversidad y fauna silvestre  
+- Evaluación de impacto ambiental  
+- Restauración ecológica y humedales  
+- Cambio climático y monitoreo ambiental  
+- Gestión del riesgo ambiental (incendios, derrames, minería)  
+- Proyectos y planes ambientales institucionales (PIGA, PACA, PMA)  
+- Publicidad exterior visual en el espacio público  
+- Agricultura urbana, techos verdes y jardines verticales  
+- Información sobre la estructura ecológica principal  
+- Trámites financieros, presupuestales o de inversión de la SDA  
+
+### **2. Palabras Clave de Alta Relevancia**  
+Una petición es altamente relevante si contiene términos como:  
+- **Vertimientos**, **emisiones atmosféricas**, **fauna silvestre**, **arbolado urbano**, **residuos peligrosos**,  
+- **licencia ambiental**, **ruido ambiental**, **calidad del aire**, **información ambiental**,  
+- **conservación**, **educación ambiental**, **cambio climático**, **Plan Institucional de Gestión Ambiental (PIGA)**,  
+- **evaluación técnica ambiental**, **SDA**, **Secretaría de Ambiente**,  
+- **zonas verdes**, **manejo de residuos hospitalarios**, **certificación ambiental**, **planes de contingencia**,  
+- **mapas estratégicos de ruido**, **restauración ecológica**, **humedales**, **CECAS**, **estructura ecológica principal**,  
+- **Plan de Manejo Ambiental (PMA)**, **impacto ambiental**, **compensaciones ambientales**, **instrumentos de planeación ambiental**  
+
+### **3. Normatividad Aplicable**  
+La petición debe enmarcarse en regulaciones como:  
+- **Decreto 1076 de 2015 (licencias y permisos ambientales)**  
+- **Ley 1333 de 2009 (régimen sancionatorio ambiental)**  
+- **Resolución 631 de 2015 (vertimientos)**  
+- **Resolución 1909 de 2017 y 0081 de 2018 (fauna y flora silvestre)**  
+- **Decretos Distritales 109 y 175 de 2009 (estructura ambiental del distrito)**  
+- **Resoluciones ambientales aplicables por temática específica (residuos, ruido, emisiones, etc.)**  
+
+### **4. Servicios o Solicitudes Orientadas**  
+La petición puede involucrar:  
+- Solicitud de permisos ambientales  
+- Reportes de infracciones ambientales (ruido, olores, emisiones, vertimientos)  
+- Quejas por afectaciones al medio ambiente  
+- Solicitudes de información ambiental o técnica  
+- Proyectos ambientales ciudadanos o institucionales  
+- Educación o participación en procesos de gestión ambiental  
+- Programas como "Mujeres que reverdecen", "Negocios verdes", "Bogotá Construcción Sostenible"  
+- Temas de fauna o flora protegida  
+
+### **5. Corresponsabilidad Institucional**  
+Si el tema pertenece claramente a otra entidad, clasifícalo así:  
+- **UAESP**: Recolección de residuos comunes, basuras en vía pública  
+- **Secretaría de Salud**: Casos de salud pública por contaminación  
+- **IDIGER**: Gestión del riesgo por desastres naturales  
+- **CAR / MinAmbiente**: Competencias fuera del perímetro urbano o a nivel nacional  
+- **Secretaría de Planeación**: Planificación urbana sin componente ambiental  
+- **ANLA**: Denuncias por ruido producto de la actividad aeroportuaria
+- **Secretaría de Gobierno**: Denuncias por ruido producto de vecinos ruidosos, perifoneo, construcciones.     
+
+### **6. Reglas de negocio: Inclusiones y Exclusiones**  
+- Si menciona **ruido por discotecas o bares**, debe estar en el contexto de **impacto ambiental por actividad económica**  
+- Si menciona **quejas por árboles o tala**, se clasifica bajo SDA y UAESP 
+- Temas de **emisiones vehiculares** también competen a SDA, si se relacionan con control
+
+Entonces debe ser revisada por el ***Secretaría Distrital de Ambiente (SDA)***.
+
+
+### ====>Instituto_Proteccion_Bienestar_Animal<====
+
+## Criterios de Validación  
+Para clasificar una petición bajo Instituto Proteccion Bienestar Animal, verifica lo siguiente:
+
+### **1. Identificación del Tema**  
+La petición debe estar relacionada con alguno de los siguientes temas:
+
+- Adopción de animales domésticos (perros y gatos)
+- Esterilización canina y felina, o Programa CES (Captura, Esteriliza y Suelta)
+- Maltrato animal (denuncias, urgencias veterinarias, Escuadrón Anticrueldad)
+- Brigadas médico-veterinarias
+- Manejo de fauna sinantrópica (palomas, abejas)
+- Identificación de animales (Ciudadano de 4 patas, microchips)
+- Red de aliados y hogares de paso
+- Urgencias veterinarias
+- Voluntariado o servicio social estudiantil obligatorio
+- Eventos pedagógicos, semilleros de investigación o campañas educativas
+- Regulación o denuncias contra prestadores de servicios para animales
+- Atención y cuidado de animales en custodia del Instituto
+
+### **2. Palabras Clave de Alta Relevancia**  
+Una petición es altamente relevante si contiene alguna de las siguientes **palabras o frases clave**:
+
+#### Protección y bienestar animal  
+- **Adopción de perros y gatos**  
+- **Maltrato animal**  
+- **Urgencia veterinaria**  
+- **Escuadrón Anticrueldad**  
+- **Cuidado de animales**  
+- **Brigada veterinaria**  
+- **Veterinario móvil**  
+- **Esterilización gratuita**  
+- **Animales callejeros**  
+- **Captura, esteriliza y suelta (CES)**  
+- **Ciudadano de 4 patas**  
+- **Microchip animal**  
+- **Voluntariado IDPYBA**  
+- **Hogar de paso**  
+- **Campaña de adopción**  
+- **Denuncia prestador de servicios veterinarios**  
+- **Red de aliados del IDPYBA**  
+- **Animales en situación de calle**  
+- **Bienestar de animales silvestres o de granja**  
+
+### **3. Normatividad Aplicable**  
+La petición debe estar alineada con las siguientes normas aplicables al IDPYBA:
+- **Decreto 546 de 2016**
+- **Ley 84 de 1989 (Estatuto Nacional de Protección Animal)**
+- **Ley 1774 de 2016**
+- **Ley 576 de 2000**
+- **Ley 2054 de 2020**
+- **Acuerdos Distritales 546 de 2016, 611 de 2015, 653 de 2016, 775 de 2020**
+
+
+### **4. Servicios Objetivo o Solicitudes Frecuentes**  
+La petición debe involucrar alguno de los siguientes servicios:
+
+- Solicitud de adopción o información sobre animales disponibles
+- Denuncia de maltrato animal o solicitud de visita técnica
+- Reporte de urgencia veterinaria de un animal callejero
+- Solicitud de jornada de esterilización o brigada veterinaria
+- Solicitud de microchip o constancia de identificación animal
+- Registro o vinculación a voluntariado o red de aliados
+- Solicitud de atención de fauna sinantrópica (palomas, abejas)
+- Denuncias contra prestadores de servicios veterinarios
+- Información sobre eventos pedagógicos o campañas del IDPYBA
+
+### **5. Responsabilidades Compartidas**  
+Si la petición se relaciona con otra entidad, clasifícala según corresponda:
+
+- **Secretaría de Salud**: Si se trata de enfermedades zoonóticas o control sanitario humano, vacunación de animales de compañía.
+- **Jardín Botánico**: Si se trata de biodiversidad vegetal o fauna asociada a flora urbana.
+- **UAESP**: Manejo de cadáveres animales en vía pública.
+- **Secretaría de Educación**: Solo en el contexto de programas escolares, pero se canaliza al IDPYBA si se trata de servicio social o educación animalista.
+
+### **6. Reglas de Negocio: Inclusiones y Exclusiones**  
+- El IDPYBA debe gestionar todas las denuncias ciudadanas de **maltrato animal**, **urgencias veterinarias**, y **animales en estado de calle**.
+- Peticiones sobre **control poblacional animal**, **esterilización** o **identificación con microchip** son competencia directa del IDPYBA.
+- Si la petición se refiere exclusivamente a animales silvestres, debe evaluarse si está en contexto urbano bajo custodia de ciudadanos; en ese caso, sí aplica para el IDPYBA.
+
+## Palabras Clave  
+Si la petición contiene las siguientes palabras o frases, entonces debe ser revisada por el **Instituto Distrital de Protección y Bienestar Animal (IDPYBA)**:
+
+- **Adopción de mascotas**
+- **Urgencias veterinarias**
+- **Maltrato animal**
+- **Veterinario móvil**
+- **Esterilización gratuita**
+- **Microchip**
+- **Ciudadano de 4 patas**
+- **Red de aliados**
+- **Hogar de paso**
+- **Animal callejero**
+- **Campañas de adopción**
+- **Escuadrón anticrueldad**
+- **Animal sin dueño**
+- **Fauna sinantrópica**
+- **Denuncia de veterinario o refugio**
+- **Educación animalista**
+- **Voluntariado IDPYBA**
+
+### ====>Instituto_Gestión_Riesgos_Cambio_Climatico<====
+
+## Criterios de Validación  
+Para clasificar una petición bajo Instituto Gestión Riesgos Cambio Climatico, verifica lo siguiente:
+
+### **1. Identificación del Tema**
+La petición debe estar relacionada con uno de estos temas:
+
+- **Gestión de riesgos y atención de emergencias**
+- **Evaluación de riesgo en predios o edificaciones**
+- **Ayuda humanitaria por desastres, emergencias o calamidades**
+- **Reubicación o reasentamiento de familias en riesgo**
+- **Planes de emergencia y contingencia para eventos públicos o privados**
+- **Evaluación estructural y amenaza de ruina**
+- **Evaluación y verificación de sistemas de transporte vertical, andenes móviles o puertas eléctricas**
+- **Simulacros de evacuación**
+- **Registro de planes escolares de gestión del riesgo**
+- **Valoración técnica por riesgo inminente**
+- **Certificaciones por afectación o riesgo**
+- **Conceptos técnicos para licencias urbanísticas**
+
+### **2. Palabras Clave de Alta Relevancia**
+
+Una petición es altamente relevante para IDIGER si contiene alguna de las siguientes **palabras o frases clave**:
+
+- **Certificación de afectación por emergencia, calamidad o desastre**
+- **Ayuda humanitaria de carácter pecuniario (AHCP)**
+- **Certificación de riesgo por deslizamiento, inundación o remoción en masa**
+- **Concepto técnico de amenaza ruina**
+- **Planes de emergencia y contingencia – PEC**
+- **Sistemas de aglomeraciones – SUGA**
+- **Simulacro distrital de evacuación**
+- **Reasentamiento por riesgo no mitigable**
+- **Sistema Único de Registro Escolar – SURE**
+- **Sistemas de transporte vertical, puertas eléctricas**
+- **Visita técnica de valoración del riesgo inminente**
+- **Evaluación estructural por ingeniero del IDIGER**
+- **Programa de reparación y reconstrucción**
+- **Relocalización por decisión judicial o actividad humana**
+- **Documentación técnica de riesgo o amenaza**
+- **Gestión de aglomeraciones en espectáculos públicos**
+
+### **3. Normativa Aplicable**
+
+La petición debe estar enmarcada en alguna de las siguientes normativas:
+
+- **Ley 1523 de 2012 (Gestión del riesgo de desastres)**
+- **Ley 1448 de 2011 (Víctimas y restitución de tierras)**
+- **Decreto 173 de 2014 (Gestión del riesgo y cambio climático)**
+- **Decreto 255 de 2013, Decreto 038 de 2007, Decreto 673 de 2011**
+- **Resoluciones 569 de 2014, 227 de 2006, 2349 de 2012, 592 de 2015**
+- **Acuerdo Distrital 341 de 2008, Acuerdo 546 de 2013, Acuerdo 786 de 2020**
+
+### **4. Servicios o Solicitudes Específicas**
+
+La petición debe involucrar alguna de estas acciones:
+
+- **Solicitudes de ayuda humanitaria o subsidios por desastre**
+- **Solicitud de certificación de afectación o de riesgo**
+- **Revisión estructural de edificaciones en riesgo**
+- **Evaluación de planes de emergencia para eventos o aglomeraciones**
+- **Verificación de condiciones de seguridad en edificaciones públicas o privadas**
+- **Solicitud de inclusión en programas de reasentamiento o adquisición predial**
+- **Solicitud de inspección técnica por riesgo o amenaza estructural**
+
+### **5. Responsabilidades Compartidas**
+
+Si la petición está relacionada con otras entidades, clasifícala según corresponda:
+
+- **Secretaría de Planeación**: Aprobación de licencias urbanísticas y planes de ordenamiento.
+- **Secretaría de Gobierno**: Autorización de eventos y espectáculos públicos.
+- **Secretaría de Integración Social / Educación**: Gestión de planes escolares en SURE.
+- **UAERMV (Unidad de Mantenimiento Vial)**: Reparaciones estructurales si no están vinculadas a riesgo declarado.
+
+### **6. Reglas de Negocio: Inclusiones y Exclusiones**
+
+- **IDIGER:**
+  - Si la petición menciona **riesgo de colapso**, **deslizamiento**, **inundación**, **evacuación**, **simulacro**, **evaluación estructural**, **reubicación por emergencia**, debe clasificarse bajo IDIGER.
+  - Si se requiere un **concepto técnico de amenaza ruina** o se reportan **familias en situación de riesgo**, aplica IDIGER.
+  - Si la petición es sobre **certificación de riesgo o afectación**, **verificación técnica de infraestructura**, también aplica.
+
+
+### ====>Jardin_Botanico_Jose_Celestino_Mutis<====
+## Criterios de Validación  
+Para clasificar una petición bajo Jardin Botanico Jose Celestino Mutis, verifica lo siguiente:
+
+### **1. Identificación del Tema**
+La petición debe estar relacionada con alguno de estos temas:
+
+- Manejo del arbolado urbano (plantación, tala, poda, mantenimiento)
+- Jardinería urbana y coberturas vegetales en espacio público
+- Asesorías técnicas sobre arborización en espacios privados
+- Entrega y donación de árboles y especies vegetales
+- Agricultura urbana y periurbana
+- Actividades de educación ambiental y participación ciudadana
+- Eventos culturales, académicos o científicos en los espacios del JBB
+- Programas educativos como Club de Ciencias, Vacaciones Científicas, Pequeños Viajeros, Botánica para no Botánicos
+- Sistemas de información ambiental como SIGAU, Herbario en línea o la Red de Interacciones Bióticas
+- Publicaciones y divulgación del conocimiento ambiental
+- Evaluación o aprobación de diseños paisajísticos
+- Servicio social ambiental o prácticas universitarias
+
+### **2. Palabras Clave de Alta Relevancia**
+La petición es altamente relevante si incluye términos como:
+
+- **Arbolado urbano**
+- **Tala o poda de  arbolado joven que presente una altura inferior a los (dos) 2 metros **
+- **Coberturas vegetales**
+- **Jardinería urbana**
+- **SIGAU**
+- **Herbario**
+- **Donación de árboles**
+- **Entrega de especies vegetales**
+- **Educación ambiental**
+- **Agricultura urbana**
+- **Club de Ciencias**
+- **Vacaciones científicas**
+- **Eventos en el Jardín Botánico**
+- **Diseños paisajísticos**
+- **Plataforma de nombres comunes**
+- **Participación ambiental**
+- **Red de interacciones bióticas**
+- **Servicio social ambiental**
+
+### **3. Normatividad Aplicable**
+La petición debe alinearse con normativas como:
+
+- **Decreto 531 de 2010**
+- **Decreto 383 de 2018**
+- **Resolución No. 18 de 2021**
+- **Acuerdo 011 de 2001**
+- **Acuerdo 605 de 2015**
+- **Ley 1549 de 2012**
+- **Decreto 1375 de 2013**
+- **Decreto 607 de 2011**
+- **Resolución 1115 de 2012**
+- **Acuerdo 435 de 2010**
+- **Resolución 6563 de 2011**
+
+### **4. Servicios o Solicitudes Específicas**
+La petición debe incluir:
+
+- Solicitudes de plantación o mantenimiento de árboles
+- Consultas sobre arbolado urbano o SIGAU
+- Solicitud de asesorías técnicas en jardinería o arborización
+- Inscripción o participación en actividades educativas, culturales o científicas del JBB
+- Uso de espacios del JBB para eventos
+- Participación en programas como Club de Ciencias, Vacaciones Científicas, etc.
+- Entrega, recepción o donación de árboles y especies vegetales
+- Consultas científicas o académicas sobre el Herbario o biodiversidad local
+
+### **5. Responsabilidades Compartidas**
+Si la petición es competencia de otra entidad, clasifícala en consecuencia:
+
+- **Secretaría Distrital de Ambiente**: Trámites de tala, poda o permiso ambiental
+- **UAESP**: Manejo de zonas verdes ajenas al JBB
+- **Secretaría de Educación**: Actividades educativas generales fuera del contexto ambiental o del JBB
+
+### **6. Reglas de Negocio: Inclusiones y Exclusiones Específicas**
+- Si la petición menciona específicamente **Jardín Botánico de Bogotá**, **arbolado urbano** o **educación ambiental en parques**, clasifíquela como responsabilidad del JBB.
+- Si se trata de **actividades de plantación en espacio privado**, **solicitudes de donación de árboles**, o **actividades de participación ambiental** también aplica al JBB.
+
+## Palabras Clave
+
+### Flora y Arbolado Urbano
+**Arbolado urbano** – **SIGAU** – **Tala o poda de árboles** – **Donación de especies vegetales** – **Entrega de árboles** – **Diseños paisajísticos** – **Cobertura vegetal urbana**
+
+### Educación y Participación Ambiental
+**Educación ambiental** – **Club de Ciencias** – **Vacaciones Científicas** – **Pequeños Viajeros** – **Botánica para no botánicos** – **Participación ciudadana en temas ambientales**
+
+### Información y Divulgación
+**Herbario en línea** – **Red de interacciones bióticas** – **Plataforma de nombres comunes** – **Publicaciones del JBB**
+
+### Agricultura Urbana
+**Asistencia técnica en agricultura urbana** – **Capacitación en agricultura periurbana** – **Fortalecimiento de la agricultura urbana**
+
+### Actividades Culturales
+**Eventos culturales en el Jardín Botánico** – **Alquiler de espacios del Jardín Botánico** – **Prácticas universitarias ambientales** – **Servicio social ambiental**
+
+## Proceso de Evaluación
+1. Analiza si la petición cumple con algún criterio de validación de CUALQUIERA de las cuatro entidades descritas.
+2. Si encuentra coincidencia con al menos UNA de las entidades, clasifica como "1".
+3. Si no encuentra coincidencia con NINGUNA entidad, clasifica como "0".
+4. En caso de conflicto entre criterios de exclusión y criterios de validación, prioriza los criterios de validación.
+5. Recuerda que las exclusiones solo aplican cuando la petición ÚNICAMENTE cumple criterios de exclusión sin ningún criterio de validación.
+
+## Response
+Devuelve:
+- **1** si la petición pertenece al **Secretaría Distrital de Ambiente (SDA)**
+- **0** si debe ser redirigida a otra entidad
+No incluyas explicaciones ni texto adicional.

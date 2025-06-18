@@ -1,0 +1,298 @@
+=== TEXTO EXTRAÍDO DE: caso4_aporte_21_Papel_de_trabajo_septiembre_2023-SD.pdf ===
+Ruta original: /Users/rayespinoza/AI_Projects/cordoba_classificator/data/casos/Caso_4/2-Aporte del contribuyente/caso4_aporte_21_Papel_de_trabajo_septiembre_2023-SD.pdf
+Fecha de procesamiento: 2025-06-17 14:51:01
+==================================================
+
+CONTRIBUYENTE CASO 4
+CM
+03
+44-44444444-4
+Art.
+2
+1
+12110
+13
+2
+12110
+2
+3
+13
+4
+-
+5
+-
+6
+-
+CUACM
+829909
+Servicios de Fotografía
+0,00
+3,00%
+0,00
+829909
+Servicios de Fotografía
+I
+Activ 5
+-
+Activ 6
+Descripción de Actividades
+Servicios Inmobiliarios realizados por cuenta propia, con 1
+0,00
+3,00%
+0,00
+Servicios Inmobiliarios realizados por cuenta propia, con 1
+0,00
+3,00%
+0,00
+Total de Ingresos en todo el País
+Saldo a Favor período anterior
+2.230,30
+Retenciones
+0,00
+Percepciones
+0,00
+Pago DJ Original
+0,00
+Pago Regimen Simpl CABA
+0,00
+Monto a Pagar
+0,00
+Total a Favor Contribuyente
+2.230,30
+Original
+Período fiscal
+05-2020
+Venc.
+20/02/2020
+901
+Capital Federal
+Base Imp.
+%
+Impuesto
+0,00
+3,00%
+0,00
+0,00
+0,00
+0,00
+0,00
+6.629.000,00
+Coeficiente Unif.de la Jurisdicción
+0,0000
+CONTRIBUYENTE CASO 4
+CM
+44-44444444-4
+03
+Art.
+2
+1
+12110
+13
+2
+12110
+2
+3
+13
+4
+-
+5
+-
+6
+CUACM
+829909
+Servicios de Fotografía
+0,00
+3,50%
+0,00
+0,00
+3,50%
+0,00
+829909
+Servicios de Fotografía
+I
+Activ 5
+Activ 6
+Descripción de Actividades
+Servicios Inmobiliarios realizados por cuenta propia, con 1
+0,00
+5,00%
+0,00
+Servicios Inmobiliarios realizados por cuenta propia, con 1
+0,00
+5,00%
+0,00
+Total de Ingresos en todo el País
+Saldo a Favor período anterior
+966,26
+Retenciones
+0,00
+Percepciones
+0,00
+Pago DJ Original
+0,00
+Monto a Pagar
+0,00
+Total a Favor Contribuyente
+966,26
+Original
+Período fiscal
+05-2020
+Venc.
+20/01/2020
+902
+Buenos Aires
+Base Imp.
+%
+Impuesto
+0,00
+0,00
+0,00
+0,00
+6.629.000,00
+Coeficiente Unif.de la Jurisdicción
+0,0000
+0,00
+CONTRIBUYENTE CASO 4
+CM
+44-44444444-4
+03
+Art.
+2
+1
+12110
+13
+2
+12110
+Servicios Inmobiliarios realizados por cuenta propia, con biene
+2
+3
+829909
+Servicios de Fotografía
+13
+4
+5
+-
+6
+CUACM
+829909
+Servicios de Fotografía
+Activ 5
+Activ 6
+Descripción de Actividades
+Servicios Inmobiliarios realizados por cuenta propia, con biene
+Total de Ingresos en todo el País
+Coeficiente Unif.de la Jurisdicción
+Saldo a Favor período anterior
+200.170,33
+Retenciones
+0,00
+Percepciones
+0,00
+Pago DJ Original
+0,00
+Monto a Pagar
+0,00
+Total a Favor Contribuyente
+150.760,33
+Original
+Período fiscal
+05-2020
+904
+Córdoba
+Base Imp.
+%
+1.647.000,00
+3,00%
+49.410,00
+0,00
+3,00%
+0,00
+0,00
+2,80%
+0,00
+0,00
+2,80%
+0,00
+0,00
+-
+0,00
+-
+6.629.000,00
+1,0000
+0,00
+Venc.
+20/01/2020
+Impuesto
+I
+49.410,00
+CONTRIBUYENTE CASO 4
+CM
+03
+44-44444444-4
+Art.
+2
+1
+12110
+13
+2
+12110
+Servicios Inmobiliarios realizados por cuenta propia, con biene
+2
+3
+829909
+Servicios de Fotografía
+13
+4
+-
+5
+-
+6
+Período fiscal
+05-2020
+Venc.
+20/01/2020
+CUACM
+Descripción de Actividades
+Base Imp.
+%
+Impuesto
+921
+Santa Fe
+Servicios Inmobiliarios realizados por cuenta propia, con biend
+829909
+Servicios de Fotografía
+Activ 5
+Activ 6
+4.982.000,00
+0,00%
+0,00
+0,00
+0,00%
+0,00
+0,00
+4,50%
+0,00
+0,00
+4,50%
+0,00
+0,00
+-
+-
+0,00
+-
+Total de Ingresos en todo el País
+0,00
+6.629.000,00
+Coeficiente Unif.de la Jurisdicción
+0,0000
+Saldo a Favor período anterior
+0,00
+Retenciones
+0,00
+Percepciones
+0,00
+0,00
+Monto a Pagar
+0,00
+Total a Favor Contribuyente
+0,00

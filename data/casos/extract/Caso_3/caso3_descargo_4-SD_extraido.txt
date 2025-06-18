@@ -1,0 +1,44 @@
+=== TEXTO EXTRAÍDO DE: caso3_descargo_4-SD.pdf ===
+Ruta original: /Users/rayespinoza/AI_Projects/cordoba_classificator/data/casos/Caso_3/2-Aporte del contribuyente/caso3_descargo_4-SD.pdf
+Fecha de procesamiento: 2025-06-17 14:49:02
+==================================================
+
+CONTRIBUYENTE CASO 3
+Detalle de Asiento: 8629
+Ren. Nro.
+Cuenta
+1 101030010001
+2 401020010001
+3 401020010001
+4 401020010001
+5 401020010001
+6 201010010003
+TOTALES
+Deudores por Ventas
+$ 9.130.836,53
+a Ventas de Mercaderia
+$ 0,00
+a Ventas de Mercaderia
+$ 0,00
+a Ventas de Mercaderia
+a Ventas de Mercaderia
+a IVA - Debito Fiscal
+Debe
+$ 0,00
+$ 0,00
+$ 0,00
+9.130.836,53
+9.130.836,53
+Haber Concepto
+$ 0,00
+FAE-000100002986A
+PED -- 1-13925 (
+$ 5.372.799,49 FAE Factura sin Entrega A-0001-00002986
+PROVEEDOR X3
+$ 734.373,65 FAE Factura sin Entrega A-0001-00002986 PROVEEDOR X3
+$ 702.265,50 FAE Factura sin Entrega A-0001-00002986 |PROVEEDOR X3
+$ 736.707,25 FAE Factura sin Entrega A-0001-00002986
+FAE-000100002986A
+PROVEEDOR X3
+$ 1.584.690,64
+PED -- 1-13925 (

@@ -1,0 +1,61 @@
+=== TEXTO EXTRAÍDO DE: caso7_aporte_7-SD.pdf ===
+Ruta original: /Users/rayespinoza/AI_Projects/cordoba_classificator/data/casos/Caso_7/2-Aporte del contribuyente/caso7_aporte_7-SD.pdf
+Fecha de procesamiento: 2025-06-17 14:54:16
+==================================================
+
+CUIT Nº: 77-77777777-7
+Establecimiento: 0
+CONTRIBUYENTE CASO 7
+IMPUESTO AL
+VALOR AGREGADO
+F. 2002
+Versión 200
+Fecha de Presentación: 23/08/2021
+Hora: 23:44
+Nro. de Transacción: 805584713
+Período: 202107
+MD5: 10
+Secuencia: ORIGINAL
+Determinación de la base imponible del período
+Total del Débito Fiscal
+Concepto
+Total del Crédito Fiscal
+$ 9965028.38
+Ajuste Anual del crédito fiscal por operaciones exentas
+AFIP
+$ 0.00
+A favor del Responsable
+$ 0.00
+Reducción del Saldo Técnico - BENEFICIO A PEQUEÑOS CONTRIBUYENTES CUMPLIDORES-Art. 12
+$ 0.00
+Saldo Técnico a Favor del Responsable del Período anterior
+$ 2143794.86
+Saldo Técnico a Favor del Responsable del Período
+$ 1404415.98
+Subtotal Saldo Técnico a Favor de la AFIP del Período
+$ 0.00
+Diferimiento F. 518
+$ 0.00
+Bonos Fiscales - Decreto 1145/09 y/o Decreto 852/14
+$ 0.00
+Determinación de la Declaración Jurada mensual
+Saldo técnico a favor AFIP
+$ 0.00
+Salto Técnico a Favor del Responsable del Período
+$ 1404415.98
+Saldo a favor de libre disponibilidad del período anterior
+$ 19447395.63
+Total del monto utilizado del período
+$ 0.00
+Total de retenciones, percepciones y pagos a cuenta computables en el período neto de restituciones
+$ 138.55
+Saldo de Libre Disponibilidad a favor del contribuyente del período
+$ 19447534.18
+Saldo del Impuesto a Favor de AFIP
+$ 0.00
+Importe
+$ 10704407.26
+Declaro que los datos a transmitir son correctos y completos y que he confeccionado el formulario digital en carácter
+de Declaración Jurada, utilizando el servicio denominado "Mis Aplicaciones Web" aprobado por la Administración
+Federal de Ingresos Públicos, sin omitir ni falsear dato alguno que deba contener, siendo fiel expresión de la verdad
+conforme lo dispuesto por el artículo 28 del Decreto 1397/79 texto sustituido por el artículo 1 de su similar 658/02

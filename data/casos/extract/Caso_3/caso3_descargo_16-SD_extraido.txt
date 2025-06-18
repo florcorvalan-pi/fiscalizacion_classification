@@ -1,0 +1,117 @@
+=== TEXTO EXTRAÍDO DE: caso3_descargo_16-SD.pdf ===
+Ruta original: /Users/rayespinoza/AI_Projects/cordoba_classificator/data/casos/Caso_3/2-Aporte del contribuyente/caso3_descargo_16-SD.pdf
+Fecha de procesamiento: 2025-06-17 14:48:45
+==================================================
+
+CONTRIBUYENTE CASO 3
+Código
+1.01.05.005.0049
+1.01.05.005.0050
+1.01.05.005.0051
+1.01.05.005.0052
+Notebook Lenovo Pad Idea 3 Ryzen5 3500U
+1.01.05.005.0053
+1.01.05.005.0054
+Amort. Acum Notebook Lenovo Pad Idea 3 R
+1.01.05.005.0055
+Notebook Lenovo V15 G2 Alc Amd Ryzen 550
+1.01.05.005.0056
+Amort. Acum Notebook Lenovo V15 G2 Alc A
+1.01.05.005.0057
+Gafas Oculus Vision 3D
+1.01.05.005.0058
+1.01.05.005.0059
+1.01.05.005.0060
+1.01.05.006.0000
+1.01.05.006.0001
+1.01.05.006.0002
+1.01.05.006.0003
+Terrenos
+1.01.05.006.0004
+Inmueble De
+1.01.05.006.0005
+2.00.00.000.0000
+2.01.00.000.0000
+2.01.01.001.0001
+2.01.01.001.0002
+Com. e Ind. Muni. Cosquin a Pagar
+Retencion de Ganancias a Depositar
+2.01.01.001.0003
+IVA - Debito Fiscal
+2.01.01.001.0006
+IVA a Pagar
+2.01.01.001.0007
+Plan Pago de II.BB. 100817398 a Pagar
+2.01.01.001.0008
+Impuesto a los Ingresos Brutos a Pagar
+2.01.01.001.0009
+Plan Pago de II.BB. 617423 a Pagar
+2.01.01.001.0010
+Imp. Bs. Pers. Acc. y Part. a Pagar
+2.01.01.001.0011
+Plan Pago de II.BB. 104728548 a Pagar
+2.01.01.001.0012
+Plan Afip a Pagar
+2.01.01.001.0013
+Anticipo de Ganancias a Pagar
+2.01.01.001.0014
+Provision Por Impuesto a las Ganancias
+2.01.01.001.0015
+Plan Pago de II.BB. 105853304 a Pagar
+2.01.01.001.0016
+Plan Pago IIB 2021103201452 a pagar
+2.01.01.001.0017
+Impuesto a las Ganancias a Pagar
+2.01.01.001.0018
+Plan de Pago IIB 2021104821996 a pagar
+2.01.01.001.0019
+Plan de Pago AFIP Nº O625660 a pagar
+2.01.01.001.0020
+Plan de Pago IIB 2021105844420 a pagar
+2.01.01.001.0021
+Plan de Pago AFIP N° P313859 a pagar
+2.01.01.001.0022
+Plan de Pago AFIP Nº P607199 a pagar
+2.01.01.001.0023
+Plan de Pago IIB 2021103201452 a pagar
+2.01.01.001.0024
+Imp. y Patentes de Rodados a Pagar
+2.01.01.001.0025
+Retenciones a Reversar
+2.01.01.001.0026
+Plan de Pago IIB 2022104120399 a pagar
+2.01.01.001.0027
+Plan de Pago IIB 2022104842146 a pagar
+2.01.01.001.0028
+Plan de Pago IIB 2022105923209 a pagar
+2.01.01.001.0029
+Com. e Ind. Muni. Córdoba a Pagar
+2.01.01.001.0030
+Plan de Pago IIB 2022199015638 a pagar
+2.01.01.001.0031
+Plan de Pago IIB 2023103830077 a pagar
+2.01.01.001.0032
+Plan de Pago IIB 2023104533093 a pagar
+2.01.01.001.0033
+Percepciones Ingresos Brutos a Depositar
+Plan de Pago IIB 2023106118281 a pagar
+2.01.01.001.0034
+TOTALES
+Plan de Cuentas
+Descripcion
+Notebook AMD RYZEN 5 3600 STEALTH
+Amort. Acum. Notebook AMD RYZEN 5 3600 S
+Celular Moto E32 Gb Gris 4 Gb Ram
+Amort. Acum Celular Moto E32 Gb Gris 4 G
+Amort. Acum Gafas Oculus Vision 3D
+Note Lenovo IdeaPD AMD Ryzen 5 - Touchsc
+Amort. Acum. Note Lenovo IdeaPD AMD Ryze
+INMUEBLES
+Cochera 59 Subsuelo - Edif. Paseo
+Dpto.19 2do.Piso - Edif. Paseo
+Amort. Acum. Inm. De los
+PASIVO
+DEUDAS FISCALES
+Fecha: 20/01/2025 11:04:09
+Hoja 5 / 9
+Generado por Sabio GO ERP www.sabiogo.com

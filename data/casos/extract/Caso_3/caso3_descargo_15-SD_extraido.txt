@@ -1,0 +1,214 @@
+=== TEXTO EXTRAÍDO DE: caso3_descargo_15-SD.pdf ===
+Ruta original: /Users/rayespinoza/AI_Projects/cordoba_classificator/data/casos/Caso_3/2-Aporte del contribuyente/caso3_descargo_15-SD.pdf
+Fecha de procesamiento: 2025-06-17 14:49:49
+==================================================
+
+Libro I.V.A. Ventas
+CONTRIBUYENTE CASO 3
+33-33333333-3
+0
+Filtros
+X
+<< < Hoy Mes > >> Limpiar Filtros Ctrl+Enter para buscar
+Fecha Desde
+01/07/2023
+Fecha Hasta
+31/07/2023
+Uni. Neg.
+presione [enter] para buscar ...
+Tipo de Mov.
+presione [enter] para buscar ..
+. Totalizado
+Hoja Inicial
+185
+Excluir Tipo de Mov
+Pto. de Venta
+[F2] Buscar aqui .. . puede usar +
+A
+Fecha
+20/07/2023
+20/07/2023
+FAC-A-0001-00007627
+20/07/2023
+FAC-A-0001-00007628
+20/07/2023
+FAC-A-0001-00007629
+20/07/2023
+20/07/2023
+20/07/2023
+20/07/2023
+20/07/2023
+20/07/2023
+20/07/2023
+FAC-B-0001-00001028
+21/07/2023
+NCR-A-0001-00000621
+21/07/2023
+FAC-A-0001-00007631
+Comprobante
+FAC-A-0001-00007626
+FAC-A-0001-00007630
+NDB-B-0001-00000007
+NDB-B-0001-00000008
+FAC-B-0001-00001025
+FAC-B-0001-00001026
+FAC-B-0001-00001027
+Razon Social
+CLIENTES OCULTOS
+CLIENTE X3
+CLIENTE2 X3
+CLIENTE3 X3
+CLIENTES OCULTOS
+TO ...
+CUIT
+CUIT DE
+CLIENTES
+OCULTOS
+30-00000033-3
+30-00000333-3
+30-00333333-3
+CUIT DE
+CLIENTES
+OCULTOS
+Cond.
+RI
+RI
+RI
+RI
+RI
+CF
+CF
+CF
+CF
+21,00
+CF
+CF
+RI
+RI
+Alicuota IVA
+21,00
+21,00
+21,00
+21,00
+21,00
+0,00
+21,00
+21,00
+21,00
+$ 4.628.099,17
+$ 0,00
+21,00
+21,00
+-$ 18.775,96
+21.00
+5439,00
+Neto Gra.
+$ 29.630,75
+$ 1.007.978,90
+$ 5.007,88
+$ 47.108,45
+$ 71.379,99
+$ 0,00
+$ 4.000,00
+$ 0,00
+$ 146.772,25
+$ 4.628.099,17
+$ 0,00
+$ 4.628.099,17
+$ 0,00
+$ 141.286.59
+$ 140.963.436,12
+$ 200.000,00
+Total de registros: 260
+Totales
+Neto G.
+$ 140.963.436,12
+Neto NG:
+$ 200.000,00
+IVA:
+$ 29.602.321,56
+Ret:
+Detalle
+Asiento
+Imprimir
+Res.Sumariza
+Res Déb/Créd.
+IVA
+Cierre IVA
+Listo. (00:00.11) 192.168.1.90
+CERACOR
+alejandro
+2024.3.15.4025
+Buscar
+X
+OF
+Detallado
+No Gra.
+$ 0,00
+$ 0,00
+$ 0,00
+$ 0,00
+$ 0,00
+$ 200.000,00
+$ 0,00
+$ 0,00
+-$ 3.942,95
+$ 0,00
+$ 0.00
+IVA
+$ 6.222,46
+$ 211.675,57
+$ 0,00
+$ 1.051,65
+$ 9.892,77
+$ 14.989,80
+$ 0,00
+$ 0,00
+$ 840,00
+$ 30.822,17
+$ 971.900,83
+$ 0,00
+$ 971.900,83
+$ 0,00
+$ 971.900,83
+$ 0,00
+$ 29.670.18
+$ 0.00
+$ 29.602.321,56
+$ 0,00
+Total:
+$ 170.765.757,69
+Ret./Per.
+$ 0,00
+$ 0,00
+$ 0,00
+$ 0,00
+$ 0,00
+$ 0,00
+$ 0,00
+O
+Buscar
+X
+Total
+<
+$ 35,853,21
+$ 1.219.654,47
+$ 6.059,53
+$ 57.001,22
+$ 86.369,78
+$ 200.000,00
+$ 4.840,00
+$ 177.594,42
+$ 5.600.000,00
+$ 5.600.000,00
+$ 5.600.000,00
+-$ 22.718,91
+$ 170.956.77
+V
+$ 170.765.757,69
+C
+Salir
+12:09
+09/12/2024
+W
+~ Di 5 ( 4x ESP
