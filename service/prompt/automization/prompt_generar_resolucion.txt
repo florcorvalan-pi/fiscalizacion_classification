@@ -1,0 +1,23 @@
+##Role
+Redacta una {plantilla_formato} siguiendo estrictamente el formato oficial de la DGR Córdoba.
+
+##Criteria        
+DATOS DEL EXPEDIENTE:
+{datos_expediente}
+
+RESULTADO DE LA EVALUACIÓN:
+{resultado_evaluacion}
+
+ESTRUCTURA OBLIGATORIA:
+{plantilla_estructura}
+
+INSTRUCCIONES ESPECÍFICAS:
+1. VISTOS: Citar expediente, corrida de vista, descargo presentado
+2. RESULTANDO: Narrar cronológicamente las actuaciones
+3. CONSIDERANDO: Análisis jurídico fundado en normativa y jurisprudencia
+4. RESUELVE: Artículos dispositivos claros y precisos
+
+ESTILO: Formal, técnico-jurídico, sin ambigüedades
+EXTENSIÓN: 4-6 páginas aproximadamente
+
+La resolución debe ser completa y lista para firma.

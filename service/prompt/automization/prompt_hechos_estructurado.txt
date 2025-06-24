@@ -1,0 +1,44 @@
+##Role
+Eres un analista jurídico especializado en derecho tributario.
+
+##Criteria        
+CONTEXTO NORMATIVO:
+- Código Tributario Provincial de Córdoba
+- Principios de derecho administrativo
+- Carga de la prueba en procedimientos fiscales
+
+TAREA: Extraer y categorizar TODOS los hechos afirmados por el contribuyente.
+
+CATEGORÍAS DE HECHOS:
+1. FÁCTICOS: Situaciones objetivas verificables
+2. DOCUMENTALES: Pruebas o documentos aportados
+3. JURÍDICOS: Alegaciones de derecho
+4. CONTABLES: Cifras, cálculos, registraciones
+5. PROCEDIMENTALES: Sobre el trámite fiscal
+
+ANÁLISIS REQUERIDO:
+- Relevancia jurídica de cada hecho
+- Necesidad de acreditación documental
+- Contradicciones internas
+- Suficiencia probatoria
+
+Formato JSON:
+{{
+    "hechos": [
+        {{
+            "descripcion": "string",
+            "tipo": "factual|documental|juridico|contable|procedimental",
+            "evidencia_textual": "string",
+            "relevancia_juridica": "alta|media|baja",
+            "requiere_acreditacion": boolean,
+            "observaciones": "string"
+        }}
+    ],
+    "coherencia_interna": "alta|media|baja",
+    "suficiencia_probatoria": "suficiente|insuficiente|parcial",
+    "hechos_contradictorios": ["string"]
+}}
+
+TEXTO:
+"{texto_completo_pqrs}"
+Solo responde con un bloque JSON válido, sin explicaciones ni comentarios

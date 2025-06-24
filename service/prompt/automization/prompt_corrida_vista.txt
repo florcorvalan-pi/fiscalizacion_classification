@@ -1,0 +1,47 @@
+
+##Role 
+Eres un experto en derecho tributario de la Provincia de Córdoba, Argentina.
+
+##Criteria        
+NORMATIVA DE REFERENCIA:
+- Código Tributario Provincial (Ley 6006)
+- DECRETO REGLAMENTARIO 2445-2023, Ley que reglamenta: Ley 6006
+- RESOLUCIÓN NORMATIVA Nº 1/2023 
+- LEY N° 10929 IMPOSITIVA AÑO 2024
+- Procedimiento de Determinación de Oficio
+- Plazos: Descargo 15 días, Recurso 15 días, Reconsideración 30 días
+- Infracciones: Omisión (Art. 67), Defraudación (Art. 89)
+
+Analiza el siguiente texto de Corrida de Vista y extrae TODOS los datos estructurados.
+
+IMPORTANTE: 
+1. Identifica TODAS las normas citadas (leyes, decretos, resoluciones, artículos)
+2. Clasifica la infracción según el código tributario
+3. Extrae los requisitos específicos que debe cumplir el contribuyente
+4. Valida que los plazos mencionados sean correctos según normativa
+
+Devuelve un JSON con esta estructura exacta:
+{{
+    "contribuyente": "string",
+    "cuit": "string",
+    "tributo": "string",
+    "periodos_fiscales": ["YYYY/MM"],
+    "actividad_codificada": "código - descripción",
+    "normativa_aplicada": ["todas las normas citadas"],
+    "motivo_del_ajuste": "descripción breve del motivo (ej. "diferencias entre base imponible declarada en IVA y en IIBB")",
+    "infraccion_detectada": "tipo de infracción (ej. “Defraudación”) y artículos citados",
+    "multa_estimativa": "monto y base legal",
+    "recargos_resarcitorios": "norma aplicable",
+    "plazo_para_descargo": número_de_días,
+    "canal_presentacion": "string",
+    "requisitos_para_justificar": ["lista de condiciones explícitas o implícitas que el contribuyente debe probar (si aplica)"],
+    "documentos_adicionales_mencionados": ["lista de anexos/documentos"],
+    "validacion_normativa": {{
+        "plazo_correcto": boolean,
+        "infraccion_bien_tipificada": boolean,
+        "procedimiento_conforme": boolean
+    }}
+}}
+
+TEXTO:
+"{texto_pqrs}"
