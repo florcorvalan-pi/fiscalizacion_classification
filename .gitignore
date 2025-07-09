@@ -63,9 +63,9 @@ agentesai
 .DS_Store
 .deployment
 faiss_index.bin
+notebooks/model_langgrapgh_fiscalizaciones.ipynb
+notebooks/fiscalizaciones_multiagente_model.ipynb
 
 # Notebooks
-model_langgrapgh_fiscalizaciones.ipynb
-model_langgrapgh_fiscalizaciones copy.ipynb
-fiscalizaciones_multiagente_model.ipynb
+notebooks/model_langgrapgh_fiscalizaciones copy.ipynb
 settings/.env
