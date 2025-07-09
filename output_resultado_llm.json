@@ -1,0 +1,282 @@
+{
+  "datos_corrida": {
+    "contribuyente": "CONTRIBUYENTE CASO1",
+    "cuit": "11-11111111-1",
+    "tributo": "Impuesto Sobre los Ingresos Brutos",
+    "periodos_fiscales": [
+      "2023/09",
+      "2023/10",
+      "2023/11"
+    ],
+    "actividad_codificada": "471120 - Actividad no especificada en el texto (código 471120)",
+    "normativa_aplicada": [
+      "Ley Nº 9187 y modificatorias",
+      "Ley Nº 6006 T.O. 2023 y modificatorias",
+      "Decreto Reglamentario Nº 2445/2023",
+      "Resolución Nº 03/2024 de la Dirección de Inteligencia Fiscal",
+      "Artículo 4 inciso 6) y 8) de la Ley Nº 9187 y modif.",
+      "Artículo 13 del Decreto Reglamentario Nº 2445/2023",
+      "Artículo 23 del Código Tributario Provincial (Ley 6006)",
+      "Artículo 87 inciso 1) del Código Tributario Provincial (Ley 6006)",
+      "Artículo 94 incisos 2) y 6) del Código Tributario Provincial (Ley 6006)",
+      "Artículo 68 del Código Tributario Provincial (Ley 6006)",
+      "Artículo 127 del Código Tributario Provincial (Ley 6006)",
+      "Artículo 98 del Código Tributario Provincial (Ley 6006)",
+      "Artículos 66 y 97 del Código Tributario Provincial (Ley 6006)",
+      "Artículo 46 del Código Tributario Provincial (Ley 6006)",
+      "Artículos 15 y/o 22 de la Ley de Procedimiento Administrativo de la Provincia de Córdoba - Ley Nº 6.658 y modificatorias",
+      "Ley Nº 10929 Impositiva Año 2024 (implícita en la aplicación de alícuotas)"
+    ],
+    "motivo_del_ajuste": "Diferencias entre bases imponibles declaradas en el IVA y en el Impuesto sobre los Ingresos Brutos, no declaración ni ingreso del tributo en su justa medida",
+    "infraccion_detectada": "Defraudación, artículo 87 inciso 1) del Código Tributario Provincial (Ley 6006), con referencia al artículo 94 incisos 2) y 6)",
+    "multa_estimativa": "$649,117.41, conforme artículo 87 y reducción prevista en artículo 68 del Código Tributario Provincial (Ley 6006)",
+    "recargos_resarcitorios": "Artículo 127 del Código Tributario Provincial (Ley 6006)",
+    "plazo_para_descargo": 15,
+    "canal_presentacion": "Domicilio Fiscal Electrónico, conforme artículo 46 del Código Tributario Provincial (Ley 6006)",
+    "requisitos_para_justificar": [
+      "Alegar defensa y ofrecer pruebas dentro del plazo de 15 días",
+      "Presentar escritos y pruebas en formato digital a través del Domicilio Fiscal Electrónico",
+      "Si actúa representante legal o apoderado, acreditar personería conforme artículos 15 y/o 22 de la Ley Nº 6.658 y modificatorias"
+    ],
+    "documentos_adicionales_mencionados": [
+      "Informe adjunto a la corrida de vista",
+      "Anexo I - Planilla de Determinación de Diferencias"
+    ]
+  },
+  "clasificacion": {
+    "clasificaciones": [
+      {
+        "tipo": "Ajuste fiscal",
+        "subtipo": "Operaciones no gravadas o exentas",
+        "evidencia_textual": "Por una cuestión de conveniencia económica, la comodante que ha tomado el inmueble donde se desarrolla la explotación en arrendamiento es asimismo el propietario del mobiliario y asume los gastos referidos a mobiliarios y servicios públicos. Mientras el comodatario asume los gastos de personal, y es quien emite el comprobante de venta hacia el comprador. A fin de mes, Ed realiza una liquidación para cobrar la totalidad de lo vendido respectivo a verdulería y carnicería, emitiendo la factura por venta por cuenta y orden. Este monto, que ha sido tomado por la fiscalización enunciada como venta de la contribuyente, por tanto, debe ser excluido, ya que pertenece a un tercero, por el cual éste, liquida e ingresa el tributo respectivo.",
+        "solidez_juridica": "media",
+        "fundamento_normativo": "Artículo 1 y 2 del Código Tributario Provincial de Córdoba, y normativa sobre ventas por cuenta y orden",
+        "observaciones": "El contribuyente argumenta que las ventas de verdulería y carnicería son realizadas por cuenta y orden de un tercero (comodante), y que por tanto no deben ser consideradas como ventas propias para la base imponible del impuesto sobre los ingresos brutos. Presenta contrato de comodato y liquidaciones como prueba. La fiscalización considera estas ventas como propias del contribuyente, lo que genera el ajuste. La solidez es media porque la exclusión de estas operaciones depende de la correcta interpretación del contrato y la realidad económica, y si el contribuyente efectivamente no es el sujeto pasivo del impuesto por esas ventas."
+      },
+      {
+        "tipo": "Prueba aportada",
+        "subtipo": "Documental",
+        "evidencia_textual": "Adjunto contrato de Comodato, certificado ante Juez de Paz de Adelia María fecha 01 de noviembre del 2016. Adjunto liquidación emitida por E A. y R S.S cuit 30-9 - A00002-00000059, A00002-00000060, A00002-00000061.",
+        "solidez_juridica": "alta",
+        "fundamento_normativo": "Artículo 17 y 18 del Código Tributario Provincial de Córdoba sobre prueba documental",
+        "observaciones": "El contribuyente aporta documentación que respalda su argumento de que las ventas de verdulería y carnicería son realizadas por cuenta y orden de un tercero, lo que es fundamental para sustentar la exclusión de esas ventas de la base imponible. La documentación está certificada y es pertinente."
+      }
+    ],
+    "resumen_estrategia_defensa": "La defensa se basa en demostrar que las ventas de verdulería y carnicería no son operaciones propias del contribuyente sino realizadas por cuenta y orden de un tercero, por lo que no deben ser incluidas en la base imponible del impuesto sobre los ingresos brutos. Se sustenta en el contrato de comodato y las liquidaciones emitidas por el tercero, que evidencian la relación jurídica y económica entre las partes. La estrategia es probar que el contribuyente no es el sujeto pasivo respecto de esas ventas y que la fiscalización cometió un error al incluirlas en el ajuste fiscal.",
+    "puntos_debiles_impugnacion": [
+      "La fiscalización puede argumentar que el contribuyente es quien emite los comprobantes de venta y asume gastos de personal, lo que podría configurar una realización efectiva de la actividad gravada.",
+      "La relación de comodato y la liquidación por cuenta y orden deben ser analizadas en profundidad para verificar si realmente se configura una operación no gravada para el contribuyente.",
+      "No se aportan pruebas periciales o informativas que corroboren la realidad económica y operativa más allá de la documentación contractual.",
+      "El ajuste fiscal puede estar basado en la interpretación normativa que considera al contribuyente responsable del impuesto por la actividad desarrollada en el establecimiento."
+    ],
+    "recomendacion_respuesta": "Se recomienda contestar el descargo destacando la documentación aportada que acredita la relación de comodato y la modalidad de ventas por cuenta y orden, solicitando que se excluyan esas operaciones de la base imponible. Además, se sugiere solicitar una revisión detallada de la fiscalización para verificar la correcta aplicación de la normativa y, en caso de persistir la controversia, proponer la realización de una pericia económica o técnica que aclare la realidad operativa y la correcta determinación del sujeto pasivo del impuesto."
+  },
+  "hechos": {
+    "hechos": [
+      {
+        "descripcion": "El contribuyente CONTRIBUYENTE CASO 1 está inscripto en el impuesto sobre los ingresos brutos bajo la CUIT 11-11111111-1 y realiza su actividad en un establecimiento ubicado en Avenida, Adelia Maria, Córdoba.",
+        "tipo": "factual",
+        "evidencia_textual": "La contribuyente CONTRIBUYENTE CASO 1 11-11111111-1, realiza su actividad en el establecimiento conocido como ubicado en el domicilio Avenida - Localidad Adelia Maria Cba.",
+        "relevancia_juridica": "alta",
+        "requiere_acreditacion": true,
+        "observaciones": "Es fundamental acreditar la existencia y ubicación del establecimiento para la correcta determinación del hecho imponible."
+      },
+      {
+        "descripcion": "El código de actividad principal según NAES es 471120: Venta al por menor en supermercados.",
+        "tipo": "factual",
+        "evidencia_textual": "El código de actividad principal según NAES es 471120: Venta al por menor en supermercados.",
+        "relevancia_juridica": "media",
+        "requiere_acreditacion": true,
+        "observaciones": "La actividad principal es relevante para la correcta aplicación de la normativa tributaria."
+      },
+      {
+        "descripcion": "Los productos de verdulería y carnicería son vendidos por cuenta y orden de R y E A. y F D. S.S 30-9, con quienes el contribuyente está vinculado por un contrato de comodato.",
+        "tipo": "factual",
+        "evidencia_textual": "los productos de verdulería y carnicería, son vendidos por cuenta y orden de R y E an D. S.S 30-9 con el cuál están vinculados por un contrato de comodato",
+        "relevancia_juridica": "alta",
+        "requiere_acreditacion": true,
+        "observaciones": "La existencia del contrato de comodato es clave para determinar la titularidad de las ventas y la base imponible."
+      },
+      {
+        "descripcion": "El contrato de comodato está certificado ante Juez de Paz de Adelia María con fecha 01 de noviembre del 2016.",
+        "tipo": "documental",
+        "evidencia_textual": "* Adjunto contrato de Comodato, certificado ante Juez de Paz de Adelia María fecha 01 de noviembre del 2016.",
+        "relevancia_juridica": "alta",
+        "requiere_acreditacion": true,
+        "observaciones": "El contrato debe ser aportado para acreditar la relación jurídica entre las partes."
+      },
+      {
+        "descripcion": "La comodante es propietaria del inmueble y mobiliario, asume gastos de mobiliarios y servicios públicos, mientras que el comodatario asume gastos de personal y emite comprobantes de venta hacia el comprador.",
+        "tipo": "factual",
+        "evidencia_textual": "la comodante que ha tomado el inmueble donde se desarrolla la explotación en arrendamiento es asimismo el propietario del mobiliario y asume los gastos referidos a mobiliarios y servicios públicos. Mientras el comodatario asume los gastos de personal, y es quien emite el comprobante de venta hacia el comprador.",
+        "relevancia_juridica": "alta",
+        "requiere_acreditacion": true,
+        "observaciones": "Esta distribución de responsabilidades es relevante para determinar la titularidad de ingresos y gastos."
+      },
+      {
+        "descripcion": "Ed D. S.S 30-9 realiza una liquidación a fin de mes para cobrar la totalidad de lo vendido respectivo a verdulería y carnicería, emitiendo factura por venta por cuenta y orden.",
+        "tipo": "factual",
+        "evidencia_textual": "A fin de mes, Ed D. S.S 30-9 realiza una liquidación para cobrar la totalidad de lo vendido respectivo a verdulería y carnicería, emitiendo la factura por venta por cuenta y orden.",
+        "relevancia_juridica": "alta",
+        "requiere_acreditacion": true,
+        "observaciones": "La liquidación y facturación por cuenta y orden es fundamental para la correcta imputación de ingresos."
+      },
+      {
+        "descripcion": "El monto facturado por Ed D. S.S 30-9 ha sido tomado por la fiscalización como venta del contribuyente, pero debe ser excluido porque pertenece a un tercero que liquida e ingresa el tributo respectivo.",
+        "tipo": "juridico",
+        "evidencia_textual": "Este monto, que ha sido tomado por la fiscalización enunciada como venta de la contribuyente, por tanto, debe ser excluido, ya que pertenece a un tercero, por el cual éste, liquida e ingresa el tributo respectivo.",
+        "relevancia_juridica": "alta",
+        "requiere_acreditacion": false,
+        "observaciones": "Es una alegación jurídica sobre la correcta base imponible y la exclusión de ingresos que no corresponden al contribuyente."
+      },
+      {
+        "descripcion": "Se adjuntan liquidaciones emitidas por E A. y R S.S cuit 30-9: facturas A00002-00000059, A00002-00000060, A00002-00000061.",
+        "tipo": "documental",
+        "evidencia_textual": "*Adjunto liquidación emitida por E A. y R S.S cuit 30-9 - A00002-00000059, A00002-00000060, A00002-00000061",
+        "relevancia_juridica": "alta",
+        "requiere_acreditacion": true,
+        "observaciones": "Las liquidaciones son pruebas documentales para sustentar la alegación de que las ventas corresponden a un tercero."
+      },
+      {
+        "descripcion": "Facturas emitidas por PROVEEDOR X1 a CONTRIBUYENTE CASO 1 correspondientes a ventas por cuenta y orden de carnicería y verdulería en los períodos 09/2023, 10/2023 y 11/2023 con montos detallados.",
+        "tipo": "documental",
+        "evidencia_textual": "FACTURA Punto de Venta: 00002 Comp. Nro: 00000059 Fecha de Emisión: 30/09/2023 ... FACTURA Punto de Venta: 00002 Comp. Nro: 00000060 Fecha de Emisión: 31/10/2023 ... FACTURA Punto de Venta: 00002 Comp. Nro: 00000061 Fecha de Emisión: 30/11/2023 ... Venta por cuenta y orden Carnicería y verdulería",
+        "relevancia_juridica": "alta",
+        "requiere_acreditacion": true,
+        "observaciones": "Las facturas son documentos esenciales para acreditar las operaciones y montos facturados."
+      },
+      {
+        "descripcion": "Los importes netos gravados, IVA y totales de las facturas emitidas en los períodos mencionados son detallados con cifras específicas.",
+        "tipo": "contable",
+        "evidencia_textual": "Importe Neto Gravado: $17891488,84, IVA 21%: $620098,02, IVA 10.5%: $1568557,32, Importe Total: $20080144,18 (09/2023); Importe Neto Gravado: $17755739,44, IVA 21%: $622833,59, IVA 10.5%: $1552935,85, Importe Total: $19931508,88 (10/2023); Importe Neto Gravado: $21648701,69, IVA 21%: $750318,68, IVA 10.5%: $1897954,34, Importe Total: $24296974,71 (11/2023).",
+        "relevancia_juridica": "alta",
+        "requiere_acreditacion": true,
+        "observaciones": "Las cifras son relevantes para la determinación de la base imponible y el cálculo del tributo."
+      },
+      {
+        "descripcion": "El contribuyente reafirma las presentaciones originales para los períodos 09/2023 a 11/2023 y explica el cálculo aplicado para determinar la base imponible.",
+        "tipo": "procedimental",
+        "evidencia_textual": "Me dirijo a ud, para reafirmar las presentaciones originales Periodos: 2023/09 A 2023/11. Procedo a explicar el cálculo aplicado para determinar la base imponible de los mencionados periodos.",
+        "relevancia_juridica": "alta",
+        "requiere_acreditacion": false,
+        "observaciones": "Es relevante para el procedimiento administrativo y la defensa del contribuyente."
+      }
+    ],
+    "coherencia_interna": "alta",
+    "suficiencia_probatoria": "parcial",
+    "hechos_contradictorios": []
+  },
+  "jurisprudencia": {
+    "jurisprudencia": [
+      {
+        "tipo": "Ajuste Fiscal",
+        "agravio": "Otras operaciones no gravadas o exentas en el ISIB, según el C.T.P.;",
+        "respuesta": "En relación a la existencia de operaciones no gravadas o exentas, cabe destacar que, se constató a partir de la información suministrada por la A.F.I.P., de acuerdo al Convenio de intercambio de información celebrado entre el Gobierno de la Provincia de Córdoba y dicho organismo, que las ventas declaradas en el Impuesto al Valor Agregado resultaban superiores a las declaradas en el Impuesto sobre los Ingresos Brutos, procediéndose ante tal circunstancia a considerar dicha diferencia como ingreso",
+        "relevancia": 19.349861,
+        "query_origen": "Ajuste fiscal Operaciones no gravadas o exentas"
+      },
+      {
+        "tipo": "Ajuste Fiscal",
+        "agravio": "Bonificaciones, descuentos y notas de debito/créditos;",
+        "respuesta": "Que en relación a la impugnación sobre la existencia de bonificaciones, descuentos y notas de débito/crédito que resultarían conceptos deducibles de la base imponible, el Código Tributario regula específicamente lo siguiente en su artículo 240 inciso e): “Se deducirá de los ingresos brutos imponibles: … e) Los descuentos o bonificaciones acordados a los compradores de mercaderías o a los usuarios de los servicios...”.\n\nPor su parte el artículo 159 del Decreto Reglamentario N° 270/2023 reza: “La ",
+        "relevancia": 7.6703796,
+        "query_origen": "Ajuste fiscal Operaciones no gravadas o exentas"
+      },
+      {
+        "tipo": "Ajuste Fiscal",
+        "agravio": "Ventas de bienes de uso;",
+        "respuesta": "Respecto a la impugnación sobre la existencia de venta de bienes de uso, cabe recordar que el art. 202 establece que estará alcanzado con el impuesto sobre los Ingresos Brutos el ejercicio habitual y a título oneroso –lucrativas o no -  de la actividad comercial, industrial, profesión, oficio, negocio, locaciones de bienes, obras o servicios, entendiendo como ejercicio habitual de la actividad gravada los, actos u operaciones, con prescindencia de su cantidad o monto, cuando los mismos sean efec",
+        "relevancia": 6.800457,
+        "query_origen": "Ajuste fiscal Operaciones no gravadas o exentas"
+      },
+      {
+        "tipo": "¿Aporta/Ofrece prueba?",
+        "agravio": "Prueba documental ;",
+        "respuesta": "En relación a la prueba documental aportada, cabe tener presente que la misma ha sido valorada por este fisco, pero no hace variar el criterio fijado conforme las consideraciones efectuadas en el presente acto, en virtud de que, el ajuste practicado se encuentra en todo arreglo con la normativa aplicable. \n \nQue en tales circunstancias, no habiendo el contribuyente aportado documental suficiente que desvirtué el criterio fiscal atacado, resulta pertinente poner de realce que a la parte le incumb",
+        "relevancia": 13.735718,
+        "query_origen": "Prueba aportada Documental"
+      },
+      {
+        "tipo": "¿Aporta/Ofrece prueba?",
+        "agravio": "Prueba informativa;",
+        "respuesta": "Respecto de la prueba informativa, cabe tener presente que no compete a este fisco provincial suplir la prueba no aportada por el administrado. Asimismo, la prueba informativa ofrecida está constituida por hechos que se encuentran debidamente probados en estas actuaciones, debiendo resaltar que lo que pretenden informar resulta irrelevante y en nada es susceptible de modificar el ajuste fiscal llevado a cabo. \n\nEn este aspecto debemos señalar lo expresado por el Tribunal Fiscal de Apelación de B",
+        "relevancia": 7.9240913,
+        "query_origen": "Prueba aportada Documental"
+      },
+      {
+        "tipo": "¿Aporta/Ofrece prueba?",
+        "agravio": "Prueba pericial cumplimentando los requisitos del art. 229 de la R.N. 01/2021 y modif.;",
+        "respuesta": "Que respecto de la prueba pericial ofrecida cabe destacar que su procedimiento se encuentra establecido en la Resolución Normativa N° 1/2021 y modif. y en este sentido el artículo 229 indica, entre otros que “…deberá estar acompañado por el pliego de preguntas a evacuar y, en caso que las mismas versen sobre documentación que no consta en las actuaciones, deberá acompañarlas en dicho momento en formato digital, cumpliendo la normativa respectiva para las presentaciones digitales según lo previst",
+        "relevancia": 4.55076,
+        "query_origen": "Prueba aportada Documental"
+      }
+    ],
+    "total_encontrados": 6,
+    "queries_utilizadas": [
+      "Ajuste fiscal Operaciones no gravadas o exentas",
+      "Prueba aportada Documental"
+    ]
+  },
+  "validacion": {
+    "cumplimiento_general": "parcial",
+    "detalles_por_requisito": [
+      {
+        "requisito": "Alegar defensa y ofrecer pruebas dentro del plazo de 15 días",
+        "cumplimiento": "cumple",
+        "fundamentacion": "El contribuyente presentó descargo dentro del plazo establecido, aportando alegatos y pruebas documentales que sustentan su defensa, conforme al artículo 97 del Código Tributario Provincial y normativa aplicable.",
+        "hechos_aplicables": [
+          "El contribuyente reafirma las presentaciones originales para los períodos 09/2023 a 11/2023 y explica el cálculo aplicado para determinar la base imponible.",
+          "Adjunto contrato de Comodato, certificado ante Juez de Paz de Adelia María fecha 01 de noviembre del 2016.",
+          "Adjunto liquidación emitida por E A. y R S.S cuit 30-9 - A00002-00000059, A00002-00000060, A00002-00000061."
+        ],
+        "jurisprudencia_aplicable": [
+          "En relación a la prueba documental aportada, cabe tener presente que la misma ha sido valorada por este fisco, pero no hace variar el criterio fijado conforme las consideraciones efectuadas en el presente acto, en virtud de que, el ajuste practicado se encuentra en todo arreglo con la normativa aplicable."
+        ],
+        "normativa_relevante": [
+          "Artículo 97 del Código Tributario Provincial (Ley 6006)",
+          "Artículo 88 del Decreto Reglamentario Nº 2445/2023"
+        ]
+      },
+      {
+        "requisito": "Presentar escritos y pruebas en formato digital a través del Domicilio Fiscal Electrónico",
+        "cumplimiento": "cumple",
+        "fundamentacion": "No se observa incumplimiento en la presentación digital de escritos y pruebas, conforme lo establecido en el artículo 46 del Código Tributario Provincial y el Decreto Reglamentario Nº 2445/2023. La documentación aportada está certificada y presentada en formato digital.",
+        "hechos_aplicables": [
+          "Adjunto contrato de Comodato, certificado ante Juez de Paz de Adelia María fecha 01 de noviembre del 2016.",
+          "Adjunto liquidación emitida por E A. y R S.S cuit 30-9 - A00002-00000059, A00002-00000060, A00002-00000061."
+        ],
+        "jurisprudencia_aplicable": [
+          "Los contribuyentes y/o responsables, independientemente de su domicilio, que en virtud de la notificación de la vista y/o instrucción de sumario presenten escritos y/o pruebas, deberán hacerlo mediante la modalidad de tramitación a distancia que la Dirección pondrá a disposición a través del sitio seguro, ingresando con clave (fiscal/cidi)."
+        ],
+        "normativa_relevante": [
+          "Artículo 46 del Código Tributario Provincial (Ley 6006)",
+          "Artículo 88 del Decreto Reglamentario Nº 2445/2023"
+        ]
+      },
+      {
+        "requisito": "Si actúa representante legal o apoderado, acreditar personería conforme artículos 15 y/o 22 de la Ley Nº 6.658 y modificatorias",
+        "cumplimiento": "parcial",
+        "fundamentacion": "No se observa en los hechos ni en la documentación aportada una acreditación explícita de personería conforme a los artículos 15 y/o 22 de la Ley Nº 6.658. Se recomienda verificar si el contribuyente actuó personalmente o a través de representante legal y si en este último caso se acreditó debidamente la personería.",
+        "hechos_aplicables": [
+          "No se menciona acreditación de personería en la documentación aportada."
+        ],
+        "jurisprudencia_aplicable": [
+          "La representación debe acreditarse conforme lo dispuesto en los artículos 15 y/o 22 de la Ley de Procedimiento Administrativo de la Provincia de Córdoba - Ley Nº 6.658 y modificatorias."
+        ],
+        "normativa_relevante": [
+          "Artículos 15 y 22 de la Ley Nº 6.658"
+        ]
+      }
+    ],
+    "recomendacion_resolucion": "determinativa_mixta",
+    "fundamentos_juridicos": [
+      "El contribuyente aportó documentación certificada que respalda la existencia del contrato de comodato y la modalidad de ventas por cuenta y orden, lo que sustenta la exclusión de las ventas de verdulería y carnicería de la base imponible del impuesto sobre los ingresos brutos.",
+      "La fiscalización consideró erróneamente estas ventas como propias del contribuyente, generando un ajuste fiscal que debe ser revisado.",
+      "La exclusión de estas operaciones depende de la correcta interpretación del contrato y la realidad económica, por lo que se recomienda una revisión detallada y, en caso de persistir la controversia, la realización de una pericia económica o técnica.",
+      "El contribuyente cumplió con los plazos y formas de presentación de descargo y pruebas, pero no se acreditó plenamente la personería en caso de actuación por representante legal o apoderado."
+    ]
+  },
+  "resolucion": "DIRECCIÓN GENERAL DE RENTAS  \nGOBIERNO DE LA PROVINCIA DE CÓRDOBA  \nRESOLUCIÓN DETERMINATIVA N° XXX/2025  \n\nVISTOS:  \nEl expediente administrativo caratulado a nombre de CONTRIBUYENTE CASO1, CUIT 11-11111111-1, relativo a la fiscalización del Impuesto Sobre los Ingresos Brutos correspondiente a los períodos fiscales 09/2023, 10/2023 y 11/2023; la corrida de vista practicada conforme a lo establecido en la normativa vigente; y el descargo presentado por el contribuyente dentro del plazo legal, mediante el cual se aportaron alegatos y documentación probatoria en formato digital a través del Domicilio Fiscal Electrónico, conforme lo previsto en el artículo 46 del Código Tributario Provincial (Ley Nº 6006) y Decreto Reglamentario Nº 2445/2023.\n\nRESULTANDO:  \n1. Que mediante actuaciones de fiscalización se detectaron diferencias significativas entre las bases imponibles declaradas en el Impuesto al Valor Agregado (IVA) y las consignadas en el Impuesto Sobre los Ingresos Brutos para los períodos 09/2023 a 11/2023, lo que motivó la apertura del presente procedimiento administrativo.  \n2. Que se constató la no declaración ni ingreso del tributo en su justa medida, configurándose una presunta infracción tipificada como defraudación en el artículo 87 inciso 1) del Código Tributario Provincial (Ley Nº 6006), con referencia al artículo 94 incisos 2) y 6) del mismo cuerpo normativo.  \n3. Que en consecuencia, se notificó al contribuyente la vista de la actuación, otorgándole un plazo de quince (15) días para que alegue defensa y ofrezca pruebas, conforme lo dispuesto en el artículo 97 del Código Tributario Provincial y demás normativa aplicable.  \n4. Que el contribuyente presentó descargo dentro del plazo legal, acompañando documentación certificada consistente en: contrato de comodato certificado ante Juez de Paz de Adelia María con fecha 01 de noviembre de 2016; liquidaciones emitidas por E A. y R S.S. (CUIT 30-9) identificadas con los números A00002-00000059, A00002-00000060 y A00002-00000061; y explicaciones respecto al cálculo aplicado para determinar la base imponible.  \n5. Que se verificó que las presentaciones y pruebas fueron efectuadas en formato digital a través del Domicilio Fiscal Electrónico, conforme a lo establecido en el artículo 46 del Código Tributario Provincial y Decreto Reglamentario Nº 2445/2023.  \n6. Que no se acreditó expresamente la personería del representante legal o apoderado en caso de actuación por terceros, conforme a lo exigido por los artículos 15 y 22 de la Ley de Procedimiento Administrativo de la Provincia de Córdoba (Ley Nº 6.658 y modificatorias).  \n7. Que el informe adjunto a la corrida de vista y el Anexo I – Planilla de Determinación de Diferencias, forman parte integrante del presente expediente y fundamentan el ajuste fiscal practicado.  \n\nCONSIDERANDO:  \nI. Competencia y normativa aplicable  \nQue la Dirección General de Rentas, en ejercicio de sus facultades conferidas por la Ley Nº 9187 y modificatorias, la Ley Nº 6006 T.O. 2023 y modificatorias, y el Decreto Reglamentario Nº 2445/2023, tiene competencia para determinar la obligación tributaria y aplicar las sanciones correspondientes en materia del Impuesto Sobre los Ingresos Brutos.  \nQue la presente actuación se sustenta en la aplicación de los artículos 4 incisos 6) y 8) de la Ley Nº 9187 y modificatorias, el artículo 13 del Decreto Reglamentario Nº 2445/2023, y los artículos 23, 46, 66, 68, 87, 94, 97, 98 y 127 del Código Tributario Provincial (Ley Nº 6006).  \nQue asimismo, se ha tenido en cuenta la Resolución Nº 03/2024 de la Dirección de Inteligencia Fiscal y la Ley Impositiva Nº 10929 para el año 2024, en lo que respecta a la aplicación de alícuotas.  \n\nII. Sobre la infracción y ajuste fiscal  \nQue la fiscalización detectó diferencias entre las bases imponibles declaradas en el IVA y las consignadas en el Impuesto Sobre los Ingresos Brutos, configurando una defraudación conforme al artículo 87 inciso 1) del Código Tributario Provincial, con referencia al artículo 94 incisos 2) y 6), al no haberse declarado ni ingresado el tributo en su justa medida.  \nQue el ajuste fiscal practicado se fundamenta en la interpretación de la documentación y la realidad económica, considerando erróneamente como propias del contribuyente las ventas de verdulería y carnicería, cuando el contribuyente sostiene que dichas operaciones corresponden a terceros en virtud del contrato de comodato aportado.  \nQue la exclusión de estas operaciones de la base imponible depende de la correcta interpretación del contrato y la realidad económica, por lo que se recomienda una revisión detallada y, en caso de persistir la controversia, la realización de una pericia económica o técnica para dirimir la cuestión.  \n\nIII. Sobre el descargo y pruebas aportadas  \nQue el contribuyente cumplió con el plazo y forma para presentar descargo y pruebas, aportando documentación certificada y explicaciones que sustentan su defensa, conforme al artículo 97 del Código Tributario Provincial y el artículo 88 del Decreto Reglamentario Nº 2445/2023.  \nQue la documentación fue presentada en formato digital a través del Domicilio Fiscal Electrónico, conforme al artículo 46 del Código Tributario Provincial y normativa complementaria, sin observarse incumplimientos en este aspecto.  \nQue no obstante, no se acreditó plenamente la personería en caso de actuación por representante legal o apoderado, conforme a lo exigido por los artículos 15 y 22 de la Ley Nº 6.658 y modificatorias, lo que constituye una observación parcial que no afecta la validez del procedimiento, pero que debe ser subsanada en futuras actuaciones.  \n\nIV. Sobre la multa y recargos  \nQue conforme al artículo 87 inciso 1) y artículo 68 del Código Tributario Provincial, corresponde aplicar una multa estimativa por un monto de $649.117,41, considerando la reducción prevista en la normativa.  \nQue asimismo, se aplicarán los recargos resarcitorios conforme al artículo 127 del Código Tributario Provincial.  \n\nV. Sobre la notificación y plazos  \nQue la notificación de la vista y demás actos procesales se realizaron conforme al artículo 46 del Código Tributario Provincial, a través del Domicilio Fiscal Electrónico del contribuyente.  \nQue se otorgó el plazo legal de quince (15) días para la presentación de descargo y pruebas, conforme a los artículos 97 y concordantes del Código Tributario Provincial y la Ley de Procedimiento Administrativo de la Provincia de Córdoba (Ley Nº 6.658).  \n\nPor todo lo expuesto, y en uso de las facultades conferidas por la normativa vigente, esta Dirección General de Rentas  \n\nRESUELVE:  \n\nARTÍCULO 1°: Determinar que el contribuyente CONTRIBUYENTE CASO1, CUIT 11-11111111-1, ha incurrido en diferencias entre las bases imponibles declaradas en el Impuesto al Valor Agregado y el Impuesto Sobre los Ingresos Brutos correspondientes a los períodos fiscales 09/2023, 10/2023 y 11/2023, configurándose una infracción por defraudación conforme al artículo 87 inciso 1) y artículo 94 incisos 2) y 6) del Código Tributario Provincial (Ley Nº 6006).  \n\nARTÍCULO 2°: Aplicar una multa estimativa por un importe de $649.117,41, conforme lo previsto en el artículo 87 y la reducción establecida en el artículo 68 del Código Tributario Provincial (Ley Nº 6006).  \n\nARTÍCULO 3°: Imponer los recargos resarcitorios correspondientes conforme al artículo 127 del Código Tributario Provincial (Ley Nº 6006).  \n\nARTÍCULO 4°: Reconocer parcialmente el descargo presentado por el contribuyente, valorando la documentación certificada aportada que respalda la existencia del contrato de comodato y la modalidad de ventas por cuenta y orden, lo que justifica la exclusión de ciertas operaciones de la base imponible, sin perjuicio de la necesidad de una revisión detallada y, en caso de controversia, la realización de una pericia económica o técnica.  \n\nARTÍCULO 5°: Requerir al contribuyente que, en caso de actuar a través de representante legal o apoderado, acredite debidamente la personería conforme a los artículos 15 y 22 de la Ley de Procedimiento Administrativo de la Provincia de Córdoba (Ley Nº 6.658 y modificatorias) en futuras actuaciones.  \n\nARTÍCULO 6°: Notificar la presente resolución a través del Domicilio Fiscal Electrónico, conforme al artículo 46 del Código Tributario Provincial (Ley Nº 6006).  \n\nARTÍCULO 7°: Registrar, comunicar y archivar.  \n\nCumplido, firmen los funcionarios intervinientes.  \n\nCiudad de Córdoba, a los ___ días del mes de _______ de 2025.  \n\n______________________________  \nDirector General de Rentas  \n\n______________________________  \nSubdirector General de Rentas  \n\n______________________________  \nJefe de Fiscalización  \n\n[ Sello Oficial ]",
+  "timestamp": "2025-07-09T16:42:24.477028",
+  "estado": "completado"
+}

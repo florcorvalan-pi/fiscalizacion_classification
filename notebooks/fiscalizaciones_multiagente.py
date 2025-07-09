@@ -946,4 +946,8 @@ if __name__ == "__main__":
     
     print(resp["graph_summarize_pqrs"]) 
     print(json.dumps(resp["graph_resultado_sistema_automizacion"], indent=2, ensure_ascii=False))
-    #cd /Users/rayespinoza/AI_Projects/fiscalizacion_classification python notebooks/ejecutable.py  
+    with open("output_resultado_llm.json", "w", encoding="utf-8") as f:
+        json.dump(resp["graph_resultado_sistema_automizacion"], f, ensure_ascii=False, indent=2)
+
+    #cd /Users/rayespinoza/AI_Projects/fiscalizacion_classification
+    #python notebooks/fiscalizaciones_multiagente.py
