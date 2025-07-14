@@ -21,33 +21,305 @@ JURISPRUDENCIA RELEVANTE:
 NORMATIVA_RELEVANTE_RECUPERADA:
 {normativa_relevante_pqrs}
 
-ANÁLISIS REQUERIDO:
-1. Evaluar cada requisito de la corrida de vista
-2. Confrontar con hechos y pruebas aportadas
-3. Aplicar jurisprudencia relevante
-4. Determinar cumplimiento normativo
-5. Fundamentar la decisión
+        
+"PRIORIDAD DE ENCUADRE NORMATIVO PARA OPERACIONES DE INTERMEDIACIÓN O RECUPERO DE GASTOS:
+▪
+1. SIEMPRE que el contribuyente alegue la venta de bienes o la prestación de servicios por cuenta y orden de un tercero Y sea el contribuyente quien emite la factura o comprobante de venta final al cliente (es decir, actúa como cobrador o intermediario que luego rinde cuentas al tercero por el monto total de la venta del bien/servicio en sí), la operación DEBE ser evaluada primariamente y con la máxima rigurosidad bajo la figura de 'Recupero de Gastos' del Art. 304 de la RN 1/2023. Para justificar la exclusión de dichos ingresos en este escenario, el contribuyente DEBE CUMPLIR CONCURRENTEMENTE TODOS y cada uno de los requisitos (a), (b), (c) y (d) del Art. 304. Si alguno de estos requisitos no se cumple, el cumplimiento para este requisito específico DEBE ser NO_JUSTIFICA, y el cumplimiento_general DEBE ser no_cumple.
+▪
+2. El Artículo 240 inciso l) del CTP ('Operaciones no gravadas o exentas') se aplicará a operaciones por cuenta y orden SÓLO Y EXCLUSIVAMENTE SI la naturaleza del ingreso del contribuyente es puramente una comisión, una regalía o una transferencia de fondos que CLARAMENTE NO representa un recupero de un gasto o costo de un bien/servicio que el contribuyente haya vendido y facturado directamente al cliente final. En estos casos, NO se aplicarán los requisitos del Art. 304."
+        
+        OBJETIVO DEL ANÁLISIS
+Evaluar cada requisito de la corrida de vista confrontando con hechos y pruebas aportadas, aplicar jurisprudencia relevante, determinar cumplimiento normativo y fundamentar la decisión.
+REGLA CRÍTICA (PRIORIDAD MÁXIMA):
+Si falta cualquier requisito sustantivo (por ejemplo, falta de factura "por cuenta y orden", falta de CUIT del tercero, falta de circuito documental, etc.), el cumplimiento de ese requisito debe ser "NO_JUSTIFICA" y el "cumplimiento_general" debe ser "no_cumple", y la "recomendacion_resolucion" debe ser "determinativa_desfavorable", aunque existan otros elementos parciales o cumplidos.
+NO SE ADMITE "PARCIAL" EN ESTOS CASOS.
+EJEMPLOS:
+Si el contribuyente presenta contrato pero NO factura "por cuenta y orden" → "NO_JUSTIFICA"
+Si hay liquidaciones pero NO se identifica al tercero con CUIT → "NO_JUSTIFICA"
+Si falta cualquier documento esencial exigido por la norma → "NO_JUSTIFICA"
 
-CRITERIOS DE EVALUACIÓN:
-- CUMPLE: Requisito satisfecho completamente con prueba suficiente
-- PARCIAL: Cumplimiento incompleto o prueba insuficiente
-- NO CUMPLE: Sin cumplimiento o prueba contradictoria
+INSTRUCCIÓN CLARA:
+Si el contribuyente justifica plenamente una parte del ajuste (por ejemplo, servicios al exterior) pero no otra (por ejemplo, recupero de gastos), el cumplimiento general debe ser 'parcial' o 'parcialmente justificado'. Explica claramente qué parte se justifica y cuál no, y fundamenta la recomendación de resolución parcial.
+
+EJEMPLO:
+Si el contribuyente aporta facturas que demuestran la exportación de servicios (art. 239 inc. g CTP), pero no cumple con los requisitos para justificar el recupero de gastos (art. 304 RN 1-2023), la validación debe ser 'parcial', justificando solo la parte de servicios al exterior.
+
+INSTRUCCIÓN ESPECÍFICA PARA SERVICIOS AL EXTERIOR:
+Si el contribuyente no aporta normativa provincial, doctrina local o jurisprudencia específica sobre exención o no gravabilidad de servicios prestados al exterior, la justificación debe ser 'parcial'.
+En la recomendación, indica exactamente qué falta para justificar plenamente: por ejemplo, "Aporte dictamen técnico sobre territorialidad del hecho imponible", "Cite jurisprudencia local relevante", o "Fundamente con doctrina provincial específica".
+
+PASO 1: IDENTIFICAR EL FUNDAMENTO PRINCIPAL DEL DESCARGO
+Antes de evaluar, determinar cuál es el argumento central:
+
+¿Presenta nota de crédito que anula factura?
+¿Alega reintegros de gastos?
+¿Invoca exención o no sujeción?
+¿Cuestiona aspectos procedimentales?
+
+REGLA CRÍTICA DE ALCANCE DEL ANÁLISIS: El análisis detallado para la generación de la lista evaluacion_por_requisito debe centrarse EXCLUSIVAMENTE en los puntos de controversia (agravios) explícitamente planteados por el contribuyente en su descargo (reflejados en el JSON IMPUGNACIONES CLASIFICADAS).
+Excepción: Los requisitos sustantivos directamente relacionados con la diferencia fiscal detectada (ej., Reintegro de Gastos, Ventas de bienes de uso, Servicios al exterior, Actividad primaria exenta, Notas de Crédito, Reconocimiento del Ajuste, Falta de prueba) SIEMPRE DEBEN SER EVALUADOS en detalle, incluso si el contribuyente no los mencionó explícitamente como un clasificacion.subtipo específico, ya que son el fundamento del ajuste fiscal.
+Importante: NO se deben incluir en evaluacion_por_requisito análisis detallados de requisitos procedimentales o principios constitucionales (ej., "Notificación DFE", "Debido proceso", "Legalidad", "Igualdad", "Propiedad", "Inconstitucionalidad de normas del C.T.P.") SI EL CONTRIBUYENTE NO LOS INVOCÓ EXPRESAMENTE COMO UN AGRAVIO (es decir, si no aparecen con tipo: 'Procedimiento de DO' o tipo: 'Afectación a principios constitucionales' en el JSON IMPUGNACIONES CLASIFICADAS con una solidez_juridica alta o media que implique una impugnación activa). Si un requisito general de la corrida_de_vista no fue impugnado por el contribuyente, simplemente asume su cumplimiento general y NO se requiere un análisis extenso ni la creación de una entrada específica para ese punto en evaluacion_por_requisito."
+
+CRITERIOS DE EVALUACIÓN GENERAL
+Escalas de Evaluación:
+
+JUSTIFICA: Requisito satisfecho completamente con evidencia documental idónea, completa y suficiente aportada por el contribuyente.
+PARCIAL: Cumplimiento incompleto o prueba documental insuficiente, incompleta o parcialmente idónea aportada por el contribuyente
+NO JUSTIFICA: Sin cumplimiento o prueba documental contradictoria, inexistente o no aportada.
+
+JERARQUÍA DE REQUISITOS
+1. REQUISITOS SUSTANTIVOS (Decisivos para la justificación)
+A) Reintegro de Gastos (Art. 304 RN 1/2023)
+✅ JUSTIFICA si cumple TODOS los requisitos sustantivos:
+
+No desarrolla la actividad que originó el gasto (a)
+Identifica tercero con CUIT y razón social (b)
+Importe exacto y correctamente discriminado (c)
+Circuito documental y contable completo (d)
+
+❌ NO JUSTIFICA si falla ALGUNO sustancial:
+
+Falta CUIT del tercero
+Importe inexacto o sin discriminar
+Circuito documental incompleto
+
+B) Otros Fundamentos Sustantivos
+Evaluar con la misma lógica estricta (bienes de uso, exportación, etc.)
+
+2. REQUISITOS PROCEDIMENTALES (No invalidan el fondo)
+
+Plazos, formato DFE, personería
+Estos requisitos (Plazos, formato DFE, personería) solo deben ser evaluados en detalle si el
+contribuyente los impugnó explícitamente en su descargo (ver IMPUGNACIONES CLASIFICADAS).
+Si no fueron impugnados, se asume su cumplimiento general y NO se requiere un análisis extenso
+en evaluacion_por_requisito. Si fueron impugnados, su análisis no invalida el fondo sustantivo
+del ajuste si este último está bien fundamentado.
+
+
+MODALIDADES DE EVALUACIÓN PARA REINTEGROS
+MODALIDAD A: Documentación Individual
+✅ Documentación suficiente:
+
+Factura del contribuyente con "por cuenta y orden" + CUIT del tercero
+Factura del tercero al contribuyente
+Concordancia exacta de importes
+
+MODALIDAD B: Contrato Sustitutivo (Igualmente válida)
+✅ Documentación suficiente:
+
+Contrato auténtico que establece:
+
+Rol de intermediario/comisionista del contribuyente
+Identificación del tercero con CUIT
+Mecánica de comisiones/reintegros
+
+
+Facturación consistente con términos contractuales
+Documentación del tercero que corrobora la relación
+
+**REGLA CLARA PARA EL MODELO:**
+Si el contribuyente exhibe un contrato auténtico que establece el carácter de intermediario/comisionista, la comisión, y la documentación/facturación es consistente con ese contrato, y el servicio es de titularidad del tercero, SE DEBE CONSIDERAR JUSTIFICADO el reintegro de gastos, aunque la factura NO diga literalmente "por cuenta y orden".
+En estos casos, el cumplimiento del requisito debe ser "JUSTIFICA" y el cumplimiento_general debe ser "cumple".
+
+**REGLA CRÍTICA PARA MODALIDAD B (CONTRATO DE INTERMEDIACIÓN):**
+Si el contribuyente exhibe un contrato auténtico que establece:
+- El carácter de intermediario/comisionista del contribuyente
+- La comisión que se abonará
+- La identificación del tercero con CUIT
+- Que el servicio es de titularidad del tercero (no del contribuyente)
+
+Y la facturación es consistente con ese contrato, entonces:
+- La suficiencia probatoria debe ser "suficiente"
+- El cumplimiento debe ser "JUSTIFICA"
+- NO se exige la fórmula "por cuenta y orden" en cada factura
+
+**EJEMPLO POSITIVO:**
+- Contrato de intermediación + facturación consistente + comisión establecida + servicio titularidad del tercero = "suficiente"
+
+**EJEMPLO POSITIVO:**
+- Contrato de intermediación + facturación consistente + comisión establecida + servicio titularidad del tercero = "JUSTIFICA"
+Evaluación por Requisito Específico:
+a) No desarrollo de actividad:
+
+✅ CUMPLE si contrato + facturación muestran solo comisiones
+✅ CUMPLE si documentación acredita rol de intermediario
+
+b) Identificación del tercero:
+
+✅ CUMPLE si CUIT aparece en contrato (aunque no en cada factura)
+✅ CUMPLE si tercero identificable en documentación integral
+
+c) Importe exacto:
+
+✅ CUMPLE si facturación muestra concordancia general
+✅ CUMPLE si contrato establece criterios de cálculo verificables
+ATENCIÓN: La justificación sobre la concordancia general o importe exacto (Art. 304, inc. c) debe ser rigurosa y precisa, indicando si la evidencia documental demuestra una coincidencia literal y total de los importes o si existen discrepancias, tal como se refleja en los comprobantes aportados. La expresión utilizada debe reflejar exactamente el nivel de concordancia de los importes documentados.
+
+d) Circuito documental:
+
+✅ CUMPLE si existe secuencia completa (contrato + facturas)
+✅ CUMPLE si documentación permite verificar la intermediación
+
+e) Ingresos no computables (Art. 240 inc. l) CTP):
+✅ **JUSTIFICA** si, conforme al análisis de `hechos.suficiencia_probatoria`, se demuestra que el ingreso observado cumple con los criterios de no sujeción o exención. Para operaciones "por cuenta y orden" u otras formas de intermediación (distintas al "reintegro de gastos" del Art. 304 RN 1/2023), esto implica verificar que:
+    - Las facturas emitidas por el contribuyente identifican claramente al tercero (nombre y CUIT).
+    - Existe una referencia explícita a la intermediación ("por cuenta y orden", "agente", etc.) o a la naturaleza no gravada/exenta del ingreso.
+    - La operación no generó un margen de ganancia propio para el contribuyente más allá de una posible comisión (si aplica a intermediación).
+    - La documentación aportada (ej. contratos, liquidaciones del tercero, etc.) es coherente con la alegación de intermediación o no sujeción.
+🔴 **REGLA CRÍTICA:** En casos evaluados bajo Art. 240 inc. l) como "operaciones por cuenta y orden", **NO se deben exigir** el "circuito documental completo" del Art. 304 RN 1/2023, ni "factura recibida del tercero al contribuyente", ni la "coincidencia exacta y total de importes" entre la facturación del contribuyente y la liquidación del tercero, si la naturaleza del ingreso corresponde a mera intermediación sin un margen de ganancia propio del contribuyente sobre la venta total. La evaluación de la suficiencia probatoria (`hechos.suficiencia_probatoria`) determinada en el paso anterior debe ser la base para esta conclusión.
+❌ **NO JUSTIFICA** si, a pesar de las alegaciones, no se acredita fehacientemente la naturaleza no gravada/exenta del ingreso o la prueba documental es insuficiente según los criterios establecidos para este artículo (ej. no se identifica al tercero, no hay indicio de intermediación, el contribuyente sí ejerce la actividad principal sobre esos ingresos).
+
+CRITERIOS ESPECÍFICOS POR TIPO DE OPERACIÓN
+ 1. NOTAS DE CRÉDITO
+ ✅ JUSTIFICA si:
+     - Presenta nota de crédito válida
+     - La nota anula total o parcialmente la factura observada
+     - Existe correlación documental comprobada
+     - Registro contable correcto
+     **Instrucción para Fundamentación:** Al redactar la `fundamentacion`, si la Nota de Crédito se utiliza para ANULAR una factura (total o parcialmente), enfatiza que esta acción ajusta la base imponible del Impuesto sobre los Ingresos Brutos conforme al principio de ingresos devengados (Artículo 210 del C.T.P. [13-15]), ya que la operación original se revierte. Si la jurisprudencia recuperada menciona el Artículo 240 inciso e) del C.T.P. (que trata sobre descuentos o bonificaciones [16]), aclara que, aunque el caso sea de anulación y no por un descuento, el principio subyacente es la reducción de la base imponible por la no concreción o reversión de la operación, lo cual es análogo a la deducción de ciertos conceptos [1, 2]. Es crucial que la fundamentación refleje esta distinción y explique cómo la anulación reduce efectivamente la base imponible, independientemente de la categorización amplia de la jurisprudencia.
+ ❌ NO JUSTIFICA si:
+     - Nota de crédito inexistente o inválida
+     - Sin correlación con factura observada
+     - Documentación insuficiente
+
+2. BIENES DE USO (Art. 152 Dto. 2445/2023)
+ ATENCIÓN: 
+Para el caso de ventas de bienes de uso, si el bien fue recibido en especie y vendido sin afectación real a la actividad, el cumplimiento debe ser "NO_JUSTIFICA" y el cumplimiento_general "no_cumple", sin excepción, aunque existan contratos, registros o liquidaciones.
+-✅ JUSTIFICA SOLO SI:
+-- El bien fue afectado efectiva y previamente al desarrollo de la actividad económica
+-- Fue usado durante un tiempo razonable como parte del giro habitual
+-- No fue recibido en especie como forma de pago
+-- La posterior venta representa una baja patrimonial genuina
+-...
+-
+-❌ NO JUSTIFICA si:
+-- Se recibe como pago (permuta, cesión de crédito, etc.)
+-- Se vende en el corto plazo sin haber sido utilizado
+-- No se demuestra afectación concreta a procesos productivos
++**Criterios de Cumplimiento para "Ventas de bienes de uso":**
++
++*   **✅ JUSTIFICA:** Únicamente si **TODAS** las siguientes condiciones se cumplen:
++    *   El bien fue afectado efectiva y previamente al desarrollo de la actividad económica del contribuyente.
++    *   Fue utilizado durante un tiempo razonable como parte del giro habitual del negocio.
++    *   **NO** fue recibido en especie como forma de pago por otra operación gravada.
++    *   La posterior venta representa una baja patrimonial genuina del activo y no una nueva operación de venta.
++
+*   **❌ NO_JUSTIFICA:** Si **CUALQUIERA** de las siguientes condiciones se cumple:
+    *   El bien fue recibido como parte de pago (permuta, cesión de crédito, etc.) por otra operación.
+    *   Se vende en el corto plazo sin haber sido utilizado de manera efectiva y prolongada en la actividad principal.
+    *   No se demuestra afectación concreta a los procesos productivos o al giro habitual del ente.
+    *   **Prioridad:** Si se cumplen las condiciones de `NO_JUSTIFICA`, este valor **DEBE** ser asignado para el `cumplimiento` de este requisito, sin importar otras condiciones.
+
+⚠️ REGLA CRÍTICA:
+Si se recibe un inmueble como pago por materiales o servicios y luego se vende sin afectación real, se considera venta gravada, no baja patrimonial.
+🚫 NO es bien de uso si:
+
+Se recibe como pago (permuta, cesión de crédito, etc.)
+Se vende en el corto plazo sin haber sido utilizado
+No se demuestra afectación concreta a procesos productivos
+
+3. SERVICIOS PRESTADOS AL EXTERIOR (Art. 239 inc. g del CTP)
+✅ JUSTIFICA si se demuestra que los ingresos provienen de exportación de servicios, con:
+
+Factura emitida al exterior
+Prestación claramente fuera del país
+
+❌ NO JUSTIFICA si el destino del servicio no está probado documentalmente
+4. ACTIVIDAD PRIMARIA EXENTA (Art. 242 inc. 22 del CTP)
+✅ JUSTIFICA si se acredita mediante facturas y liquidaciones primarias que el ingreso corresponde a una actividad primaria
+5. RECONOCIMIENTO DEL AJUSTE
+✅ JUSTIFICA si el contribuyente acepta el ajuste y presenta DDJJ rectificativa como reconocimiento de la deuda
+6. FALTA DE PRUEBA O PRUEBA INSUFICIENTE
+❌ NO JUSTIFICA si:
+
+El contribuyente no aporta documentación
+Solo presenta declaraciones juradas propias sin respaldo externo
+El descargo es meramente argumentativo o extemporáneo
+
+REGLAS DE RESOLUCIÓN FINAL
+Criterio Principal:
+
+Si los REQUISITOS SUSTANTIVOS se cumplen TOTALMENTE → "cumple"
+Si los requisitos sustantivos son PARCIALES pero PROCEDIMENTALES son válidos → "parcial"
+Solo es "no_cumple" si:
+
+Falla algún requisito sustantivo CRÍTICO (ej: falta CUIT en reintegros)
+Hay falla procedimental GRAVE (ej: descargo extemporáneo)
+
+
+
+Excepción para Reintegros:
+Cuando se cumple el Art. 304 RN 1/2023 COMPLETO:
+
+El cumplimiento general debe ser "cumple"
+Los aspectos procedimentales menores se consideran en "observaciones"
+
+⚠️ EXCEPCIÓN CRÍTICA PARA BIENES DE USO:
+Si el bien fue recibido como parte de pago y no se acredita uso real en la actividad económica → El cumplimiento general debe ser "no_cumple", sin excepción.
+⚠️ ACLARACIÓN FINAL:
+Si cualquier requisito sustantivo califica como "NO_JUSTIFICA", el cumplimiento general debe ser "no_cumple" y la resolución "determinativa_desfavorable", incluso si otros requisitos están cumplidos.
+INTERPRETACIÓN JURÍDICA ADICIONAL
+Para Reintegros:
+El carácter de intermediario puede probarse mediante:
+
+Contrato auténtico que especifique la relación
+Registros contables consistentes
+Facturación que muestre solo comisiones
+Documentación del tercero que corrobore
+
+NO se exige fórmula sacramental "por cuenta y orden" SI:
+
+Existe contrato válido que establece la relación
+La facturación muestra solo comisiones
+Los documentos del tercero corroboran la relación
+
+⚠️ REGLA INFLEXIBLE DEL ART. 304:
+Si la factura EMITIDA POR EL CONTRIBUYENTE al cliente final no contiene la frase "por cuenta y orden" ni identifica con CUIT al tercero, entonces **NO SE CUMPLE** el requisito del inciso b).  
+Aunque exista contrato, liquidación o facturas del tercero, **la prueba es insuficiente** si ese dato no está en la factura emitida.  
+→ La suficiencia probatoria debe ser **"insuficiente"**.
+
+❌ NO debe aplicarse el principio de duda razonable si no hay identificación en la factura emitida.
+
+
+Casos Especiales:
+
+Criterio de devengamiento diferente: ❌ NO JUSTIFICA si se aplica sin respaldo normativo o documental suficiente
+Falta de factura del contribuyente: Si no se muestra el carácter de intermediario → NO JUSTIFICA (aunque exista contrato)
+
+IMPORTANTE: Si en los hechoes la "suficiencia_probatoria": "insuficiente", se debe considerar "no_cumple"
+**REGLA DE PRIORIDAD PARA CUMPLIMIENTO GENERAL:**
+Si el requisito sustantivo principal o el más relevante para el ajuste (ej. `Exclusión de ingresos por ventas realizadas por cuenta y orden de un tercero (Art. 240 inc. l) CTP)`) obtiene un `cumplimiento: "JUSTIFICA"` basado en la `suficiencia_probatoria: "suficiente"` de los hechos, entonces el `cumplimiento_general` DEBE ser "cumple", a menos que existan otros requisitos sustantivos **CRÍTICOS** que califiquen como "NO_JUSTIFICA" (no menores o procedimentales).
+REGLA CRÍTICA:  
+No se debe considerar "JUSTIFICA" ni "cumple" si el contribuyente solo presenta declaraciones juradas propias, sin documentación externa, comprobantes, contratos, recibos u otros elementos probatorios.  
+En estos casos, el cumplimiento del requisito debe ser "NO_JUSTIFICA" y el cumplimiento_general "no_cumple".  
+La recomendación de resolución debe ser "determinativa_desfavorable".  
+Ejemplo: Si solo hay DDJJ propias y no se aporta documentación adicional, la respuesta debe ser:  
+"cumplimiento": "NO_JUSTIFICA",  
+"cumplimiento_general": "no_cumple",  
+"recomendacion_resolucion": "determinativa_desfavorable".
+
+INSTRUCCIÓN ESPECÍFICA PARA BIENES DE USO:
+Si el contribuyente registra y vende el inmueble en el mismo momento, no acredita afectación previa ni uso prolongado en la actividad, y no cumple con las características intrínsecas de bien de uso (afectación, uso efectivo y prolongado), la exclusión de la base imponible NO SE JUSTIFICA, aunque aporte contratos, liquidaciones o cualquier otro documento. 
+La fundamentación debe citar el art. 152 del Decreto Reglamentario 2445/2023 y explicar que la operación constituye un nuevo hecho imponible gravado.
+Ejemplo: "No cumple requisitos de bien de uso conforme lo dispuesto por art. 152 del DR 2445/2023. El contribuyente registra y vende el inmueble en el mismo momento, no tiene intención de afectarlo a la actividad, nunca estuvo afectado a la actividad, por lo cual no cumple con las características de bien de uso."
+INSTRUCCIÓN ESPECÍFICA PARA BIENES DE USO:
+Si el inmueble fue recibido en especie y vendido sin evidencia de uso efectivo y prolongado en la actividad, la exclusión de la base imponible NO SE JUSTIFICA, aunque haya contratos, liquidaciones o facturas. Fundamenta con art. 152 DR 2445/2023.
 
 Formato de respuesta JSON:
-{{
-    "evaluacion_por_requisito": [
         {{
-            "requisito": "string",
-            "cumplimiento": "cumple|parcial|no_cumple",
-            "fundamentacion": "análisis detallado",
-            "hechos_aplicables": ["string"],
-            "jurisprudencia_aplicable": ["string"],
-            "normativa_relevante": ["string"]
+            "evaluacion_por_requisito": [
+                {{
+                    "requisito": "string",
+                    "cumplimiento": "JUSTIFICA|PARCIAL|NO_JUSTIFICA",
+                    "fundamentacion": "análisis detallado, **haciendo referencia explícita a la documentación aportada por el contribuyente (o su ausencia) y cómo esta soporta o no el argumento específico.**",
+                    "hechos_aplicables": ["string"],
+                    "jurisprudencia_aplicable": ["string"],
+                    "normativa_relevante": ["string"]
+                }}
+            ],
+            "cumplimiento_general": "cumple|parcial|no_cumple",
+            "recomendacion_resolucion": "determinativa_favorable|determinativa_desfavorable|determinativa_mixta",
+            "fundamentos_principales": ["string"],
+            "consideraciones_especiales": ["string"],
+            "propuesta_articulos_resolutivos": ["string"]
         }}
-    ],
-    "cumplimiento_general": "cumple|parcial|no_cumple",
-    "recomendacion_resolucion": "determinativa_favorable|determinativa_desfavorable|determinativa_mixta",
-    "fundamentos_principales": ["string"],
-    "consideraciones_especiales": ["string"],
-    "propuesta_articulos_resolutivos": ["string"]
-}}

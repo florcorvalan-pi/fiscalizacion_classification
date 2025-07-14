@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Casos Individual - Determinación de Oficio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8fafc;
+            color: #334155;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header del caso */
+        .case-header {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .case-header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .case-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .info-item i {
+            width: 20px;
+            text-align: center;
+        }
+
+        .status-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .status-en-analisis {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .status-vencido {
+            background: #fecaca;
+            color: #991b1b;
+        }
+
+        .status-completado {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        /* Navegación por pestañas */
+        .tab-navigation {
+            display: flex;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .tab-button {
+            flex: 1;
+            padding: 15px 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            color: #64748b;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            justify-content: center;
+        }
+
+        .tab-button:hover {
+            background: #f8fafc;
+            color: #1e40af;
+        }
+
+        .tab-button.active {
+            background: #1e40af;
+            color: white;
+        }
+
+        /* Contenido principal */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 20px;
+        }
+
+        .content-panel {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .panel-header {
+            background: #f8fafc;
+            padding: 15px 20px;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: between;
+            align-items: center;
+        }
+
+        .panel-header h3 {
+            font-size: 1.1rem;
+            color: #1e293b;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .panel-content {
+            padding: 20px;
+        }
+
+        /* Historial del expediente */
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #e2e8f0;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -37px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: #3b82f6;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 2px #3b82f6;
+        }
+
+        .timeline-item.completed::before {
+            background: #10b981;
+            box-shadow: 0 0 0 2px #10b981;
+        }
+
+        .timeline-date {
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-bottom: 5px;
+        }
+
+        .timeline-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .timeline-description {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        /* Panel de documentos */
+        .document-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .document-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+
+        .document-item:hover {
+            background: #f1f5f9;
+            border-color: #3b82f6;
+        }
+
+        .document-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #3b82f6;
+            color: white;
+            border-radius: 8px;
+            font-size: 1.2rem;
+        }
+
+        .document-info {
+            flex: 1;
+        }
+
+        .document-name {
+            font-weight: 500;
+            margin-bottom: 2px;
+        }
+
+        .document-meta {
+            font-size: 0.8rem;
+            color: #64748b;
+        }
+
+        .document-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-icon {
+            width: 32px;
+            height: 32px;
+            border: 1px solid #e2e8f0;
+            background: white;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-icon:hover {
+            background: #f8fafc;
+            border-color: #3b82f6;
+            color: #3b82f6;
+        }
+
+        /* Análisis de IA */
+        .ai-analysis {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border: 1px solid #0ea5e9;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .ai-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .ai-icon {
+            width: 40px;
+            height: 40px;
+            background: #0ea5e9;
+            color: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .confidence-score {
+            background: #10b981;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .analysis-section {
+            margin-bottom: 15px;
+        }
+
+        .analysis-section h4 {
+            color: #1e293b;
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+
+        .analysis-content {
+            background: white;
+            padding: 12px;
+            border-radius: 8px;
+            border-left: 4px solid #0ea5e9;
+        }
+
+        /* Propuesta de resolución */
+        .resolution-editor {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .editor-toolbar {
+            background: #f8fafc;
+            padding: 10px 15px;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .editor-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-primary:hover {
+            background: #2563eb;
+        }
+
+        .btn-secondary {
+            background: #64748b;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-secondary:hover {
+            background: #475569;
+        }
+
+        .editor-content {
+            padding: 20px;
+        }
+
+        .resolution-text {
+            width: 100%;
+            min-height: 300px;
+            border: none;
+            font-family: inherit;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            resize: vertical;
+            padding: 15px;
+            background: #f8fafc;
+            border-radius: 6px;
+        }
+
+        .resolution-text:focus {
+            outline: none;
+            background: white;
+            box-shadow: 0 0 0 2px #3b82f6;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .case-info {
+                grid-template-columns: 1fr;
+            }
+            
+            .tab-navigation {
+                flex-direction: column;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+
+        /* Loading state */
+        .loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            color: #64748b;
+        }
+
+        .loading i {
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Hidden tabs */
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        details {
+            margin-bottom: 15px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            background: #f8fafc;
+            padding: 8px 12px;
+        }
+        summary {
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .detalle-bloque {
+            margin-top: 18px;
+            margin-bottom: 18px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            background: #f8fafc;
+            padding: 10px 18px 10px 18px;
+        }
+
+        .bloque-titulo {
+            font-size: 1.15em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .hechos-lista {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .hecho-item {
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .hecho-descripcion {
+            margin: 0 0 4px 0;
+            font-weight: bold;
+        }
+
+        .hecho-meta {
+            font-size: 0.95em;
+            color: #475569;
+            margin-bottom: 3px;
+        }
+
+        .hecho-obs, .hecho-obs-gen {
+            font-size: 0.95em;
+            color: #64748b;
+            margin-bottom: 2px;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header del caso -->
+        <div class="case-header">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+            <h1>
+                <i class="fas fa-folder-open"></i>
+                <span id="case-number">DO-2025-001234</span>
+            </h1>
+                <a href="/dashboard" class="btn-secondary" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                    <i class="fas fa-arrow-left"></i>
+                    Volver al Dashboard
+                </a>
+            </div>
+            <div class="case-info">
+                <div class="info-item">
+                    <i class="fas fa-building"></i>
+                    <span id="taxpayer-name">EMPRESA EJEMPLO S.A.</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-id-card"></i>
+                    <span id="taxpayer-cuit">30-12345678-9</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>Vencimiento: <span id="due-date">20/03/2025</span></span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-flag"></i>
+                    <span class="status-badge status-en-analisis" id="case-status">En Análisis</span>
+                </div>
+            </div>
+        </div>
+        <button id="btn-reprocesar" class="btn-primary" style="margin-bottom: 15px;">
+    <i class="fas fa-sync-alt"></i> Reprocesar con datos actuales
+</button>
+<div id="tiempo-procesamiento" style="margin: 10px 0 20px 0; font-weight: bold; color: #1e40af;"></div>
+
+        <!-- Navegación por pestañas -->
+        <div class="tab-navigation">
+            <button class="tab-button active" data-tab="expediente">
+                <i class="fas fa-history"></i>
+                Expediente
+            </button>
+            <button class="tab-button" data-tab="documentos">
+                <i class="fas fa-file-alt"></i>
+                Documentos
+            </button>
+            <button class="tab-button" data-tab="analisis">
+                <i class="fas fa-brain"></i>
+                Análisis IA
+            </button>
+            <button class="tab-button" data-tab="resolucion">
+                <i class="fas fa-gavel"></i>
+                Resolución
+            </button>
+            
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="main-content">
+            <div class="content-panel">
+                <!-- Tab: Expediente -->
+                <div id="expediente" class="tab-content active">
+                    <div class="panel-header">
+                        <h3>
+                            <i class="fas fa-history"></i>
+                            Historial del Expediente
+                        </h3>
+                    </div>
+                    <div class="panel-content">
+                        <div class="timeline" id="timeline-container">
+                            <div class="loading">
+                                <i class="fas fa-spinner"></i>
+                                Cargando historial...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab: Documentos -->
+                <div id="documentos" class="tab-content">
+                    <div class="panel-header">
+                        <h3>
+                            <i class="fas fa-file-alt"></i>
+                            Documentos Aportados
+                        </h3>
+                    </div>
+                    <div class="panel-content">
+                        <div class="document-list" id="document-list">
+                            <div class="loading">
+                                <i class="fas fa-spinner"></i>
+                                Cargando documentos...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab: Análisis IA -->
+                <div id="analisis" class="tab-content">
+                    <div class="panel-header">
+                        <h3>
+                            <i class="fas fa-brain"></i>
+                            Análisis de Inteligencia Artificial
+                        </h3>
+                    </div>
+                    <div class="panel-content">
+                        <div id="ai-analysis-container">
+                            <div class="loading">
+                                <i class="fas fa-spinner"></i>
+                                Procesando análisis...
+                            </div>
+                        </div>
+                        <div id="detalle-completo-container"></div>
+                    </div>
+                </div>
+
+                <!-- Tab: Resolución -->
+                <div id="resolucion" class="tab-content">
+                    <div class="panel-header">
+                        <h3>
+                            <i class="fas fa-gavel"></i>
+                            Propuesta de Resolución
+                        </h3>
+                    </div>
+                    <div class="panel-content">
+                        <div class="resolution-editor">
+                            <div class="editor-toolbar">
+                                <span id="resolution-type">Resolución Determinativa</span>
+                                <div class="editor-actions">
+                                    <button class="btn-secondary" id="btn-edit-resolution">
+                                        <i class="fas fa-edit"></i>
+                                        Editar
+                                    </button>
+                                    <button class="btn-primary" id="btn-save-resolution" style="display: none;">
+                                        <i class="fas fa-save"></i>
+                                        Guardar
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="editor-content">
+                                <textarea class="resolution-text" id="resolution-text" readonly placeholder="La propuesta de resolución se generará automáticamente basada en el análisis..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel lateral - Resumen -->
+            <div class="content-panel">
+                <div class="panel-header">
+                    <h3>
+                        <i class="fas fa-chart-line"></i>
+                        Resumen del Caso
+                    </h3>
+                </div>
+                <div class="panel-content">
+                    <div id="case-summary">
+                        <div class="loading">
+                            <i class="fas fa-spinner"></i>
+                            Cargando resumen...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Variables globales
+        let currentCase = null;
+        let isEditing = false;
+
+        // Funciones utilitarias
+        function formatLabel(text) {
+            if (!text || typeof text !== 'string') return '-';
+            // Reemplaza guiones bajos por espacios y pone mayúscula inicial de cada palabra
+            return text
+                .replace(/_/g, ' ')
+                .replace(/\b\w/g, l => l.toUpperCase());
+        }
+
+        function obtenerCasoIdDeURL() {
+            const pathParts = window.location.pathname.split('/');
+            const casoId = pathParts[pathParts.length - 1];
+            return casoId && casoId !== 'caso' ? casoId : '1';
+        }
+        // Inicializar la aplicación
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeApp();
+            const btnReprocesar = document.getElementById('btn-reprocesar');
+            if (btnReprocesar) {
+                btnReprocesar.addEventListener('click', function() {
+                    loadCaseData(true); // Llama con force=true
+                });
+            }
+        });
+
+        function initializeApp() {
+            setupTabNavigation();
+            setupResolutionEditor();
+            loadCaseData();
+        }
+
+        // Navegación por pestañas
+        function setupTabNavigation() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const tabName = this.dataset.tab;
+                    
+                    // Actualizar botones activos
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Mostrar contenido correspondiente
+                    tabContents.forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    document.getElementById(tabName).classList.add('active');
+                });
+            });
+        }
+
+        // Editor de resolución
+        function setupResolutionEditor() {
+            const btnEdit = document.getElementById('btn-edit-resolution');
+            const btnSave = document.getElementById('btn-save-resolution');
+            const textarea = document.getElementById('resolution-text');
+
+            btnEdit.addEventListener('click', function() {
+                textarea.readOnly = false;
+                textarea.focus();
+                btnEdit.style.display = 'none';
+                btnSave.style.display = 'flex';
+                isEditing = true;
+            });
+
+            btnSave.addEventListener('click', function() {
+                textarea.readOnly = true;
+                btnEdit.style.display = 'flex';
+                btnSave.style.display = 'none';
+                isEditing = false;
+                
+                // Aquí enviarías los cambios al backend
+                console.log('Guardando resolución:', textarea.value);
+            });
+        }
+
+        function loadCaseData(force = false) {
+            // Obtener el caso_id de la URL (por ejemplo, /caso/1)
+            
+            const pathParts = window.location.pathname.split('/');
+            let casoId = pathParts[pathParts.length - 1];
+            if (!casoId || isNaN(Number(casoId))) casoId = 1; // fallback
+        
+            let startTime = Date.now();
+            let timerInterval = null;
+            
+            function mostrarContador() {
+                const contador = document.getElementById('tiempo-procesamiento');
+                timerInterval = setInterval(() => {
+                    const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+                    contador.innerText = `Procesando... (${elapsed} segundos)`;
+                }, 100);
+            }
+
+            function detenerContador() {
+                clearInterval(timerInterval);
+                const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+                document.getElementById('tiempo-procesamiento').innerText = `Tiempo total: ${elapsed} segundos`;
+            }
+
+            // Cuando inicias la petición:
+            startTime = Date.now();
+            mostrarContador();
+
+            let url = `/api/caso-data/${casoId}`;
+            if (force) url += '?force=true';
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    detenerContador();
+                    renderCaseData(data);
+                })
+                .catch(error => {
+                    detenerContador();
+                    console.error('Error cargando datos del caso:', error);
+                    // Puedes mostrar un mensaje de error en la UI aquí
+                });
+        }
+
+        // Datos mock para demostración
+        function loadMockData() {
+            const mockData = {
+                expediente: 'DO-2025-001234',
+                contribuyente: {
+                    nombre: 'EMPRESA EJEMPLO S.A.',
+                    cuit: '30-12345678-9'
+                },
+                vencimiento: '2025-03-20',
+                estado: 'En Análisis',
+                historial: [
+                    {
+                        fecha: '2025-01-10',
+                        titulo: 'Comunicación de Inicio',
+                        descripcion: 'Notificación de inicio de inspección enviada al DFE',
+                        completado: true
+                    },
+                    {
+                        fecha: '2025-01-25',
+                        titulo: 'Cierre - Pase a DO',
+                        descripcion: 'Derivación a Determinación de Oficio',
+                        completado: true
+                    },
+                    {
+                        fecha: '2025-02-15',
+                        titulo: 'Corrida de Vista',
+                        descripcion: 'Notificación de corrida de vista enviada',
+                        completado: true
+                    },
+                    {
+                        fecha: '2025-03-01',
+                        titulo: 'Descargo del Contribuyente',
+                        descripcion: 'Recepción de descargo y documentación',
+                        completado: true
+                    },
+                    {
+                        fecha: '2025-03-10',
+                        titulo: 'Análisis en Curso',
+                        descripcion: 'Análisis de documentos y generación de resolución',
+                        completado: false
+                    }
+                ],
+                documentos: [
+                    {
+                        nombre: 'Descargo del Contribuyente',
+                        tipo: 'PDF',
+                        tamaño: '2.3 MB',
+                        fecha: '2025-03-01'
+                    },
+                    {
+                        nombre: 'Factura 001-00123456',
+                        tipo: 'PDF',
+                        tamaño: '0.8 MB',
+                        fecha: '2025-03-01'
+                    },
+                    {
+                        nombre: 'Contrato de Servicios',
+                        tipo: 'PDF',
+                        tamaño: '1.2 MB',
+                        fecha: '2025-03-01'
+                    }
+                ],
+                analisisIA: {
+                    confianza: 87,
+                    completitud: 'Parcial',
+                    observaciones: 'Se aportaron 3 de 5 documentos requeridos',
+                    recomendacion: 'Solicitar documentos faltantes'
+                },
+                resolucion: `VISTO: El expediente N° DO-2025-001234 iniciado a la razón social EMPRESA EJEMPLO S.A., CUIT N° 30-12345678-9...
+
+RESULTANDO: Que se ha dado vista al contribuyente de las diferencias detectadas...
+
+CONSIDERANDO: Que analizada la documentación aportada por el contribuyente...
+
+RESUELVE: Hacer lugar parcialmente al descargo presentado...`
+            };
+
+            renderCaseData(mockData);
+        }
+
+        // Renderizar datos del caso
+        function renderCaseData(data) {
+            // Actualizar header
+            document.getElementById('case-number').textContent = data.expediente;
+            document.getElementById('taxpayer-name').textContent = data.contribuyente?.nombre || '';
+            document.getElementById('taxpayer-cuit').textContent = data.contribuyente?.cuit || '';
+            document.getElementById('due-date').textContent = formatDate(data.vencimiento);
+            document.getElementById('case-status').textContent = data.estado;
+
+            // Renderizar historial
+            renderTimeline(data.historial);
+            
+            // Renderizar documentos
+            renderDocuments(data.documentos); // Pass documentos
+            
+            // Renderizar análisis IA
+            renderAIAnalysis(data);
+            
+            // Renderizar el detalle debajo del análisis IA
+            renderDetalleAuditable(data);
+            
+            // Renderizar resolución
+            renderResolution(data.resolucion);
+            
+            // Renderizar resumen
+            renderSummary(data);
+        }
+
+        // Renderizar timeline
+        function renderTimeline(historial) {
+            const container = document.getElementById('timeline-container');
+            container.innerHTML = '';
+
+            historial.forEach(item => {
+                const timelineItem = document.createElement('div');
+                timelineItem.className = `timeline-item ${item.completado ? 'completed' : ''}`;
+                timelineItem.innerHTML = `
+                    <div class="timeline-date">${formatDate(item.fecha)}</div>
+                    <div class="timeline-title">${item.titulo}</div>
+                    <div class="timeline-description">${item.descripcion}</div>
+                `;
+                container.appendChild(timelineItem);
+            });
+        }
+
+        // Renderizar documentos
+        function renderDocuments(documentos) {
+            const container = document.getElementById('document-list');
+            if (!documentos || documentos.length === 0) {
+                container.innerHTML = '<p>No hay documentos aportados.</p>';
+                return;
+            }
+            
+            // Obtener el casoId de la URL
+            const casoId = obtenerCasoIdDeURL();
+            console.log('Caso ID extraído de URL:', casoId); // Debug
+            
+            container.innerHTML = documentos.map(doc => `
+                <div class="document-item">
+                    <div class="document-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="document-info">
+                        <div class="document-name">${doc.nombre}</div>
+                        <div class="document-meta">${doc.tipo} • ${doc.tamaño} • ${formatDate(doc.fecha)}</div>
+                    </div>
+                    <div class="document-actions">
+                        <a class="btn-icon" title="Ver documento" target="_blank"
+                           href="/documentos/caso/${casoId}/${encodeURIComponent(doc.nombre)}">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                        <a class="btn-icon" title="Descargar"
+                           href="/documentos/caso/${casoId}/${encodeURIComponent(doc.nombre)}" download>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Renderizar análisis IA
+        function renderAIAnalysis(data) {
+            const container = document.getElementById('ai-analysis-container');
+            // Usa validacion si existe, si no, usa analisisIA, si no, muestra mensaje
+            const validacion = data.validacion || data.analisisIA || {};
+          
+            const cumplimiento = formatLabel(validacion.cumplimiento_general);
+            const observaciones = validacion.observaciones ?? '-';
+            const recomendacion = formatLabel(validacion.recomendacion_resolucion);
+
+            container.innerHTML = `
+                <div class="ai-analysis">
+                    <div class="ai-header">
+                        <div class="ai-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div>
+                            <h3>Análisis Automatizado</h3>
+                        </div>
+                    </div>
+                    <div class="analysis-section">
+                        <h4>Estado de Cumplimiento</h4>
+                        <div class="analysis-content">
+                            <strong>Validación:</strong> ${cumplimiento}<br>
+                            <strong>Observaciones:</strong> ${observaciones}
+                        </div>
+                    </div>
+                    <div class="analysis-section">
+                        <h4>Recomendación</h4>
+                        <div class="analysis-content">
+                            ${recomendacion}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Renderizar resolución
+        function renderResolution(resolucion) {
+            document.getElementById('resolution-text').value = resolucion;
+        }
+
+        // Renderizar resumen
+        function renderSummary(data) {
+            const container = document.getElementById('case-summary');
+            container.innerHTML = `
+                <div style="margin-bottom: 15px;">
+                    <h4>Estado Actual</h4>
+                    <p>${formatLabel(data.estado)}</p>
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <h4>Documentos</h4>
+                    <p>${data.documentos.length} documentos aportados</p>
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <h4>Análisis IA</h4>
+                    <p>Validación: ${formatLabel(data.validacion?.cumplimiento_general)}</p>
+                </div>
+                
+                <div>
+                    <h4>Próximos Pasos</h4>
+                    <p>Revisar y aprobar resolución propuesta</p>
+                </div>
+            `;
+        }
+
+        // Utilidades
+        function formatDate(dateStr) {
+            const date = new Date(dateStr);
+            return date.toLocaleDateString('es-AR');
+        }
+
+        // API para integrar con LangGraph
+        async function fetchCaseAnalysis(caseId) {
+            try {
+                const response = await fetch(`/api/case-analysis/${caseId}`);
+                const data = await response.json();
+                return data;
+            } catch (error) {
+                console.error('Error fetching case analysis:', error);
+                return null;
+            }
+        }
+
+        // Función para actualizar datos desde tu script de LangGraph
+        function updateCaseFromLangGraph(analysisData) {
+            // Esta función recibirá el JSON de tu script y actualizará la interfaz
+            renderCaseData(analysisData);
+        }
+
+        function renderDetalleAuditable(data) {
+            const container = document.getElementById('detalle-completo-container');
+            let html = '';
+
+            // Hechos
+            html += `<details open class="detalle-bloque">
+                <summary><span class="bloque-titulo"><i class="fas fa-balance-scale"></i> Hechos relevantes</span></summary>
+                <div class="hechos-lista">
+                    ${Array.isArray(data.hechos?.hechos) ? data.hechos.hechos.map(h => `
+                        <div class="hecho-item">
+                            <p class="hecho-descripcion"><strong>${h.descripcion}</strong></p>
+                            <div class="hecho-meta">
+                                <span><em>Tipo:</em> ${h.tipo}</span> | 
+                                <span><em>Relevancia:</em> ${h.relevancia_juridica}</span>
+                            </div>
+                            <div class="hecho-obs">
+                                <em>Observaciones:</em> ${h.observaciones}
+                            </div>
+                        </div>
+                    `).join('') : '<div>No hay hechos cargados.</div>'}
+                    ${data.hechos?.observaciones_generales ? `<div class="hecho-obs-gen"><em>Observaciones generales:</em> ${data.hechos.observaciones_generales}</div>` : ''}
+                </div>
+            </details>`;
+
+            // Validación
+            html += `<details open class="detalle-bloque">
+                <summary><span class="bloque-titulo"><i class="fas fa-check-circle"></i> Validación</span></summary>
+                <div><strong>Estado general:</strong> ${data.validacion?.cumplimiento_general ?? '-'}</div>
+                ${Array.isArray(data.validacion?.detalles_por_requisito) ? `
+                    <ul>
+                        ${data.validacion.detalles_por_requisito.map(v => `
+                            <li>
+                                <strong>${v.requisito}</strong>: ${v.cumplimiento}<br>
+                                <em>Fundamentación:</em> ${v.fundamentacion}
+                            </li>
+                        `).join('')}
+                    </ul>
+                ` : ''}
+                ${data.validacion?.recomendacion_resolucion ? `<div><strong>Recomendación:</strong> ${data.validacion.recomendacion_resolucion}</div>` : ''}
+            </details>`;
+
+            // Clasificación
+            html += `<details class="detalle-bloque">
+                <summary><span class="bloque-titulo"><i class="fas fa-tags"></i> Clasificación</span></summary>
+                ${Array.isArray(data.clasificacion?.clasificaciones) ? `
+                    <ul>
+                        ${data.clasificacion.clasificaciones.map(c => `
+                            <li>
+                                <strong>${c.tipo} (${c.subtipo})</strong><br>
+                                <em>Fundamento:</em> ${c.fundamento_normativo}<br>
+                                <em>Solidez:</em> ${c.solidez_juridica}<br>
+                                <em>Observaciones:</em> ${c.observaciones}
+                            </li>
+                        `).join('')}
+                    </ul>
+                ` : ''}
+                ${data.clasificacion?.resumen_estrategia_defensa ? `<div><strong>Estrategia de defensa:</strong> ${data.clasificacion.resumen_estrategia_defensa}</div>` : ''}
+                ${Array.isArray(data.clasificacion?.puntos_debiles_impugnacion) ? `
+                    <div><strong>Puntos débiles:</strong>
+                        <ul>
+                            ${data.clasificacion.puntos_debiles_impugnacion.map(p => `<li>${p}</li>`).join('')}
+                        </ul>
+                    </div>
+                ` : ''}
+            </details>`;
+
+            // Jurisprudencia
+            html += `<details class="detalle-bloque">
+                <summary><span class="bloque-titulo"><i class="fas fa-book"></i> Jurisprudencia relevante</span></summary>
+                ${Array.isArray(data.jurisprudencia?.jurisprudencia) ? `
+                    <ul>
+                        ${data.jurisprudencia.jurisprudencia.map(j => `
+                            <li>
+                                <strong>${j.tipo}</strong> - ${j.agravio}<br>
+                                <em>Respuesta:</em> ${j.respuesta}
+                            </li>
+                        `).join('')}
+                    </ul>
+                ` : '<div>No hay jurisprudencia cargada.</div>'}
+            </details>`;
+
+            // Normativa relevante
+            html += `<details class="detalle-bloque">
+                <summary><span class="bloque-titulo"><i class="fas fa-gavel"></i> Normativa relevante</span></summary>
+                ${Array.isArray(data.normativa_relevante) ? `
+                    <ul>
+                        ${data.normativa_relevante.map(n => `
+                            <li>
+                                <strong>${n.articulo}</strong>: ${n.texto}
+                            </li>
+                        `).join('')}
+                    </ul>
+                ` : '<div>No hay normativa cargada.</div>'}
+            </details>`;
+
+            // JSON crudo (opcional, colapsado)
+            html += `<details class="detalle-bloque">
+                <summary><span class="bloque-titulo"><i class="fas fa-code"></i> Ver JSON completo (técnico)</span></summary>
+                <pre style="max-height:300px;overflow:auto;">${JSON.stringify(data, null, 2)}</pre>
+            </details>`;
+
+            container.innerHTML = html;
+        }
+    </script>
+</body>
+</html>

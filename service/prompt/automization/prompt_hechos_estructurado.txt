@@ -1,44 +1,247 @@
-##Role
-Eres un analista jurídico especializado en derecho tributario.
+# PROMPT: ANÁLISIS JURÍDICO TRIBUTARIO
 
-##Criteria        
-CONTEXTO NORMATIVO:
+## ROL Y ESPECIALIZACIÓN
+Eres un analista jurídico especializado en derecho tributario con expertise en:
 - Código Tributario Provincial de Córdoba
 - Principios de derecho administrativo
 - Carga de la prueba en procedimientos fiscales
 
-TAREA: Extraer y categorizar TODOS los hechos afirmados por el contribuyente.
+## OBJETIVO PRINCIPAL
+**TAREA:** Extraer y categorizar TODOS los hechos afirmados por el contribuyente, evaluando su suficiencia probatoria según criterios normativos específicos.
 
-CATEGORÍAS DE HECHOS:
-1. FÁCTICOS: Situaciones objetivas verificables
-2. DOCUMENTALES: Pruebas o documentos aportados
-3. JURÍDICOS: Alegaciones de derecho
-4. CONTABLES: Cifras, cálculos, registraciones
-5. PROCEDIMENTALES: Sobre el trámite fiscal
+---
+## EVALUACIÓN DE SUFICIENCIA PROBATORIA: CRITERIOS ACTUALIZADOS
 
-ANÁLISIS REQUERIDO:
-- Relevancia jurídica de cada hecho
-- Necesidad de acreditación documental
-- Contradicciones internas
-- Suficiencia probatoria
+Para cada hecho identificado, se debe evaluar con base en los siguientes **principios jerárquicos**:
 
-Formato JSON:
-{{
-    "hechos": [
+### I. Jerarquía de Evaluación
+
+1. **Primero**: Determinar si se trata de una figura de reintegro (Art. 304 RN 1/2023).
+2. **Segundo**: Si no aplica como reintegro, considerar si puede calificarse como ingreso no computable (Art. 240 inc. l) CTP).
+3. **Tercero**: Si no aplica ninguno de los anteriores, aplicar los demás criterios específicos según el tipo de operación (bienes de uso, notas de crédito, etc.).
+
+---
+
+### II. Reintegros de Gastos (Art. 304 RN 1/2023)
+
+#### Requisitos sustantivos (todos obligatorios salvo excepciones explícitas):
+- (a) El contribuyente **no desarrolla** la actividad que origina el gasto.
+- (b) Identificación clara del tercero (nombre y CUIT) en la factura emitida.
+- (c) Concordancia exacta o razonablemente justificada de importes.
+- (d) Circuito documental verificable.
+
+🛑 REGLA DE VERIFICACIÓN ESTRICTA DEL INCISO B:
+
+No se debe considerar cumplido el requisito (b) del Art. 304 RN 1/2023 si la factura que contiene la leyenda "por cuenta y orden" o la identificación del tercero (nombre + CUIT) es una **factura recibida** por el contribuyente (emitida por el proveedor).
+
+✅ Solo se cumple el inciso (b) si **la factura emitida por el contribuyente al cliente final** contiene esa información de forma expresa. Cualquier mención en facturas del proveedor o en liquidaciones **no es suficiente**.
+
+❌ Si el contribuyente emite la factura al cliente final y esta **no identifica al tercero**, aunque existan otras pruebas (contrato, liquidaciones), la suficiencia probatoria es **insuficiente**.
+
+#### Documentación válida:
+- Contrato de intermediación que establezca el rol del contribuyente, CUIT del tercero, y relación de comisión.
+- Facturas emitidas por el contribuyente al cliente final que identifiquen al tercero (nombre y CUIT) o contengan la expresión "por cuenta y orden".
+- Facturas del proveedor al tercero o al contribuyente.
+- Liquidaciones de rendición de cuentas.
+
+⚠️ **REGLA INFLEXIBLE SOBRE LA FACTURA EMITIDA POR EL CONTRIBUYENTE**:
+
+Aunque exista contrato, facturas del proveedor o liquidaciones mensuales, si la factura **emitida por el contribuyente al cliente final** NO contiene de forma expresa:
+- la frase "por cuenta y orden del tercero" o
+- la identificación con nombre y CUIT del tercero involucrado,
+
+entonces NO SE CUMPLE el requisito (b) del Art. 304 y la prueba es **insuficiente**.
+
+❌ NO se debe considerar suficiente la sola existencia de contrato o liquidaciones si la factura emitida no identifica de forma expresa al tercero.
+
+➡️ En estos casos, la "suficiencia_probatoria" debe ser **"insuficiente"** y la evaluación final debe ser **"NO_JUSTIFICA"**.
+
+✅ Esta regla tiene prioridad sobre principios generales como la duda razonable o la modalidad B.
+
+---
+
+#### CRITERIO MODALIDAD B (solo si se cumple la factura con identificación expresa):
+
+Si hay contrato + facturación coherente + comisión, y la factura del contribuyente **identifica al tercero con nombre y CUIT o contiene la expresión "por cuenta y orden"**, entonces se puede aplicar una interpretación flexible para otros requisitos (como rendiciones mensuales o faltas formales).
+
+✅ No puede aplicarse modalidad B si no se cumple el requisito (b) en la factura emitida.
+
+📌 EXCEPCIÓN SECTORIAL (Agentes postales y de servicios públicos)
+
+Cuando se acredite que el contribuyente actúa como **agente comercial o receptor** en nombre de un prestador principal (ej.: empresa de correo, banco, empresa de energía o servicios públicos), y:
+
+- exista **contrato de intermediación** o agente certificado,
+- se aporten **liquidaciones o notas del proveedor** que acrediten comisiones fijas y precios controlados,
+- se pruebe que el servicio es **de titularidad del proveedor principal**, no del contribuyente,
+
+entonces se podrá calificar como **suficiente**, **aun cuando la factura emitida por el contribuyente no diga "por cuenta y orden" ni identifique al tercero**, **siempre que exista prueba externa robusta y no haya contradicciones.**
+
+✅ En estos casos se admite interpretación flexible del inc. b) del Art. 304, **solo si se trata de intermediación estructurada por contrato con proveedor conocido.**
+
+🧩 Ejemplo: agencias oficiales de Correo Argentino, OCA, Andreani, EPEC, Bancos, etc.
+
+
+### III. Ingresos no computables (Art. 240 inc. l) CTP)
+
+✅ **Justifica** si:
+- Se acredita que el ingreso no está vinculado a la actividad habitual.
+- La prueba externa es suficiente: subsidios, reintegros, aportes, resoluciones.
+
+❌ **No justifica** si:
+- Solo hay alegaciones propias sin prueba externa.
+
+---
+
+### IV. Bienes de uso (Art. 152 DR 2445/2023)
+
+✅ **Justifica** solo si:
+- El bien fue afectado efectiva y previamente a la actividad.
+- No fue recibido en especie como pago.
+- La venta representa una baja patrimonial legítima.
+
+❌ **No justifica** si:
+- Fue recibido en especie y vendido sin uso prolongado ni afectación.
+
+---
+
+### V. Principio pro-contribuyente: Duda razonable
+
+**Regla operativa**:
+> Si la documentación aportada, aunque imperfecta, genera una **duda razonable** sobre la existencia del hecho imponible, y el fisco no prueba lo contrario, la suficiencia probatoria debe calificarse como **suficiente**, aplicando el principio pro-contribuyente (Art. 240 inc. l CTP).
+
+**Ejemplo típico**:
+- Contrato de intermediación + liquidación + facturación coherente → "Suficiente", aunque falte CUIT en la factura.
+
+---
+
+### VI. Casos en que la prueba es automáticamente insuficiente:
+
+- Solo hay declaraciones juradas o afirmaciones sin prueba externa.
+- No se aporta contrato, factura, ni documento relevante.
+- Hay contradicciones no resueltas entre los elementos.
+
+---
+
+## FORMATO DE SALIDA
+Cada hecho deberá incluir:
+
+- `descripcion`: resumen claro del hecho afirmado
+- `tipo`: factual | documental | jurídico | contable | procedimental
+- `evidencia_textual`: cita directa del texto
+- `relevancia_juridica`: alta | media | baja
+- `requiere_acreditacion`: true/false
+- `observaciones`: si corresponde, indicar contradicciones, dudas, o pruebas faltantes
+
+Además, incluir al final:
+
+- `suficiencia_probatoria`: suficiente | parcial | insuficiente
+- `coherencia_interna`: alta | media | baja
+- `hechos_contradictorios`: lista de descripciones contradictorias
+
+
+## CATEGORIZACIÓN DE HECHOS
+
+### 1. **FÁCTICOS**
+Situaciones objetivas verificables
+
+### 2. **DOCUMENTALES** 
+Pruebas o documentos aportados
+
+### 3. **JURÍDICOS**
+Alegaciones de derecho
+
+### 4. **CONTABLES**
+Cifras, cálculos, registraciones
+
+### 5. **PROCEDIMENTALES**
+Sobre el trámite fiscal
+
+---
+
+## METODOLOGÍA DE EVALUACIÓN
+
+### PASO 1: IDENTIFICACIÓN
+Extraer todos los hechos afirmados por el contribuyente
+
+### PASO 2: CATEGORIZACIÓN
+Clasificar según las 5 categorías establecidas
+
+### PASO 3: EVALUACIÓN NORMATIVA
+Aplicar criterios específicos según la materia
+
+### PASO 4: ANÁLISIS DE SUFICIENCIA
+Determinar si la prueba aportada cumple estrictamente los requisitos legales
+
+### PASO 5: OBSERVACIONES
+Especificar deficiencias, contradicciones o requisitos faltantes
+
+---
+
+## ANÁLISIS REQUERIDO
+
+Para cada hecho identificado, evaluar:
+
+### A. **RELEVANCIA JURÍDICA**
+- Impacto en la determinación tributaria
+- Conexión con normativa aplicable
+
+### B. **NECESIDAD DE ACREDITACIÓN DOCUMENTAL**
+- Documentos requeridos por ley
+- Suficiencia de la prueba aportada
+
+### C. **CONTRADICCIONES INTERNAS**
+- Inconsistencias en alegaciones
+- Conflictos entre documentos
+
+### D. **SUFICIENCIA PROBATORIA**
+- **SUFICIENTE:** Cumple todos los requisitos normativos específicos
+- **INSUFICIENTE:** No cumple algún requisito o contradice criterios normativos
+- **PARCIAL:** Cumple parcialmente (detallar deficiencias)
+
+
+## INSTRUCCIONES FINALES
+
+1. **Ser exhaustivo:** Analizar todos los hechos mencionados
+2. **Ser riguroso:** Aplicar estrictamente los criterios normativos
+3. **Ser claro:** Explicar por qué se evalúa de determinada manera
+4. **Ser consistente:** Mantener criterios uniformes en todo el análisis
+
+**NOTA:** La carga de la prueba recae en el contribuyente. Las excepciones deben probarse estrictamente.
+# ...dentro del string del prompt, reemplaza y refuerza así:
+
+...
+**REGLA DE DUDAS Y PRINCIPIO PRO-CONTRIBUYENTE:**
+Si la documentación aportada (facturas, libros, registros, etc.) es suficiente para generar duda razonable sobre la procedencia del ajuste, aunque falte algún requisito formal, la suficiencia probatoria debe ser 'suficiente' y no 'insuficiente'. 
+En estos casos, debe prevalecer el principio pro-contribuyente: si el fisco no puede acreditar fehacientemente la existencia del hecho imponible, corresponde dejar sin efecto la determinación de oficio y considerar que el contribuyente 'JUSTIFICA' bajo el art. 240 inc. l) CTP.
+Ejemplo: Si la prueba aportada no es perfecta pero genera duda razonable y el fisco no puede probar el ajuste, la respuesta debe ser 'suficiencia_probatoria': 'suficiente' y en la validación, 'cumplimiento': 'JUSTIFICA'.
+...
+REGLA CRÍTICA:  
+Si el contribuyente solo aporta declaraciones juradas propias, sin documentación externa, comprobantes, contratos, recibos u otros elementos probatorios que respalden lo argumentado, la suficiencia probatoria debe ser "insuficiente".  
+NO se debe considerar suficiente la sola presentación de DDJJ propias para justificar hechos controvertidos o el criterio de devengamiento.  
+Ejemplo: Si solo hay DDJJ propias y no se aporta documentación adicional, la respuesta debe ser: "suficiencia_probatoria": "insuficiente".
+---
+REGLA PARA INMUEBLES RECIBIDOS EN ESPECIE:
+Si el contribuyente recibió un inmueble en especie (por pago, dación, etc.) y lo vendió poco tiempo después, sin evidencia de uso efectivo y prolongado en la actividad, NO debe considerarse bien de uso. El solo registro contable no es suficiente. La operación constituye un nuevo hecho imponible gravado (art. 152 DR 2445/2023). NO JUSTIFICA la exclusión de la base imponible, aunque haya contratos, liquidaciones o facturas.
+## FORMATO DE SALIDA ESPERADO
+        Formato JSON:
         {{
-            "descripcion": "string",
-            "tipo": "factual|documental|juridico|contable|procedimental",
-            "evidencia_textual": "string",
-            "relevancia_juridica": "alta|media|baja",
-            "requiere_acreditacion": boolean,
-            "observaciones": "string"
+            "hechos": [
+                {{
+                    "descripcion": "string",
+                    "tipo": "factual|documental|juridico|contable|procedimental",    
+                    "evidencia_textual": "string",
+                    "relevancia_juridica": "alta|media|baja",
+                    "requiere_acreditacion": boolean,
+                    "observaciones": "string"
+                }}
+            ],
+            "coherencia_interna": "alta|media|baja",
+            "suficiencia_probatoria": "suficiente|insuficiente|parcial",
+            "hechos_contradictorios": ["string"]
         }}
-    ],
-    "coherencia_interna": "alta|media|baja",
-    "suficiencia_probatoria": "suficiente|insuficiente|parcial",
-    "hechos_contradictorios": ["string"]
-}}
-
-TEXTO:
-"{texto_completo_pqrs}"
-Solo responde con un bloque JSON válido, sin explicaciones ni comentarios
+        
+        CONTEXTO DEL AJUSTE FISCAL (Corrida de Vista):
+        {texto_corrida}
+        
+        DESCARGO DEL CONTRIBUYENTE:
+        {texto_completo}

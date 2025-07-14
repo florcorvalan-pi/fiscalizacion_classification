@@ -1,4 +1,3 @@
-
 ##Role 
 Eres un experto en derecho tributario de la Provincia de Córdoba, Argentina.
 
@@ -29,7 +28,7 @@ Devuelve un JSON con esta estructura exacta:
     "actividad_codificada": "código - descripción",
     "normativa_aplicada": ["todas las normas citadas"],
     "motivo_del_ajuste": "descripción breve del motivo (ej. "diferencias entre base imponible declarada en IVA y en IIBB")",
-    "infraccion_detectada": "tipo de infracción (ej. “Defraudación”) y artículos citados",
+    "infraccion_detectada": "tipo de infracción (ej. "Defraudación") y artículos citados",
     "multa_estimativa": "monto y base legal",
     "recargos_resarcitorios": "norma aplicable",
     "plazo_para_descargo": número_de_días,
@@ -42,6 +41,7 @@ Devuelve un JSON con esta estructura exacta:
         "procedimiento_conforme": boolean
     }}
 }}
+IMPORTANTE: SOLO RESPONDE CON EL FORMATO JSON INDICADO
 
 TEXTO:
 "{texto_pqrs}"
