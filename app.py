@@ -104,10 +104,7 @@ except ImportError as e:
     grafo = None
     sistema_do = None
 
-app = Flask(__name__, 
-           template_folder=os.path.join(PROJECT_ROOT, 'service', 'scripts'),
-           static_folder=os.path.join(PROJECT_ROOT, 'service', 'scripts'))
-
+app = Flask(__name__, template_folder="templates")
 # Variable global para almacenar resultados (en producción usar Redis o base de datos)
 resultados_cache = {}
 
@@ -847,4 +844,4 @@ def dashboard():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=8000)
