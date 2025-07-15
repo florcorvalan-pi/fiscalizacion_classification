@@ -6,7 +6,6 @@ from settings.config import create_app, load_spacy_model
 app = create_app()
 app.include_router(router, prefix="/api/v1", tags=["/api/v1"])
 
-
 @app.get("/")
 def home():
     return RedirectResponse(url="/hello")
