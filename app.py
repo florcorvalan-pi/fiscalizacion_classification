@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template, send_from_directory
+from flask import Flask, request, jsonify, render_template, send_from_directory, Response
 import sys
 import os
 import json
@@ -593,28 +593,29 @@ import os
 def obtener_documentos_caso(numero_caso):
     """
     Lista los documentos PDF (o los que quieras) de un caso desde Azure Blob Storage,
-    buscando en la raíz de la carpeta del caso.
+    buscando en la raíz y subcarpetas del caso, sin repetir archivos con el mismo nombre.
     """
     documentos = []
+    nombres_agregados = set()  # Para evitar duplicados por nombre
     container = os.environ.get("AZURE_STORAGE_CONTAINER")
     blob_service = get_blob_service_client()
     carpeta_caso = f"Caso_{numero_caso}/"
-    extensiones_validas = ['.pdf', '.PDF', '.txt']  # Agrega .txt si quieres mostrar esos también
+    extensiones_validas = ['.pdf', '.PDF', '.txt']
 
     blobs = blob_service.get_container_client(container).list_blobs(name_starts_with=carpeta_caso)
     for blob in blobs:
-        # Solo archivos en la raíz de la carpeta del caso (no en subcarpetas)
-        nombre_relativo = blob.name[len(carpeta_caso):]
-        if '/' in nombre_relativo:
-            continue  # Está en una subcarpeta, lo ignoramos
         if any(blob.name.lower().endswith(ext) for ext in extensiones_validas):
+            nombre_archivo = os.path.basename(blob.name)
+            if nombre_archivo in nombres_agregados:
+                continue  # Ya lo agregamos, saltar
+            nombres_agregados.add(nombre_archivo)
             documentos.append({
-                "nombre": os.path.basename(blob.name),
+                "nombre": nombre_archivo,
                 "tipo": blob.name.split('.')[-1].upper(),
                 "tamaño": f"{blob.size // 1024} KB",
                 "fecha": str(blob.last_modified)[:10] if blob.last_modified else ""
             })
-    print(f"Total documentos encontrados en Blob (raíz de Caso_{numero_caso}): {len(documentos)}")
+    print(f"Total documentos encontrados en Blob (únicos, Caso_{numero_caso}): {len(documentos)}")
     return documentos
 
 @app.route('/api/test-data/<caso_id>')
@@ -667,34 +668,47 @@ def test_data(caso_id):
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-@app.route('/documentos/caso/<caso_id>/<path:nombre_archivo>')
-def servir_documento(caso_id, nombre_archivo):
+@app.route('/documentos/caso/<caso_id>/<nombre_archivo>')
+def servir_documento_blob(caso_id, nombre_archivo):
     """
-    Sirve un documento real del caso para ver o descargar.
+    Sirve un documento real del caso directamente desde Azure Blob Storage,
+    buscando en cualquier subcarpeta dentro de la carpeta del caso.
     """
-    base_path = os.path.join(PROJECT_ROOT, "data", "casos", f"Caso_{caso_id}")
-    print(f"Buscando archivo: {nombre_archivo}")  # Debug
-    print(f"En carpeta: {base_path}")  # Debug
-    
-    # Buscar en subcarpetas relevantes
-    subcarpetas = [
-        "1-Corrida de Vista",
-        "2-Aporte del contribuyente",
-        "3-Resolución Determinativa",
-        "3- Resolución",
-        "3-Resolucion Determinativa"
-    ]
-    for sub in subcarpetas:
-        carpeta = os.path.join(base_path, sub)
-        archivo_path = os.path.join(carpeta, nombre_archivo)
-        print(f"Probando: {archivo_path}")  # Debug
-        print(f"¿Existe? {os.path.exists(archivo_path)}")  # Debug
-        if os.path.exists(archivo_path):
-            print(f"Archivo encontrado en: {carpeta}")  # Debug
-            return send_from_directory(carpeta, nombre_archivo, as_attachment=False)
-    
-    print(f"Archivo NO encontrado: {nombre_archivo}")  # Debug
-    return f"Archivo no encontrado: {nombre_archivo}", 404
+    import mimetypes
+
+    container = os.environ.get("AZURE_STORAGE_CONTAINER")
+    blob_service = get_blob_service_client()
+    carpeta_caso = f"Caso_{caso_id}/"
+
+    # Buscar el blob cuyo nombre termina con el nombre_archivo (en cualquier subcarpeta)
+    blobs = blob_service.get_container_client(container).list_blobs(name_starts_with=carpeta_caso)
+    blob_encontrado = None
+    for blob in blobs:
+        if blob.name.endswith('/' + nombre_archivo) or blob.name == carpeta_caso + nombre_archivo:
+            blob_encontrado = blob.name
+            break
+
+    if not blob_encontrado:
+        return f"Archivo no encontrado en Blob Storage: {nombre_archivo}", 404
+
+    # Descargar el blob
+    blob_client = blob_service.get_blob_client(container=container, blob=blob_encontrado)
+    stream = blob_client.download_blob()
+    contenido = stream.readall()
+
+    # Detectar el tipo MIME
+    mimetype, _ = mimetypes.guess_type(nombre_archivo)
+    if not mimetype:
+        mimetype = "application/octet-stream"
+
+    # Sirve el archivo (inline para ver, o download si el usuario lo solicita)
+    return Response(
+        contenido,
+        mimetype=mimetype,
+        headers={
+            "Content-Disposition": f'inline; filename="{nombre_archivo}"'
+        }
+    )
 
 @app.route('/api/casos')
 def obtener_casos_dashboard():
@@ -717,10 +731,18 @@ def obtener_casos_dashboard():
             numero_caso = ""
             if partition_id.startswith("caso"):
                 numero_caso = partition_id.replace("caso", "")
-            # Construye el expediente (ej: DO-2025-000010)
             expediente = f"DO-2025-{str(numero_caso).zfill(6)}" if numero_caso else ""
-            # Extrae datos del subcampo datos_corrida si existe
-            datos_corrida = item.get("datos_corrida", {})
+            datos_corrida = item.get("datos_corrida", "")
+
+            # --- AGREGADO: valores por defecto ---
+            vencimiento = item.get("vencimiento")
+            if not vencimiento:
+                vencimiento = "2025-07-25"  # Fecha hardcodeada por defecto
+
+            dias_restantes = item.get("diasRestantes")
+            if dias_restantes is None or dias_restantes == "" or not isinstance(dias_restantes, int):
+                dias_restantes = 10  # Valor hardcodeado por defecto
+
             casos.append({
                 "expediente": expediente,
                 "numero_caso": numero_caso,
@@ -730,8 +752,8 @@ def obtener_casos_dashboard():
                 "etapa": item.get("etapa", ""),
                 "estado": item.get("estado", ""),
                 "prioridad": item.get("prioridad", ""),
-                "vencimiento": item.get("vencimiento", ""),
-                "diasRestantes": item.get("diasRestantes", 0),
+                "vencimiento": vencimiento,
+                "diasRestantes": dias_restantes,
                 "fechaInicio": item.get("fechaInicio", ""),
                 "fechaCompletado": item.get("fechaCompletado", ""),
                 "analisisIA": item.get("analisisIA", False),
