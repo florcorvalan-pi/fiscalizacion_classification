@@ -105,6 +105,7 @@ except ImportError as e:
     sistema_do = None
 
 app = Flask(__name__, template_folder="templates")
+
 # Variable global para almacenar resultados (en producción usar Redis o base de datos)
 resultados_cache = {}
 
@@ -698,90 +699,46 @@ def servir_documento(caso_id, nombre_archivo):
 @app.route('/api/casos')
 def obtener_casos_dashboard():
     """
-    Endpoint para obtener todos los casos reales para el dashboard
+    Endpoint para obtener todos los casos reales para el dashboard desde Cosmos DB
     """
     try:
+        container = get_cosmos_container()
+        # Consulta todos los documentos (puedes filtrar por estado, etc.)
+        query = "SELECT * FROM c"
+        items = list(container.query_items(
+            query=query,
+            enable_cross_partition_query=True
+        ))
+
         casos = []
-        
-        # Buscar casos reales en /data/casos/
-        casos_path = os.path.join(PROJECT_ROOT, "data", "casos")
-        
-        if not os.path.exists(casos_path):
-            logger.error(f"No existe la carpeta de casos: {casos_path}")
-            return jsonify({"error": "Carpeta de casos no encontrada"}), 404
-        
-        # Listar todas las carpetas de casos (Caso_1, Caso_2, etc.)
-        for item in os.listdir(casos_path):
-            if item.startswith("Caso_") and os.path.isdir(os.path.join(casos_path, item)):
-                try:
-                    # Extraer número de caso
-                    numero_caso = item.split("_")[1]
-                    caso_id = int(numero_caso)
-                    
-                    # Verificar que el caso tenga contenido
-                    caso_path = os.path.join(casos_path, item)
-                    
-                    # Contar documentos reales
-                    documentos_count = 0
-                    subcarpetas = ["1-Corrida de Vista", "2-Aporte del contribuyente", "3-Resolución Determinativa", "3- Resolución", "3-Resolucion Determinativa"]
-                    
-                    for subcarpeta in subcarpetas:
-                        subcarpeta_path = os.path.join(caso_path, subcarpeta)
-                        if os.path.exists(subcarpeta_path):
-                            for archivo in os.listdir(subcarpeta_path):
-                                if os.path.isfile(os.path.join(subcarpeta_path, archivo)):
-                                    documentos_count += 1
-                    
-                    # Solo incluir casos que tengan documentos
-                    if documentos_count > 0:
-                        # Calcular días restantes basado en el número de caso (para simular diferentes vencimientos)
-                        dias_restantes = max(1, 15 - (caso_id * 1.5))
-                        
-                        # Determinar estado basado en días restantes
-                        if dias_restantes <= 2:
-                            estado = "vencido"
-                            prioridad = "alta"
-                        elif dias_restantes <= 7:
-                            estado = "proceso"
-                            prioridad = "media"
-                        else:
-                            estado = "pendiente"
-                            prioridad = "baja"
-                        
-                        # Determinar etapa basada en el contenido de carpetas
-                        etapa = "Corrida de Vista"  # Default
-                        if os.path.exists(os.path.join(caso_path, "3-Resolución Determinativa")) or \
-                           os.path.exists(os.path.join(caso_path, "3- Resolución")) or \
-                           os.path.exists(os.path.join(caso_path, "3-Resolucion Determinativa")):
-                            etapa = "Resolución Determinativa"
-                        elif os.path.exists(os.path.join(caso_path, "2-Aporte del contribuyente")):
-                            etapa = "Análisis de Descargo"
-                        
-                        casos.append({
-                            "expediente": f"DO-2025-{str(caso_id).zfill(6)}",
-                            "contribuyente": f"CONTRIBUYENTE CASO{caso_id}",
-                            "cuit": f"11-{str(11111111 + caso_id).zfill(8)}-{caso_id}",
-                            "etapa": etapa,
-                            "estado": estado,
-                            "prioridad": prioridad,
-                            "vencimiento": calcular_fecha_vencimiento(dias_restantes),
-                            "diasRestantes": int(dias_restantes),
-                            "fechaInicio": "2025-01-10",
-                            "fechaCompletado": None if estado != "completado" else "2025-03-15",
-                            "analisisIA": True if caso_id % 2 == 0 else False,
-                            "documentosCount": documentos_count
-                        })
-                        
-                        logger.info(f"Caso {caso_id} agregado con {documentos_count} documentos")
-                        
-                except Exception as e:
-                    logger.error(f"Error procesando caso {item}: {str(e)}")
-                    continue
-        
-        # Ordenar casos por número
-        casos.sort(key=lambda x: int(x["expediente"].split("-")[2]))
-        
-        # Calcular métricas reales
+        for item in items:
+            # Extrae el número de caso del partition_id (ej: caso10 → 10)
+            partition_id = item.get("partition_id", "")
+            numero_caso = ""
+            if partition_id.startswith("caso"):
+                numero_caso = partition_id.replace("caso", "")
+            # Construye el expediente (ej: DO-2025-000010)
+            expediente = f"DO-2025-{str(numero_caso).zfill(6)}" if numero_caso else ""
+            # Extrae datos del subcampo datos_corrida si existe
+            datos_corrida = item.get("datos_corrida", {})
+            casos.append({
+                "expediente": expediente,
+                "numero_caso": numero_caso,
+                "partition_id": partition_id,
+                "contribuyente": datos_corrida.get("contribuyente", ""),
+                "cuit": datos_corrida.get("cuit", ""),
+                "etapa": item.get("etapa", ""),
+                "estado": item.get("estado", ""),
+                "prioridad": item.get("prioridad", ""),
+                "vencimiento": item.get("vencimiento", ""),
+                "diasRestantes": item.get("diasRestantes", 0),
+                "fechaInicio": item.get("fechaInicio", ""),
+                "fechaCompletado": item.get("fechaCompletado", ""),
+                "analisisIA": item.get("analisisIA", False),
+                "documentosCount": item.get("documentosCount", 0)
+            })
+
+        # Calcula métricas y alertas como antes, pero usando la lista de Cosmos
         total_casos = len(casos)
         casos_criticos = len([c for c in casos if c["diasRestantes"] <= 2])
         casos_advertencia = len([c for c in casos if c["diasRestantes"] > 2 and c["diasRestantes"] <= 7])
@@ -825,7 +782,6 @@ def obtener_casos_dashboard():
             },
             "alerts": alertas
         })
-        
     except Exception as e:
         logger.error(f"Error en obtener_casos_dashboard: {str(e)}")
         return jsonify({"error": str(e)}), 500

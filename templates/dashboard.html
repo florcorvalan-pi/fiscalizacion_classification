@@ -1087,6 +1087,27 @@
                 </tr>
             `).join('');
         }
+        function openCase(expediente) {
+            // Busca el caso en allCases
+            const caso = allCases.find(c => c.expediente === expediente);
+            let caseNumber = null;
+            if (caso) {
+                caseNumber = caso.numero_caso || (caso.partition_id ? caso.partition_id.replace('caso', '') : null);
+            }
+            if (!caseNumber) {
+                // Fallback: intenta extraerlo del expediente
+                const partes = expediente.split('-');
+                if (partes.length === 3 && !isNaN(parseInt(partes[2]))) {
+                    caseNumber = parseInt(partes[2]).toString();
+                }
+            }
+            if (caseNumber) {
+                window.location.href = `/caso/${caseNumber}`;
+            } else {
+                console.error('No se pudo extraer el número de caso del expediente:', expediente);
+                alert('Error: No se pudo abrir el caso. Verifique el expediente.');
+            }
+        }
 
         function formatStatus(status) {
             const statusMap = {
