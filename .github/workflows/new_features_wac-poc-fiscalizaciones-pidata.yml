@@ -66,5 +66,4 @@ jobs:
         with:
           app-name: 'wac-poc-fiscalizaciones-pidata'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_594A5516E29548A5A33A4AECB3385B66 }}
-          package: release.zip
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E67F0050F38E478CA4C56C8C6C20C7F3 }}
