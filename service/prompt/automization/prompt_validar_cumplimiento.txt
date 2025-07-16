@@ -28,7 +28,7 @@ NORMATIVA_RELEVANTE_RECUPERADA:
 ▪
 2. El Artículo 240 inciso l) del CTP ('Operaciones no gravadas o exentas') se aplicará a operaciones por cuenta y orden SÓLO Y EXCLUSIVAMENTE SI la naturaleza del ingreso del contribuyente es puramente una comisión, una regalía o una transferencia de fondos que CLARAMENTE NO representa un recupero de un gasto o costo de un bien/servicio que el contribuyente haya vendido y facturado directamente al cliente final. En estos casos, NO se aplicarán los requisitos del Art. 304."
         
-        OBJETIVO DEL ANÁLISIS
+OBJETIVO DEL ANÁLISIS
 Evaluar cada requisito de la corrida de vista confrontando con hechos y pruebas aportadas, aplicar jurisprudencia relevante, determinar cumplimiento normativo y fundamentar la decisión.
 REGLA CRÍTICA (PRIORIDAD MÁXIMA):
 Si falta cualquier requisito sustantivo (por ejemplo, falta de factura "por cuenta y orden", falta de CUIT del tercero, falta de circuito documental, etc.), el cumplimiento de ese requisito debe ser "NO_JUSTIFICA" y el "cumplimiento_general" debe ser "no_cumple", y la "recomendacion_resolucion" debe ser "determinativa_desfavorable", aunque existan otros elementos parciales o cumplidos.

@@ -184,7 +184,6 @@ def obtener_datos_caso(caso_id):
 
         if data is None or force:
             # Si no existe, ejecuta el grafo y guarda el resultado
-            from service.scripts.script_modified import construir_grafo, SistemaAutomatizacionDO
             grafo = construir_grafo()
             sistema_do = SistemaAutomatizacionDO()
 
@@ -192,7 +191,7 @@ def obtener_datos_caso(caso_id):
             # (esto ya lo vimos en la respuesta anterior)
             # Ejemplo:
             corrida_path = f"Caso_{caso_id}/corrida/caso{caso_id}_corrida_de_vista-SD_extraido.txt"
-            contenido_corrida = read_blob_text(corrida_path)
+            contenido_corrida = read_blob_text(corrida_path, "extract")
 
             aportes = []
             for i in range(1, 7):
@@ -252,6 +251,9 @@ def obtener_datos_caso(caso_id):
             data['documentos'] = []
         return data
     except Exception as e:
+        import traceback
+        logger.error(f"Error en procesamiento: {str(e)}")
+        traceback.print_exc()  # Esto imprime el stack trace completo en la consola
         return {"error": str(e)}, 500
     
 def procesar_caso_predefinido_interno(numero_caso):
@@ -593,11 +595,11 @@ import os
 def obtener_documentos_caso(numero_caso):
     """
     Lista los documentos PDF (o los que quieras) de un caso desde Azure Blob Storage,
-    buscando en la raíz y subcarpetas del caso, sin repetir archivos con el mismo nombre.
+    buscando en el contenedor 'pdfs', en la raíz y subcarpetas del caso, sin repetir archivos con el mismo nombre.
     """
     documentos = []
     nombres_agregados = set()  # Para evitar duplicados por nombre
-    container = os.environ.get("AZURE_STORAGE_CONTAINER")
+    container = "pdfs"  # Siempre usar el contenedor 'pdfs'
     blob_service = get_blob_service_client()
     carpeta_caso = f"Caso_{numero_caso}/"
     extensiones_validas = ['.pdf', '.PDF', '.txt']
