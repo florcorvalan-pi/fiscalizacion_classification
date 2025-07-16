@@ -906,8 +906,17 @@ RESUELVE: Hacer lugar parcialmente al descargo presentado...`
         function renderCaseData(data) {
             // Actualizar header
             document.getElementById('case-number').textContent = data.expediente;
-            document.getElementById('taxpayer-name').textContent = data.contribuyente?.nombre || '';
-            document.getElementById('taxpayer-cuit').textContent = data.contribuyente?.cuit || '';
+            let nombre = '';
+            let cuit = '';
+            if (typeof data.contribuyente === 'object' && data.contribuyente !== null) {
+                nombre = data.contribuyente.nombre || '';
+                cuit = data.contribuyente.cuit || '';
+            } else if (data.datos_corrida) {
+                nombre = data.datos_corrida.contribuyente || '';
+                cuit = data.datos_corrida.cuit || '';
+            }
+            document.getElementById('taxpayer-name').textContent = nombre;
+            document.getElementById('taxpayer-cuit').textContent = cuit;
             document.getElementById('due-date').textContent = formatDate(data.vencimiento);
             document.getElementById('case-status').textContent = data.estado;
 

@@ -670,43 +670,38 @@ def test_data(caso_id):
 
 @app.route('/documentos/caso/<caso_id>/<nombre_archivo>')
 def servir_documento_blob(caso_id, nombre_archivo):
-    """
-    Sirve un documento real del caso directamente desde Azure Blob Storage,
-    buscando en cualquier subcarpeta dentro de la carpeta del caso.
-    """
     import mimetypes
 
-    container = os.environ.get("AZURE_STORAGE_CONTAINER")
+    container = "pdfs"  # El contenedor de los PDFs
     blob_service = get_blob_service_client()
-    carpeta_caso = f"Caso_{caso_id}/"
+    carpeta_caso = f"Caso_{caso_id}/"  # Prefijo dentro del contenedor
 
-    # Buscar el blob cuyo nombre termina con el nombre_archivo (en cualquier subcarpeta)
+    # Buscar el blob cuyo nombre termina exactamente con el nombre_archivo (en cualquier subcarpeta)
     blobs = blob_service.get_container_client(container).list_blobs(name_starts_with=carpeta_caso)
     blob_encontrado = None
     for blob in blobs:
-        if blob.name.endswith('/' + nombre_archivo) or blob.name == carpeta_caso + nombre_archivo:
+        # Imprime para debug
+        print("Blob encontrado:", blob.name)
+        if blob.name.endswith(nombre_archivo):
             blob_encontrado = blob.name
             break
 
     if not blob_encontrado:
         return f"Archivo no encontrado en Blob Storage: {nombre_archivo}", 404
 
-    # Descargar el blob
     blob_client = blob_service.get_blob_client(container=container, blob=blob_encontrado)
     stream = blob_client.download_blob()
     contenido = stream.readall()
 
-    # Detectar el tipo MIME
     mimetype, _ = mimetypes.guess_type(nombre_archivo)
     if not mimetype:
         mimetype = "application/octet-stream"
 
-    # Sirve el archivo (inline para ver, o download si el usuario lo solicita)
     return Response(
         contenido,
         mimetype=mimetype,
         headers={
-            "Content-Disposition": f'inline; filename="{nombre_archivo}"'
+            "Content-Disposition": f'inline; filename=\"{nombre_archivo}\"'
         }
     )
 
